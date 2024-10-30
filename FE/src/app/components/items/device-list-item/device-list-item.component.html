@@ -1,0 +1,16 @@
+<li *ngIf="device" class="item">
+    <div class="rounded-lg overflow-hidden bg-white shadow-lg transform transition-transform duration-300 hover:scale-105">
+        <div class="item-header">
+            <img 
+                src="/assets/computer.png" 
+                alt="{{ device.deviceName }}" 
+                class="w-full h-48 object-cover"
+            >
+        </div>
+        <div class="item-content p-4">
+            <h3 class="text-lg font-bold text-center text-green -600">{{ device.deviceName }}</h3>
+            <p class="text-sm text-gray-600">Address: {{ device.address }}</p>
+            <p class="text-sm text-gray-600">Max Hourly Consumption: {{ device.maxHourlyCons }}</p>
+        </div>
+    </div>
+</li>

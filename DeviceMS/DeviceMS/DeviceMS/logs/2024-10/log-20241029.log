@@ -1,0 +1,1517 @@
+[12:28:07 DBG] Hosting starting
+[12:28:07 INF] User profile is available. Using 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[12:28:07 DBG] Reading data from file 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys\key-ecac6b21-68f0-4cc8-99a1-58c655fd7c96.xml'.
+[12:28:07 DBG] Found key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96}.
+[12:28:07 DBG] Considering key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} with expiration date 2025-01-20 06:32:51Z as default key.
+[12:28:07 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:28:07 DBG] Decrypting secret element using Windows DPAPI.
+[12:28:07 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:28:07 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[12:28:07 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[12:28:07 DBG] Using key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} as the default key.
+[12:28:07 DBG] Key ring with default key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} was loaded during application startup.
+[12:28:09 DBG] Using development certificate: CN=localhost (Thumbprint: 483DCE1C48C5459E772E751BB169AAF690CD4851)
+[12:28:09 INF] Now listening on: https://localhost:7155
+[12:28:09 INF] Application started. Press Ctrl+C to shut down.
+[12:28:09 INF] Hosting environment: Development
+[12:28:09 INF] Content root path: C:\Users\Kaan Demirezenler\Desktop\UTCN24-25\DS\src\DeviceMS\DeviceMS\DeviceMS\
+[12:28:09 DBG] Hosting started
+[12:28:09 DBG] Connection id "0HN7O0HH6CR8U" received FIN.
+[12:28:09 DBG] Connection id "0HN7O0HH6CR8U" accepted.
+[12:28:09 DBG] Connection id "0HN7O0HH6CR8U" started.
+[12:28:09 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[12:28:09 DBG] Connection id "0HN7O0HH6CR8U" stopped.
+[12:28:09 DBG] Connection id "0HN7O0HH6CR8U" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:28:10 DBG] Connection id "0HN7O0HH6CR8V" accepted.
+[12:28:10 DBG] Connection id "0HN7O0HH6CR8V" started.
+[12:28:10 DBG] Connection 0HN7O0HH6CR8V established using the following protocol: "Tls13"
+[12:28:11 DBG] Wildcard detected, all requests with hosts will be allowed.
+[12:28:11 DBG] Response markup is scheduled to include browser refresh script injection.
+[12:28:13 DBG] HTTP GET /swagger/index.html responded 200 in 1740.4960 ms
+[12:28:13 DBG] Response markup was updated to include browser refresh script injection.
+[12:28:13 DBG] Connection id "0HN7O0HH6CR8V" received FIN.
+[12:28:13 DBG] Connection id "0HN7O0HH6CR8V" is closed. The last processed stream ID was 1.
+[12:28:13 DBG] Connection id "0HN7O0HH6CR8V" sending FIN because: "The client closed the connection."
+[12:28:13 DBG] Connection id "0HN7O0HH6CR8V" stopped.
+[12:28:14 DBG] Connection id "0HN7O0HH6CR90" accepted.
+[12:28:14 DBG] Connection id "0HN7O0HH6CR90" started.
+[12:28:14 DBG] Connection 0HN7O0HH6CR90 established using the following protocol: "Tls13"
+[12:28:14 DBG] HTTP GET /swagger/index.js responded 200 in 18.1606 ms
+[12:28:14 DBG] HTTP GET /swagger/v1/swagger.json responded 200 in 422.2660 ms
+[12:28:18 DBG] Connection id "0HN7O0HH6CR90" received FIN.
+[12:28:18 DBG] Connection id "0HN7O0HH6CR90" is closed. The last processed stream ID was 7.
+[12:28:18 DBG] Connection id "0HN7O0HH6CR90" sending FIN because: "The client closed the connection."
+[12:28:18 DBG] Connection id "0HN7O0HH6CR90" stopped.
+[12:29:43 DBG] Connection id "0HN7O0HH6CR91" accepted.
+[12:29:43 DBG] Connection id "0HN7O0HH6CR91" started.
+[12:29:43 DBG] Connection 0HN7O0HH6CR91 established using the following protocol: "Tls13"
+[12:29:43 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:43 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:43 INF] CORS policy execution successful.
+[12:29:43 DBG] The request is a preflight request.
+[12:29:43 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 19.6265 ms
+[12:29:43 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:43 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:43 INF] CORS policy execution successful.
+[12:29:44 DBG] Successfully validated the token.
+[12:29:44 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:29:44 DBG] Authorization was successful.
+[12:29:44 DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+[12:29:44 INF] Retrieving devices for user with ID 19
+[12:29:45 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:29:45 DBG] Compiling query expression: 
+'DbSet<Device>()
+    .Where(d => d.User != null && d.User.UserId == __userId_0)'
+[12:29:46 DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Device>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Device.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Device.Address (string) Required, 1], [Property: Device.Description (string) Required MaxLength(100), 2], [Property: Device.DeviceName (string) Required, 3], [Property: Device.MaxHourlyCons (float) Required, 4], [Property: Device.UserId (no field, int?) Shadow FK Index, 5] }
+        SELECT d.Id, d.Address, d.Description, d.DeviceName, d.MaxHourlyCons, d.UserId
+        FROM Devices AS d
+        LEFT JOIN PersonReferences AS p ON d.UserId == p.UserId
+        WHERE Not(p.UserId == NULL) && (p.UserId == @__userId_0)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Device>, 
+    DeviceMS.Core.DomainLayer.Data.AppDbContext, 
+    False, 
+    False, 
+    True
+)'
+[12:29:46 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:29:46 DBG] Created DbCommand for 'ExecuteReader' (78ms).
+[12:29:46 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:29:47 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:29:47 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:29:47 INF] Executed DbCommand (113ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:29:47 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:29:47 DBG] A data reader was disposed.
+[12:29:47 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:29:47 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:29:47 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:29:47 DBG] HTTP GET /api/Device/user/19 responded 200 in 3610.8322 ms
+[12:29:47 DBG] 'AppDbContext' disposed.
+[12:29:51 DBG] Connection id "0HN7O0HH6CR91" received FIN.
+[12:29:51 DBG] Connection id "0HN7O0HH6CR91" is closed. The last processed stream ID was 3.
+[12:29:51 DBG] Connection id "0HN7O0HH6CR91" sending FIN because: "The client closed the connection."
+[12:29:51 DBG] Connection id "0HN7O0HH6CR91" stopped.
+[12:30:12 DBG] Connection id "0HN7O0HH6CR92" accepted.
+[12:30:12 DBG] Connection id "0HN7O0HH6CR92" started.
+[12:30:12 DBG] Connection 0HN7O0HH6CR92 established using the following protocol: "Tls13"
+[12:30:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:30:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:30:12 INF] CORS policy execution successful.
+[12:30:12 DBG] The request is a preflight request.
+[12:30:12 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 2.9155 ms
+[12:30:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:30:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:30:12 INF] CORS policy execution successful.
+[12:30:12 DBG] Successfully validated the token.
+[12:30:12 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:30:12 DBG] Authorization was successful.
+[12:30:12 INF] Retrieving devices for user with ID 19
+[12:30:12 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:30:12 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:30:12 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[12:30:12 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:30:12 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:30:12 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:30:12 INF] Executed DbCommand (25ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:30:12 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:30:12 DBG] A data reader was disposed.
+[12:30:12 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:30:12 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:30:12 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:30:12 DBG] HTTP GET /api/Device/user/19 responded 200 in 86.6009 ms
+[12:30:12 DBG] 'AppDbContext' disposed.
+[12:30:16 DBG] Connection id "0HN7O0HH6CR92" received FIN.
+[12:30:16 DBG] Connection id "0HN7O0HH6CR92" is closed. The last processed stream ID was 3.
+[12:30:16 DBG] Connection id "0HN7O0HH6CR92" sending FIN because: "The client closed the connection."
+[12:30:16 DBG] Connection id "0HN7O0HH6CR92" stopped.
+[12:35:52 DBG] Connection id "0HN7O0HH6CR93" accepted.
+[12:35:52 DBG] Connection id "0HN7O0HH6CR93" started.
+[12:35:53 DBG] Connection 0HN7O0HH6CR93 established using the following protocol: "Tls13"
+[12:35:53 DBG] Static files was skipped as the request already matched an endpoint.
+[12:35:53 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:35:53 INF] CORS policy execution successful.
+[12:35:53 DBG] The request is a preflight request.
+[12:35:53 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 46.6616 ms
+[12:35:53 DBG] Static files was skipped as the request already matched an endpoint.
+[12:35:53 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:35:53 INF] CORS policy execution successful.
+[12:35:53 DBG] Successfully validated the token.
+[12:35:53 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:35:53 DBG] Authorization was successful.
+[12:35:53 INF] Retrieving devices for user with ID 19
+[12:35:53 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:35:53 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:35:53 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:35:53 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:35:53 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:35:53 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:35:53 INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:35:53 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:35:53 DBG] A data reader was disposed.
+[12:35:53 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:35:53 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:35:53 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:35:53 DBG] HTTP GET /api/Device/user/19 responded 200 in 182.2873 ms
+[12:35:53 DBG] 'AppDbContext' disposed.
+[12:36:12 DBG] Connection id "0HN7O0HH6CR93" received FIN.
+[12:36:12 DBG] Connection id "0HN7O0HH6CR93" is closed. The last processed stream ID was 3.
+[12:36:12 DBG] Connection id "0HN7O0HH6CR93" sending FIN because: "The client closed the connection."
+[12:36:12 DBG] Connection id "0HN7O0HH6CR93" stopped.
+[12:36:13 DBG] Connection id "0HN7O0HH6CR94" accepted.
+[12:36:13 DBG] Connection id "0HN7O0HH6CR94" started.
+[12:36:13 DBG] Connection 0HN7O0HH6CR94 established using the following protocol: "Tls13"
+[12:36:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:13 INF] CORS policy execution successful.
+[12:36:13 DBG] The request is a preflight request.
+[12:36:13 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 8.5874 ms
+[12:36:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:13 INF] CORS policy execution successful.
+[12:36:13 DBG] Successfully validated the token.
+[12:36:13 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:36:13 DBG] Authorization was successful.
+[12:36:13 INF] Retrieving devices for user with ID 19
+[12:36:13 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:36:13 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:36:13 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:36:13 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:36:13 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:36:13 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:36:13 INF] Executed DbCommand (29ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:36:13 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:36:13 DBG] A data reader was disposed.
+[12:36:13 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:36:13 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:36:13 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:36:13 DBG] HTTP GET /api/Device/user/19 responded 200 in 95.8085 ms
+[12:36:13 DBG] 'AppDbContext' disposed.
+[12:36:37 DBG] Connection id "0HN7O0HH6CR94" received FIN.
+[12:36:37 DBG] Connection id "0HN7O0HH6CR94" is closed. The last processed stream ID was 3.
+[12:36:37 DBG] Connection id "0HN7O0HH6CR94" stopped.
+[12:36:37 DBG] Connection id "0HN7O0HH6CR94" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:36:47 DBG] Connection id "0HN7O0HH6CR95" accepted.
+[12:36:47 DBG] Connection id "0HN7O0HH6CR95" started.
+[12:36:47 DBG] Connection 0HN7O0HH6CR95 established using the following protocol: "Tls13"
+[12:36:47 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:47 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:47 INF] CORS policy execution successful.
+[12:36:47 DBG] The request is a preflight request.
+[12:36:47 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 1.8784 ms
+[12:36:47 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:47 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:47 INF] CORS policy execution successful.
+[12:36:47 DBG] Successfully validated the token.
+[12:36:47 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:36:47 DBG] Authorization was successful.
+[12:36:47 INF] Retrieving devices for user with ID 19
+[12:36:47 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:36:47 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:36:47 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:36:47 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:36:47 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:36:47 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:36:47 INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:36:47 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:36:47 DBG] A data reader was disposed.
+[12:36:47 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:36:47 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:36:47 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:36:47 DBG] HTTP GET /api/Device/user/19 responded 200 in 50.8199 ms
+[12:36:47 DBG] 'AppDbContext' disposed.
+[12:36:47 DBG] Connection id "0HN7O0HH6CR95" received FIN.
+[12:36:47 DBG] Connection id "0HN7O0HH6CR95" is closed. The last processed stream ID was 3.
+[12:36:47 DBG] Connection id "0HN7O0HH6CR95" sending FIN because: "The client closed the connection."
+[12:36:47 DBG] Connection id "0HN7O0HH6CR95" stopped.
+[12:39:08 DBG] Connection id "0HN7O0HH6CR96" accepted.
+[12:39:08 DBG] Connection id "0HN7O0HH6CR96" started.
+[12:39:08 DBG] Connection 0HN7O0HH6CR96 established using the following protocol: "Tls13"
+[12:39:08 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:08 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:08 INF] CORS policy execution successful.
+[12:39:08 DBG] The request is a preflight request.
+[12:39:08 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 12.0849 ms
+[12:39:08 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:08 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:08 INF] CORS policy execution successful.
+[12:39:08 DBG] Successfully validated the token.
+[12:39:08 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:39:08 DBG] Authorization was successful.
+[12:39:08 INF] Retrieving devices for user with ID 19
+[12:39:08 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:39:08 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:08 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:39:08 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:39:08 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:39:08 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:39:08 INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:39:08 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:08 DBG] A data reader was disposed.
+[12:39:08 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:39:08 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:39:08 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:39:08 DBG] HTTP GET /api/Device/user/19 responded 200 in 29.1653 ms
+[12:39:08 DBG] 'AppDbContext' disposed.
+[12:39:16 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:16 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:16 INF] CORS policy execution successful.
+[12:39:16 DBG] The request is a preflight request.
+[12:39:16 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 7.4905 ms
+[12:39:16 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:16 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:16 INF] CORS policy execution successful.
+[12:39:16 DBG] Successfully validated the token.
+[12:39:16 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:39:16 DBG] Authorization was successful.
+[12:39:16 INF] Retrieving devices for user with ID 19
+[12:39:16 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:39:16 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:16 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[12:39:16 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:39:16 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:39:16 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:39:16 INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:39:16 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:16 DBG] A data reader was disposed.
+[12:39:16 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:39:16 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:39:16 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:39:16 DBG] HTTP GET /api/Device/user/19 responded 200 in 56.1130 ms
+[12:39:16 DBG] 'AppDbContext' disposed.
+[12:39:17 DBG] Connection id "0HN7O0HH6CR96" received FIN.
+[12:39:17 DBG] Connection id "0HN7O0HH6CR96" is closed. The last processed stream ID was 7.
+[12:39:17 DBG] Connection id "0HN7O0HH6CR96" sending FIN because: "The client closed the connection."
+[12:39:17 DBG] Connection id "0HN7O0HH6CR96" stopped.
+[12:42:50 DBG] Connection id "0HN7O0HH6CR97" accepted.
+[12:42:50 DBG] Connection id "0HN7O0HH6CR97" started.
+[12:42:50 DBG] Connection 0HN7O0HH6CR97 established using the following protocol: "Tls13"
+[12:42:50 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:50 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:50 INF] CORS policy execution successful.
+[12:42:50 DBG] The request is a preflight request.
+[12:42:50 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 9.3181 ms
+[12:42:50 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:50 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:50 INF] CORS policy execution successful.
+[12:42:50 DBG] Successfully validated the token.
+[12:42:50 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:42:50 DBG] Authorization was successful.
+[12:42:50 INF] Retrieving devices for user with ID 19
+[12:42:50 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:42:50 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:42:50 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:42:50 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:42:51 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:42:51 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:42:51 INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:42:51 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:42:51 DBG] A data reader was disposed.
+[12:42:51 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:42:51 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:42:51 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:42:51 DBG] HTTP GET /api/Device/user/19 responded 200 in 85.0341 ms
+[12:42:51 DBG] 'AppDbContext' disposed.
+[12:42:55 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:55 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:55 INF] CORS policy execution successful.
+[12:42:55 DBG] Successfully validated the token.
+[12:42:55 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:42:55 DBG] Authorization was successful.
+[12:42:56 INF] Retrieving devices for user with ID 19
+[12:42:56 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:42:56 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:42:56 DBG] Created DbCommand for 'ExecuteReader' (7ms).
+[12:42:56 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:42:56 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:42:56 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:42:56 INF] Executed DbCommand (58ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:42:56 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:42:56 DBG] A data reader was disposed.
+[12:42:56 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:42:56 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:42:56 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:42:56 DBG] HTTP GET /api/Device/user/19 responded 200 in 234.0285 ms
+[12:42:56 DBG] 'AppDbContext' disposed.
+[12:42:58 DBG] Connection id "0HN7O0HH6CR97" received FIN.
+[12:42:58 DBG] Connection id "0HN7O0HH6CR97" is closed. The last processed stream ID was 5.
+[12:42:58 DBG] Connection id "0HN7O0HH6CR97" sending FIN because: "The client closed the connection."
+[12:42:58 DBG] Connection id "0HN7O0HH6CR97" stopped.
+[12:43:03 DBG] Connection id "0HN7O0HH6CR98" accepted.
+[12:43:03 DBG] Connection id "0HN7O0HH6CR98" started.
+[12:43:03 DBG] Connection 0HN7O0HH6CR98 established using the following protocol: "Tls13"
+[12:43:03 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:03 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:03 INF] CORS policy execution successful.
+[12:43:03 DBG] The request is a preflight request.
+[12:43:03 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 70.5435 ms
+[12:43:03 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:03 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:03 INF] CORS policy execution successful.
+[12:43:03 DBG] Successfully validated the token.
+[12:43:03 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:43:03 DBG] Authorization was successful.
+[12:43:03 INF] Retrieving devices for user with ID 19
+[12:43:03 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:43:03 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:43:03 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:43:03 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:43:03 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:43:03 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:43:03 INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:43:03 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:43:03 DBG] A data reader was disposed.
+[12:43:03 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:43:03 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:43:03 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:43:03 DBG] HTTP GET /api/Device/user/19 responded 200 in 62.4779 ms
+[12:43:03 DBG] 'AppDbContext' disposed.
+[12:43:08 DBG] Connection id "0HN7O0HH6CR98" received FIN.
+[12:43:08 DBG] Connection id "0HN7O0HH6CR98" is closed. The last processed stream ID was 3.
+[12:43:08 DBG] Connection id "0HN7O0HH6CR98" sending FIN because: "The client closed the connection."
+[12:43:08 DBG] Connection id "0HN7O0HH6CR98" stopped.
+[12:48:13 DBG] Connection id "0HN7O0HH6CR99" accepted.
+[12:48:13 DBG] Connection id "0HN7O0HH6CR99" started.
+[12:48:13 DBG] Connection 0HN7O0HH6CR99 established using the following protocol: "Tls13"
+[12:48:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:13 INF] CORS policy execution successful.
+[12:48:13 DBG] The request is a preflight request.
+[12:48:13 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 42.9363 ms
+[12:48:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:13 INF] CORS policy execution successful.
+[12:48:13 DBG] Successfully validated the token.
+[12:48:13 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:13 DBG] Authorization was successful.
+[12:48:13 INF] Retrieving devices for user with ID 19
+[12:48:13 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:13 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:13 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:48:13 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:48:13 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:48:13 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:13 INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:13 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:13 DBG] A data reader was disposed.
+[12:48:13 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:48:13 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:48:13 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:48:13 DBG] HTTP GET /api/Device/user/19 responded 200 in 67.0265 ms
+[12:48:13 DBG] 'AppDbContext' disposed.
+[12:48:18 DBG] Connection id "0HN7O0HH6CR99" received FIN.
+[12:48:18 DBG] Connection id "0HN7O0HH6CR99" is closed. The last processed stream ID was 3.
+[12:48:18 DBG] Connection id "0HN7O0HH6CR99" sending FIN because: "The client closed the connection."
+[12:48:18 DBG] Connection id "0HN7O0HH6CR99" stopped.
+[12:48:27 DBG] Connection id "0HN7O0HH6CR9A" accepted.
+[12:48:27 DBG] Connection id "0HN7O0HH6CR9A" started.
+[12:48:27 DBG] Connection 0HN7O0HH6CR9A established using the following protocol: "Tls13"
+[12:48:27 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:27 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:27 INF] CORS policy execution successful.
+[12:48:27 DBG] The request is a preflight request.
+[12:48:27 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 2.9926 ms
+[12:48:27 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:27 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:27 INF] CORS policy execution successful.
+[12:48:27 DBG] Successfully validated the token.
+[12:48:27 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:27 DBG] Authorization was successful.
+[12:48:27 INF] Retrieving devices for user with ID 19
+[12:48:27 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:27 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:27 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:48:27 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:48:27 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:48:27 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:27 INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:27 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:27 DBG] A data reader was disposed.
+[12:48:27 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:48:27 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:48:27 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:48:27 DBG] HTTP GET /api/Device/user/19 responded 200 in 26.0667 ms
+[12:48:27 DBG] 'AppDbContext' disposed.
+[12:48:28 DBG] Connection id "0HN7O0HH6CR9A" received FIN.
+[12:48:28 DBG] Connection id "0HN7O0HH6CR9A" is closed. The last processed stream ID was 3.
+[12:48:28 DBG] Connection id "0HN7O0HH6CR9A" sending FIN because: "The client closed the connection."
+[12:48:28 DBG] Connection id "0HN7O0HH6CR9A" stopped.
+[12:48:41 DBG] Connection id "0HN7O0HH6CR9B" accepted.
+[12:48:41 DBG] Connection id "0HN7O0HH6CR9B" started.
+[12:48:41 DBG] Connection 0HN7O0HH6CR9B established using the following protocol: "Tls13"
+[12:48:41 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:41 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:41 INF] CORS policy execution successful.
+[12:48:41 DBG] The request is a preflight request.
+[12:48:41 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 2.4795 ms
+[12:48:41 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:41 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:41 INF] CORS policy execution successful.
+[12:48:41 DBG] Successfully validated the token.
+[12:48:41 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:41 DBG] Authorization was successful.
+[12:48:41 INF] Retrieving devices for user with ID 19
+[12:48:41 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:41 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:41 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:48:41 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:48:41 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:48:41 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:41 INF] Executed DbCommand (53ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:41 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:41 DBG] A data reader was disposed.
+[12:48:41 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:48:41 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:48:41 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:48:41 DBG] HTTP GET /api/Device/user/19 responded 200 in 86.4761 ms
+[12:48:41 DBG] 'AppDbContext' disposed.
+[12:48:44 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:44 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:44 INF] CORS policy execution successful.
+[12:48:44 DBG] Successfully validated the token.
+[12:48:44 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:44 DBG] Authorization was successful.
+[12:48:44 INF] Retrieving devices for user with ID 19
+[12:48:44 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:44 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:44 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:48:44 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:48:44 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:48:44 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:44 INF] Executed DbCommand (62ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:48:44 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:44 DBG] A data reader was disposed.
+[12:48:44 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:48:44 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:48:44 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:48:44 DBG] HTTP GET /api/Device/user/19 responded 200 in 148.8896 ms
+[12:48:44 DBG] 'AppDbContext' disposed.
+[12:48:48 DBG] Connection id "0HN7O0HH6CR9B" received FIN.
+[12:48:48 DBG] Connection id "0HN7O0HH6CR9B" is closed. The last processed stream ID was 5.
+[12:48:48 DBG] Connection id "0HN7O0HH6CR9B" sending FIN because: "The client closed the connection."
+[12:48:48 DBG] Connection id "0HN7O0HH6CR9B" stopped.
+[12:49:30 DBG] Connection id "0HN7O0HH6CR9C" accepted.
+[12:49:30 DBG] Connection id "0HN7O0HH6CR9C" started.
+[12:49:30 DBG] Connection 0HN7O0HH6CR9C established using the following protocol: "Tls13"
+[12:49:30 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:30 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:30 INF] CORS policy execution successful.
+[12:49:30 DBG] The request is a preflight request.
+[12:49:30 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 7.3651 ms
+[12:49:30 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:30 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:30 INF] CORS policy execution successful.
+[12:49:30 DBG] Successfully validated the token.
+[12:49:30 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:30 DBG] Authorization was successful.
+[12:49:30 INF] Retrieving devices for user with ID 19
+[12:49:30 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:30 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:30 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[12:49:30 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:49:30 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:49:30 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:49:30 INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:49:30 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:30 DBG] A data reader was disposed.
+[12:49:30 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:49:30 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:49:30 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:49:30 DBG] HTTP GET /api/Device/user/19 responded 200 in 40.3082 ms
+[12:49:30 DBG] 'AppDbContext' disposed.
+[12:49:33 DBG] Connection id "0HN7O0HH6CR9C" received FIN.
+[12:49:33 DBG] Connection id "0HN7O0HH6CR9C" is closed. The last processed stream ID was 3.
+[12:49:33 DBG] Connection id "0HN7O0HH6CR9C" sending FIN because: "The client closed the connection."
+[12:49:33 DBG] Connection id "0HN7O0HH6CR9C" stopped.
+[12:49:50 DBG] Connection id "0HN7O0HH6CR9D" accepted.
+[12:49:50 DBG] Connection id "0HN7O0HH6CR9D" started.
+[12:49:50 DBG] Connection 0HN7O0HH6CR9D established using the following protocol: "Tls13"
+[12:49:50 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:50 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:50 INF] CORS policy execution successful.
+[12:49:50 DBG] The request is a preflight request.
+[12:49:50 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 13.3523 ms
+[12:49:50 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:50 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:50 INF] CORS policy execution successful.
+[12:49:50 DBG] Successfully validated the token.
+[12:49:50 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:50 DBG] Authorization was successful.
+[12:49:50 INF] Retrieving devices for user with ID 19
+[12:49:50 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:50 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:50 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:49:50 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:49:50 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:49:50 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:49:50 INF] Executed DbCommand (27ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:49:50 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:50 DBG] A data reader was disposed.
+[12:49:50 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:49:50 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:49:50 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:49:50 DBG] HTTP GET /api/Device/user/19 responded 200 in 64.4090 ms
+[12:49:50 DBG] 'AppDbContext' disposed.
+[12:49:53 DBG] Connection id "0HN7O0HH6CR9D" received FIN.
+[12:49:53 DBG] Connection id "0HN7O0HH6CR9D" is closed. The last processed stream ID was 3.
+[12:49:53 DBG] Connection id "0HN7O0HH6CR9D" sending FIN because: "The client closed the connection."
+[12:49:53 DBG] Connection id "0HN7O0HH6CR9D" stopped.
+[12:49:55 DBG] Connection id "0HN7O0HH6CR9E" accepted.
+[12:49:56 DBG] Connection id "0HN7O0HH6CR9E" started.
+[12:49:56 DBG] Connection 0HN7O0HH6CR9E established using the following protocol: "Tls13"
+[12:49:56 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:56 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:56 INF] CORS policy execution successful.
+[12:49:56 DBG] The request is a preflight request.
+[12:49:56 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 10.1476 ms
+[12:49:56 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:56 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:56 INF] CORS policy execution successful.
+[12:49:56 DBG] Successfully validated the token.
+[12:49:56 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:56 DBG] Authorization was successful.
+[12:49:56 INF] Retrieving devices for user with ID 19
+[12:49:56 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:56 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:56 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[12:49:56 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:49:56 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:49:56 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:49:56 INF] Executed DbCommand (17ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:49:56 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:56 DBG] A data reader was disposed.
+[12:49:56 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:49:56 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:49:56 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:49:56 DBG] HTTP GET /api/Device/user/19 responded 200 in 49.8345 ms
+[12:49:56 DBG] 'AppDbContext' disposed.
+[12:50:03 DBG] Connection id "0HN7O0HH6CR9E" received FIN.
+[12:50:03 DBG] Connection id "0HN7O0HH6CR9E" is closed. The last processed stream ID was 3.
+[12:50:03 DBG] Connection id "0HN7O0HH6CR9E" sending FIN because: "The client closed the connection."
+[12:50:03 DBG] Connection id "0HN7O0HH6CR9E" stopped.
+[12:50:10 DBG] Connection id "0HN7O0HH6CR9F" accepted.
+[12:50:10 DBG] Connection id "0HN7O0HH6CR9F" started.
+[12:50:10 DBG] Connection 0HN7O0HH6CR9F established using the following protocol: "Tls13"
+[12:50:10 DBG] Static files was skipped as the request already matched an endpoint.
+[12:50:10 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:50:10 INF] CORS policy execution successful.
+[12:50:10 DBG] The request is a preflight request.
+[12:50:10 DBG] HTTP OPTIONS /api/Device/user/19 responded 204 in 9.7269 ms
+[12:50:10 DBG] Static files was skipped as the request already matched an endpoint.
+[12:50:10 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:50:10 INF] CORS policy execution successful.
+[12:50:10 DBG] Successfully validated the token.
+[12:50:10 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:50:10 DBG] Authorization was successful.
+[12:50:10 INF] Retrieving devices for user with ID 19
+[12:50:10 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:50:10 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:50:10 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:50:10 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:50:10 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:50:10 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:50:10 INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+LEFT JOIN [PersonReferences] AS [p] ON [d].[UserId] = [p].[UserId]
+WHERE ([p].[UserId] IS NOT NULL) AND ([p].[UserId] = @__userId_0)
+[12:50:10 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:50:10 DBG] A data reader was disposed.
+[12:50:10 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:50:10 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:50:10 INF] Found devices for user ID 19: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"}]
+[12:50:10 DBG] HTTP GET /api/Device/user/19 responded 200 in 89.3679 ms
+[12:50:10 DBG] 'AppDbContext' disposed.
+[12:50:13 DBG] Connection id "0HN7O0HH6CR9F" received FIN.
+[12:50:13 DBG] Connection id "0HN7O0HH6CR9F" is closed. The last processed stream ID was 3.
+[12:50:13 DBG] Connection id "0HN7O0HH6CR9F" sending FIN because: "The client closed the connection."
+[12:50:13 DBG] Connection id "0HN7O0HH6CR9F" stopped.
+[12:51:12 DBG] Connection id "0HN7O0HH6CR9G" accepted.
+[12:51:12 DBG] Connection id "0HN7O0HH6CR9G" started.
+[12:51:12 DBG] Connection 0HN7O0HH6CR9G established using the following protocol: "Tls13"
+[12:51:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:51:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:51:12 INF] CORS policy execution successful.
+[12:51:12 DBG] The request is a preflight request.
+[12:51:12 DBG] HTTP OPTIONS /api/Device responded 204 in 1.4695 ms
+[12:51:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:51:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:51:12 INF] CORS policy execution successful.
+[12:51:12 DBG] Successfully validated the token.
+[12:51:12 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:51:12 DBG] Authorization was successful.
+[12:51:12 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:51:12 DBG] Compiling query expression: 
+'DbSet<Device>()'
+[12:51:12 DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Device>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Device.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Device.Address (string) Required, 1], [Property: Device.Description (string) Required MaxLength(100), 2], [Property: Device.DeviceName (string) Required, 3], [Property: Device.MaxHourlyCons (float) Required, 4], [Property: Device.UserId (no field, int?) Shadow FK Index, 5] }
+        SELECT d.Id, d.Address, d.Description, d.DeviceName, d.MaxHourlyCons, d.UserId
+        FROM Devices AS d), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Device>, 
+    DeviceMS.Core.DomainLayer.Data.AppDbContext, 
+    False, 
+    False, 
+    True
+)'
+[12:51:12 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:51:12 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:51:12 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:51:12 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:51:12 DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+[12:51:12 INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+[12:51:12 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:51:12 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:51:12 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:51:12 DBG] A data reader was disposed.
+[12:51:12 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:51:12 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:51:12 INF] Found devices: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"},{"Id":3,"DeviceName":"second","Description":"loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description","Address":"0.0.0.1","MaxHourlyCons":7.2,"$type":"DeviceDTO"},{"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}]
+[12:51:12 DBG] HTTP GET /api/Device responded 200 in 121.5185 ms
+[12:51:12 DBG] 'AppDbContext' disposed.
+[12:51:14 DBG] Static files was skipped as the request already matched an endpoint.
+[12:51:14 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:51:14 INF] CORS policy execution successful.
+[12:51:14 DBG] The request is a preflight request.
+[12:51:14 DBG] HTTP OPTIONS /api/Device/search responded 204 in 1.6685 ms
+[12:51:14 DBG] Static files was skipped as the request already matched an endpoint.
+[12:51:14 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:51:14 INF] CORS policy execution successful.
+[12:51:14 DBG] Successfully validated the token.
+[12:51:14 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:51:14 DBG] Authorization was successful.
+[12:51:14 INF] Searching for devices with name containing s
+[12:51:14 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:51:14 DBG] Compiling query expression: 
+'DbSet<Device>()
+    .Where(d => d.DeviceName.Contains(__name_0))'
+[12:51:14 DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Device>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Device.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Device.Address (string) Required, 1], [Property: Device.Description (string) Required MaxLength(100), 2], [Property: Device.DeviceName (string) Required, 3], [Property: Device.MaxHourlyCons (float) Required, 4], [Property: Device.UserId (no field, int?) Shadow FK Index, 5] }
+        SELECT d.Id, d.Address, d.Description, d.DeviceName, d.MaxHourlyCons, d.UserId
+        FROM Devices AS d
+        WHERE (@__name_0 LIKE N'') || (CHARINDEX(@__name_0, d.DeviceName) > 0)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Device>, 
+    DeviceMS.Core.DomainLayer.Data.AppDbContext, 
+    False, 
+    False, 
+    True
+)'
+[12:51:14 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:51:14 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:51:14 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:51:14 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:51:14 DBG] Executing DbCommand [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE (@__name_0 LIKE N'') OR (CHARINDEX(@__name_0, [d].[DeviceName]) > 0)
+[12:51:14 INF] Executed DbCommand (18ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE (@__name_0 LIKE N'') OR (CHARINDEX(@__name_0, [d].[DeviceName]) > 0)
+[12:51:14 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:51:14 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:51:14 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:51:14 DBG] A data reader was disposed.
+[12:51:14 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:51:14 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:51:14 INF] Found devices: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"},{"Id":3,"DeviceName":"second","Description":"loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description","Address":"0.0.0.1","MaxHourlyCons":7.2,"$type":"DeviceDTO"},{"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}]
+[12:51:14 DBG] HTTP GET /api/Device/search responded 200 in 137.1011 ms
+[12:51:14 DBG] 'AppDbContext' disposed.
+[12:51:15 DBG] Static files was skipped as the request already matched an endpoint.
+[12:51:15 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:51:15 INF] CORS policy execution successful.
+[12:51:15 DBG] The request is a preflight request.
+[12:51:15 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 1.5726 ms
+[12:51:15 DBG] Static files was skipped as the request already matched an endpoint.
+[12:51:15 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:51:15 INF] CORS policy execution successful.
+[12:51:15 DBG] Successfully validated the token.
+[12:51:15 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:51:15 DBG] Authorization was successful.
+[12:51:15 INF] Trying to retrieve device with id 4
+[12:51:15 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:51:15 DBG] Compiling query expression: 
+'DbSet<Device>()
+    .FirstOrDefault(d => d.Id == __id_0)'
+[12:51:15 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Device>(
+    asyncEnumerable: new SingleQueryingEnumerable<Device>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Device.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Device.Address (string) Required, 1], [Property: Device.Description (string) Required MaxLength(100), 2], [Property: Device.DeviceName (string) Required, 3], [Property: Device.MaxHourlyCons (float) Required, 4], [Property: Device.UserId (no field, int?) Shadow FK Index, 5] }
+            SELECT TOP(1) d.Id, d.Address, d.Description, d.DeviceName, d.MaxHourlyCons, d.UserId
+            FROM Devices AS d
+            WHERE d.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Device>, 
+        DeviceMS.Core.DomainLayer.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[12:51:15 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:51:15 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:51:15 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:51:15 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:51:15 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:51:15 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:51:15 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:51:15 DBG] A data reader was disposed.
+[12:51:15 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:51:15 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:51:15 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:51:15 DBG] HTTP GET /api/Device/4 responded 200 in 49.1370 ms
+[12:51:15 DBG] 'AppDbContext' disposed.
+[12:51:23 DBG] Connection id "0HN7O0HH6CR9G" received FIN.
+[12:51:23 DBG] Connection id "0HN7O0HH6CR9G" is closed. The last processed stream ID was 11.
+[12:51:23 DBG] Connection id "0HN7O0HH6CR9G" sending FIN because: "The client closed the connection."
+[12:51:23 DBG] Connection id "0HN7O0HH6CR9G" stopped.
+[12:52:32 DBG] Connection id "0HN7O0HH6CR9H" accepted.
+[12:52:32 DBG] Connection id "0HN7O0HH6CR9H" started.
+[12:52:32 DBG] Connection 0HN7O0HH6CR9H established using the following protocol: "Tls13"
+[12:52:32 DBG] Static files was skipped as the request already matched an endpoint.
+[12:52:32 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:52:32 INF] CORS policy execution successful.
+[12:52:32 DBG] The request is a preflight request.
+[12:52:32 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 2.3883 ms
+[12:52:32 DBG] Static files was skipped as the request already matched an endpoint.
+[12:52:33 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:52:33 INF] CORS policy execution successful.
+[12:52:33 DBG] Successfully validated the token.
+[12:52:33 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:52:33 DBG] Authorization was successful.
+[12:52:33 INF] Trying to retrieve device with id 4
+[12:52:33 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:52:33 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:52:33 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:52:33 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:52:33 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:52:33 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:52:33 INF] Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:52:33 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:52:33 DBG] A data reader was disposed.
+[12:52:33 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:52:33 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:52:33 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:52:33 DBG] HTTP GET /api/Device/4 responded 200 in 59.1758 ms
+[12:52:33 DBG] 'AppDbContext' disposed.
+[12:52:38 DBG] Connection id "0HN7O0HH6CR9H" received FIN.
+[12:52:38 DBG] Connection id "0HN7O0HH6CR9H" is closed. The last processed stream ID was 3.
+[12:52:38 DBG] Connection id "0HN7O0HH6CR9H" sending FIN because: "The client closed the connection."
+[12:52:38 DBG] Connection id "0HN7O0HH6CR9H" stopped.
+[12:53:54 DBG] Connection id "0HN7O0HH6CR9I" accepted.
+[12:53:54 DBG] Connection id "0HN7O0HH6CR9I" started.
+[12:53:54 DBG] Connection 0HN7O0HH6CR9I established using the following protocol: "Tls13"
+[12:53:54 DBG] Static files was skipped as the request already matched an endpoint.
+[12:53:54 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:53:54 INF] CORS policy execution successful.
+[12:53:54 DBG] The request is a preflight request.
+[12:53:54 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 6.8759 ms
+[12:53:54 DBG] Static files was skipped as the request already matched an endpoint.
+[12:53:54 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:53:54 INF] CORS policy execution successful.
+[12:53:54 DBG] Successfully validated the token.
+[12:53:54 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:53:54 DBG] Authorization was successful.
+[12:53:54 INF] Trying to retrieve device with id 4
+[12:53:54 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:53:54 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:53:54 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:53:54 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:53:54 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:53:54 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:53:54 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:53:54 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:53:54 DBG] A data reader was disposed.
+[12:53:54 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:53:54 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:53:54 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:53:54 DBG] HTTP GET /api/Device/4 responded 200 in 19.1617 ms
+[12:53:54 DBG] 'AppDbContext' disposed.
+[12:53:58 DBG] Connection id "0HN7O0HH6CR9I" received FIN.
+[12:53:58 DBG] Connection id "0HN7O0HH6CR9I" is closed. The last processed stream ID was 3.
+[12:53:58 DBG] Connection id "0HN7O0HH6CR9I" sending FIN because: "The client closed the connection."
+[12:53:58 DBG] Connection id "0HN7O0HH6CR9I" stopped.
+[12:54:14 DBG] Connection id "0HN7O0HH6CR9J" accepted.
+[12:54:14 DBG] Connection id "0HN7O0HH6CR9J" started.
+[12:54:14 DBG] Connection 0HN7O0HH6CR9J established using the following protocol: "Tls13"
+[12:54:14 DBG] Static files was skipped as the request already matched an endpoint.
+[12:54:14 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:54:14 INF] CORS policy execution successful.
+[12:54:14 DBG] The request is a preflight request.
+[12:54:14 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 8.9641 ms
+[12:54:14 DBG] Static files was skipped as the request already matched an endpoint.
+[12:54:14 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:54:14 INF] CORS policy execution successful.
+[12:54:14 DBG] Successfully validated the token.
+[12:54:14 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:54:14 DBG] Authorization was successful.
+[12:54:14 INF] Trying to retrieve device with id 4
+[12:54:14 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:54:14 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:54:14 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:54:14 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:54:14 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:54:14 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:54:14 INF] Executed DbCommand (32ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:54:14 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:54:14 DBG] A data reader was disposed.
+[12:54:14 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:54:14 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:54:14 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:54:14 DBG] HTTP GET /api/Device/4 responded 200 in 57.1570 ms
+[12:54:14 DBG] 'AppDbContext' disposed.
+[12:54:19 DBG] Connection id "0HN7O0HH6CR9J" received FIN.
+[12:54:19 DBG] Connection id "0HN7O0HH6CR9J" is closed. The last processed stream ID was 3.
+[12:54:19 DBG] Connection id "0HN7O0HH6CR9J" sending FIN because: "The client closed the connection."
+[12:54:19 DBG] Connection id "0HN7O0HH6CR9J" stopped.
+[12:54:36 DBG] Connection id "0HN7O0HH6CR9K" accepted.
+[12:54:36 DBG] Connection id "0HN7O0HH6CR9K" started.
+[12:54:36 DBG] Connection 0HN7O0HH6CR9K established using the following protocol: "Tls13"
+[12:54:36 DBG] Static files was skipped as the request already matched an endpoint.
+[12:54:36 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:54:36 INF] CORS policy execution successful.
+[12:54:36 DBG] The request is a preflight request.
+[12:54:36 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 1.6117 ms
+[12:54:36 DBG] Static files was skipped as the request already matched an endpoint.
+[12:54:36 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:54:36 INF] CORS policy execution successful.
+[12:54:36 DBG] Successfully validated the token.
+[12:54:36 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:54:36 DBG] Authorization was successful.
+[12:54:36 INF] Trying to retrieve device with id 4
+[12:54:36 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:54:36 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:54:36 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:54:36 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:54:36 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:54:36 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:54:36 INF] Executed DbCommand (16ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:54:36 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:54:37 DBG] A data reader was disposed.
+[12:54:37 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:54:37 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:54:37 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:54:37 DBG] HTTP GET /api/Device/4 responded 200 in 46.6506 ms
+[12:54:37 DBG] 'AppDbContext' disposed.
+[12:54:39 DBG] Connection id "0HN7O0HH6CR9K" received FIN.
+[12:54:39 DBG] Connection id "0HN7O0HH6CR9K" is closed. The last processed stream ID was 3.
+[12:54:39 DBG] Connection id "0HN7O0HH6CR9K" sending FIN because: "The client closed the connection."
+[12:54:39 DBG] Connection id "0HN7O0HH6CR9K" stopped.
+[12:55:29 DBG] Connection id "0HN7O0HH6CR9L" accepted.
+[12:55:29 DBG] Connection id "0HN7O0HH6CR9L" started.
+[12:55:29 DBG] Connection 0HN7O0HH6CR9L established using the following protocol: "Tls13"
+[12:55:29 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:29 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:29 INF] CORS policy execution successful.
+[12:55:29 DBG] The request is a preflight request.
+[12:55:29 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 1.5735 ms
+[12:55:29 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:29 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:29 INF] CORS policy execution successful.
+[12:55:29 DBG] Successfully validated the token.
+[12:55:29 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:55:29 DBG] Authorization was successful.
+[12:55:29 INF] Trying to retrieve device with id 4
+[12:55:29 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:55:29 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:55:29 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:55:29 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:55:29 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:55:29 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:29 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:29 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:29 DBG] A data reader was disposed.
+[12:55:29 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:55:29 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:55:29 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:55:29 DBG] HTTP GET /api/Device/4 responded 200 in 14.7918 ms
+[12:55:29 DBG] 'AppDbContext' disposed.
+[12:55:32 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:32 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:32 INF] CORS policy execution successful.
+[12:55:32 DBG] Successfully validated the token.
+[12:55:32 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:55:32 DBG] Authorization was successful.
+[12:55:32 INF] Trying to retrieve device with id 4
+[12:55:32 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:55:32 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:55:32 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:55:32 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:55:32 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:55:32 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:32 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:32 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:32 DBG] A data reader was disposed.
+[12:55:32 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:55:32 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:55:32 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:55:32 DBG] HTTP GET /api/Device/4 responded 200 in 17.5565 ms
+[12:55:32 DBG] 'AppDbContext' disposed.
+[12:55:38 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:38 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:38 INF] CORS policy execution successful.
+[12:55:38 DBG] The request is a preflight request.
+[12:55:38 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 32.3096 ms
+[12:55:38 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:38 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:38 INF] CORS policy execution successful.
+[12:55:38 DBG] Successfully validated the token.
+[12:55:38 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:55:38 DBG] Authorization was successful.
+[12:55:38 INF] Trying to retrieve device with id 4
+[12:55:38 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:55:38 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:55:38 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:55:38 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:55:38 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:55:38 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:38 INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:38 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:38 DBG] A data reader was disposed.
+[12:55:38 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:55:38 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:55:38 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:55:38 DBG] HTTP GET /api/Device/4 responded 200 in 70.1555 ms
+[12:55:38 DBG] 'AppDbContext' disposed.
+[12:55:39 DBG] Connection id "0HN7O0HH6CR9L" received FIN.
+[12:55:39 DBG] Connection id "0HN7O0HH6CR9L" is closed. The last processed stream ID was 9.
+[12:55:39 DBG] Connection id "0HN7O0HH6CR9L" sending FIN because: "The client closed the connection."
+[12:55:39 DBG] Connection id "0HN7O0HH6CR9L" stopped.
+[12:55:45 DBG] Connection id "0HN7O0HH6CR9M" accepted.
+[12:55:45 DBG] Connection id "0HN7O0HH6CR9M" started.
+[12:55:45 DBG] Connection 0HN7O0HH6CR9M established using the following protocol: "Tls13"
+[12:55:45 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:45 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:45 INF] CORS policy execution successful.
+[12:55:45 DBG] The request is a preflight request.
+[12:55:45 DBG] HTTP OPTIONS /api/Device/search responded 204 in 14.6860 ms
+[12:55:46 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:46 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:46 INF] CORS policy execution successful.
+[12:55:46 DBG] The request is a preflight request.
+[12:55:46 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 82.7452 ms
+[12:55:46 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:46 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:46 INF] CORS policy execution successful.
+[12:55:46 DBG] Successfully validated the token.
+[12:55:46 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:55:46 DBG] Authorization was successful.
+[12:55:46 INF] Trying to retrieve device with id 4
+[12:55:46 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:55:46 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:55:46 DBG] Created DbCommand for 'ExecuteReader' (4ms).
+[12:55:46 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:55:46 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:55:46 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:46 INF] Executed DbCommand (46ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:46 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:46 DBG] A data reader was disposed.
+[12:55:46 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:55:46 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:55:46 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:55:46 DBG] HTTP GET /api/Device/4 responded 200 in 76.0825 ms
+[12:55:46 DBG] 'AppDbContext' disposed.
+[12:55:48 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:48 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:48 INF] CORS policy execution successful.
+[12:55:48 DBG] Successfully validated the token.
+[12:55:48 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:55:48 DBG] Authorization was successful.
+[12:55:48 INF] Searching for devices with name containing s
+[12:55:48 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:55:48 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:55:48 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:55:48 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:55:48 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:55:48 DBG] Executing DbCommand [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE (@__name_0 LIKE N'') OR (CHARINDEX(@__name_0, [d].[DeviceName]) > 0)
+[12:55:48 INF] Executed DbCommand (6ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE (@__name_0 LIKE N'') OR (CHARINDEX(@__name_0, [d].[DeviceName]) > 0)
+[12:55:48 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:48 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:48 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:48 DBG] A data reader was disposed.
+[12:55:48 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:55:48 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:55:48 INF] Found devices: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"},{"Id":3,"DeviceName":"second","Description":"loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description","Address":"0.0.0.1","MaxHourlyCons":7.2,"$type":"DeviceDTO"},{"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}]
+[12:55:48 DBG] HTTP GET /api/Device/search responded 200 in 23.2150 ms
+[12:55:48 DBG] 'AppDbContext' disposed.
+[12:55:49 DBG] Connection id "0HN7O0HH6CR9M" received FIN.
+[12:55:49 DBG] Connection id "0HN7O0HH6CR9M" is closed. The last processed stream ID was 7.
+[12:55:49 DBG] Connection id "0HN7O0HH6CR9M" sending FIN because: "The client closed the connection."
+[12:55:49 DBG] Connection id "0HN7O0HH6CR9M" stopped.
+[12:55:51 DBG] Connection id "0HN7O0HH6CR9N" accepted.
+[12:55:51 DBG] Connection id "0HN7O0HH6CR9N" started.
+[12:55:51 DBG] Connection 0HN7O0HH6CR9N established using the following protocol: "Tls13"
+[12:55:51 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:51 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:51 INF] CORS policy execution successful.
+[12:55:51 DBG] The request is a preflight request.
+[12:55:51 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 1.2721 ms
+[12:55:51 DBG] Static files was skipped as the request already matched an endpoint.
+[12:55:51 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:55:51 INF] CORS policy execution successful.
+[12:55:51 DBG] Successfully validated the token.
+[12:55:51 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:55:51 DBG] Authorization was successful.
+[12:55:51 INF] Trying to retrieve device with id 4
+[12:55:51 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:55:51 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:55:51 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:55:51 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[12:55:51 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[12:55:51 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:51 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[12:55:51 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:55:51 DBG] A data reader was disposed.
+[12:55:51 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[12:55:51 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[12:55:51 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[12:55:51 DBG] HTTP GET /api/Device/4 responded 200 in 15.2465 ms
+[12:55:51 DBG] 'AppDbContext' disposed.
+[12:56:19 DBG] Connection id "0HN7O0HH6CR9N" received FIN.
+[12:56:19 DBG] Connection id "0HN7O0HH6CR9N" is closed. The last processed stream ID was 3.
+[12:56:19 DBG] Connection id "0HN7O0HH6CR9N" sending FIN because: "The client closed the connection."
+[12:56:19 DBG] Connection id "0HN7O0HH6CR9N" stopped.
+[13:07:32 DBG] Connection id "0HN7O0HH6CR9O" accepted.
+[13:07:32 DBG] Connection id "0HN7O0HH6CR9O" started.
+[13:07:32 DBG] Connection 0HN7O0HH6CR9O established using the following protocol: "Tls13"
+[13:07:32 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:32 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:32 INF] CORS policy execution successful.
+[13:07:32 DBG] The request is a preflight request.
+[13:07:32 DBG] HTTP OPTIONS /api/Device/search responded 204 in 2.3687 ms
+[13:07:32 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:32 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:32 INF] CORS policy execution successful.
+[13:07:32 DBG] Successfully validated the token.
+[13:07:32 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[13:07:32 DBG] Authorization was successful.
+[13:07:32 INF] Searching for devices with name containing s
+[13:07:32 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[13:07:32 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:32 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[13:07:32 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[13:07:32 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[13:07:32 DBG] Executing DbCommand [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE (@__name_0 LIKE N'') OR (CHARINDEX(@__name_0, [d].[DeviceName]) > 0)
+[13:07:32 INF] Executed DbCommand (23ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE (@__name_0 LIKE N'') OR (CHARINDEX(@__name_0, [d].[DeviceName]) > 0)
+[13:07:32 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:32 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:32 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:32 DBG] A data reader was disposed.
+[13:07:32 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[13:07:32 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[13:07:32 INF] Found devices: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"},{"Id":3,"DeviceName":"second","Description":"loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description","Address":"0.0.0.1","MaxHourlyCons":7.2,"$type":"DeviceDTO"},{"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}]
+[13:07:32 DBG] HTTP GET /api/Device/search responded 200 in 87.9891 ms
+[13:07:32 DBG] 'AppDbContext' disposed.
+[13:07:34 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:34 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:34 INF] CORS policy execution successful.
+[13:07:34 DBG] The request is a preflight request.
+[13:07:34 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 1.0620 ms
+[13:07:34 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:34 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:34 INF] CORS policy execution successful.
+[13:07:34 DBG] Successfully validated the token.
+[13:07:34 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[13:07:34 DBG] Authorization was successful.
+[13:07:34 INF] Trying to retrieve device with id 4
+[13:07:34 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[13:07:34 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:34 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[13:07:34 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[13:07:34 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[13:07:34 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:34 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:34 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:34 DBG] A data reader was disposed.
+[13:07:34 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[13:07:34 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[13:07:34 INF] Found device: {"Id":4,"DeviceName":"nicest device","Description":"stringstringstring","Address":"0.1.0.2","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[13:07:34 DBG] HTTP GET /api/Device/4 responded 200 in 15.8867 ms
+[13:07:34 DBG] 'AppDbContext' disposed.
+[13:07:35 DBG] Connection id "0HN7O0HH6CR9O" received FIN.
+[13:07:35 DBG] Connection id "0HN7O0HH6CR9O" is closed. The last processed stream ID was 7.
+[13:07:35 DBG] Connection id "0HN7O0HH6CR9O" sending FIN because: "The client closed the connection."
+[13:07:35 DBG] Connection id "0HN7O0HH6CR9O" stopped.
+[13:07:51 DBG] Connection id "0HN7O0HH6CR9P" accepted.
+[13:07:51 DBG] Connection id "0HN7O0HH6CR9P" started.
+[13:07:51 DBG] Connection 0HN7O0HH6CR9P established using the following protocol: "Tls13"
+[13:07:51 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:51 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:51 INF] CORS policy execution successful.
+[13:07:51 DBG] The request is a preflight request.
+[13:07:51 DBG] HTTP OPTIONS /api/Device/4 responded 204 in 5.3201 ms
+[13:07:51 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:51 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:51 INF] CORS policy execution successful.
+[13:07:51 DBG] Successfully validated the token.
+[13:07:51 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[13:07:51 DBG] Authorization was successful.
+[13:07:51 DBG] Connection id "0HN7O0HH6CR9P", Request id "0HN7O0HH6CR9P:00000003": started reading request body.
+[13:07:51 DBG] Connection id "0HN7O0HH6CR9P", Request id "0HN7O0HH6CR9P:00000003": done reading request body.
+[13:07:51 INF] Trying to update device with id 4
+[13:07:51 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[13:07:51 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:51 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[13:07:51 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:51 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:51 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:51 DBG] A data reader was disposed.
+[13:07:51 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:51 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[13:07:51 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:51 INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:51 DBG] A data reader was disposed.
+[13:07:51 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] The unchanged property 'Device.Address' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[13:07:51 DBG] An entity of type 'Device' tracked by 'AppDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:51 DBG] The unchanged property 'Device.Description' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[13:07:51 DBG] The unchanged property 'Device.DeviceName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[13:07:51 DBG] SaveChanges starting for 'AppDbContext'.
+[13:07:51 DBG] DetectChanges starting for 'AppDbContext'.
+[13:07:51 DBG] DetectChanges completed for 'AppDbContext'.
+[13:07:51 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[13:07:51 DBG] Beginning transaction with isolation level 'Unspecified'.
+[13:07:51 DBG] Began transaction with isolation level 'ReadCommitted'.
+[13:07:51 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:51 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[13:07:51 DBG] Executing DbCommand [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (DbType = Single), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Devices] SET [Address] = @p0, [Description] = @p1, [DeviceName] = @p2, [MaxHourlyCons] = @p3, [UserId] = @p4
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+[13:07:52 INF] Executed DbCommand (13ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (DbType = Single), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Devices] SET [Address] = @p0, [Description] = @p1, [DeviceName] = @p2, [MaxHourlyCons] = @p3, [UserId] = @p4
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+[13:07:52 DBG] A data reader was disposed.
+[13:07:52 DBG] Committing transaction.
+[13:07:52 DBG] Committed transaction.
+[13:07:52 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[13:07:52 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[13:07:52 DBG] Disposing transaction.
+[13:07:52 DBG] An entity of type 'Device' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:52 DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[13:07:52 INF] Successfully updated device: {"Id":4,"DeviceName":"worst","Description":"stringstringstringasdasda","Address":"0.1.0.22","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[13:07:52 DBG] HTTP PUT /api/Device/4 responded 200 in 437.4731 ms
+[13:07:52 DBG] 'AppDbContext' disposed.
+[13:07:55 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:55 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:55 INF] CORS policy execution successful.
+[13:07:55 DBG] Successfully validated the token.
+[13:07:55 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[13:07:55 DBG] Authorization was successful.
+[13:07:55 INF] Trying to retrieve device with id 4
+[13:07:55 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[13:07:55 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:55 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[13:07:55 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[13:07:56 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[13:07:56 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:56 INF] Executed DbCommand (134ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+WHERE [d].[Id] = @__id_0
+[13:07:56 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:56 DBG] A data reader was disposed.
+[13:07:56 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[13:07:56 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[13:07:56 INF] Found device: {"Id":4,"DeviceName":"worst","Description":"stringstringstringasdasda","Address":"0.1.0.22","MaxHourlyCons":9,"$type":"DeviceDTO"}
+[13:07:56 DBG] HTTP GET /api/Device/4 responded 200 in 475.5219 ms
+[13:07:56 DBG] 'AppDbContext' disposed.
+[13:07:58 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:58 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:58 INF] CORS policy execution successful.
+[13:07:58 DBG] The request is a preflight request.
+[13:07:58 DBG] HTTP OPTIONS /api/Device responded 204 in 1.1617 ms
+[13:07:58 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:58 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:58 INF] CORS policy execution successful.
+[13:07:58 DBG] Successfully validated the token.
+[13:07:58 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[13:07:58 DBG] Authorization was successful.
+[13:07:58 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[13:07:58 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:58 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[13:07:58 DBG] Opening connection to database 'device-db' on server 'localhost'.
+[13:07:58 DBG] Opened connection to database 'device-db' on server 'localhost'.
+[13:07:58 DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+[13:07:58 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Address], [d].[Description], [d].[DeviceName], [d].[MaxHourlyCons], [d].[UserId]
+FROM [Devices] AS [d]
+[13:07:58 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:58 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:58 DBG] Context 'AppDbContext' started tracking 'Device' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:58 DBG] A data reader was disposed.
+[13:07:58 DBG] Closing connection to database 'device-db' on server 'localhost'.
+[13:07:58 DBG] Closed connection to database 'device-db' on server 'localhost'.
+[13:07:58 INF] Found devices: [{"Id":2,"DeviceName":"first","Description":"description","Address":"0.0.0.0","MaxHourlyCons":3.5,"$type":"DeviceDTO"},{"Id":3,"DeviceName":"second","Description":"loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description","Address":"0.0.0.1","MaxHourlyCons":7.2,"$type":"DeviceDTO"},{"Id":4,"DeviceName":"worst","Description":"stringstringstringasdasda","Address":"0.1.0.22","MaxHourlyCons":9,"$type":"DeviceDTO"}]
+[13:07:58 DBG] HTTP GET /api/Device responded 200 in 22.6703 ms
+[13:07:58 DBG] 'AppDbContext' disposed.
+[13:08:00 DBG] Connection id "0HN7O0HH6CR9P" received FIN.
+[13:08:00 DBG] Connection id "0HN7O0HH6CR9P" is closed. The last processed stream ID was 9.
+[13:08:00 DBG] Connection id "0HN7O0HH6CR9P" sending FIN because: "The client closed the connection."
+[13:08:00 DBG] Connection id "0HN7O0HH6CR9P" stopped.

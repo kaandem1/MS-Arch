@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "primeicons/primeicons.css";
+
+
+.p-message {
+    width: 20rem;
+    display: flex !important;
+    flex-direction: column;
+    margin: 1rem auto;
+    border-radius: 8px; 
+    padding: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: white;
+    position: relative;
+    margin-left: 99rem;
+    bottom:22px;
+    position: fixed;
+    bottom: 80px;
+    right: 100rem;
+    z-index: 500;
+}
+
+.p-message-success {
+    background: rgb(110, 170, 21);
+}
+
+.p-message-info {
+    background: rgb(144, 198, 247);
+}
+
+.p-message-warning {
+    background: rgb(255, 187, 51);
+}
+
+.p-message-error {
+    background: rgb(240, 48, 35);
+}
+
+.p-message-summary {
+    font-size: 16px;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    font-weight: bold;  
+}
+
+.p-message-detail {
+    font-size: 14px;
+    margin-top: 0.5rem;  
+   
+}
+
+.p-message-icon {
+    margin-right: 0.5rem;  
+    font-size: 1.5rem;  
+    align-self: center; 
+    margin-top: 0.5rem;
+}
+
+.p-message-close {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%); 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+
+.p-message-close-icon {
+    font-size: 1.2rem; 
+}
+
+
+
+html.light-mode {
+    --background-color: #ffffff;
+    --text-color: #43A047;
+    --border-color: #e0e0e0;
+}
+
+html.light-mode body {
+    background-color: var(--background-color);
+    color: var(--text-color); 
+}
+
+html.dark-mode {
+    --background-color: #222;
+    --text-color: #e0e0e0;
+    --border-color: #222;
+}
+
+html.dark-mode body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body {
+    color: var(--text-color);
+}
+
+input,
+textarea,
+button {
+    color: var(--text-color);
+}

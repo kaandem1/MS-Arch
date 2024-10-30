@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DeviceMS",
+    "\\DeviceMS\\DeviceMS",
+    "\\DeviceMS\\DeviceMS\\DeviceMS",
+    "\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\Repository",
+    "\\DeviceMS\\DeviceMS\\DeviceMS\\Properties",
+    "\\UserMS",
+    "\\UserMS\\UserMS"
+  ],
+  "SelectedNode": "\\DeviceMS\\DeviceMS\\DeviceMS\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,66 @@
+version: '3.8'  # You can keep this line
+
+services:
+  device-db:
+    image: mcr.microsoft.com/mssql/server
+    container_name: device-db
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Passw0rd  # Required to start SQL Server
+    ports:
+      - "1434:1433"  # Host port 1434 mapped to container port 1433
+    volumes:
+      - device_data:/var/opt/mssql
+    networks:
+      - app-network
+  
+  user-db:
+    image: mcr.microsoft.com/mssql/server
+    container_name: user-db
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Passw0rd  # Required to start SQL Server
+    ports:
+      - "1435:1433"  # Change to avoid conflict with device-db
+    volumes:
+      - user_data:/var/opt/mssql
+    networks:
+      - app-network
+
+  device-ms:
+    build:
+      context: ./DeviceMS/DeviceMS/DeviceMS  # Path to your Dockerfile
+      dockerfile: Dockerfile  # Ensure this matches the actual Dockerfile name if it's different
+    ports:
+      - "7155:80"  # Adjust ports as needed
+    networks:
+      - app-network
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal;Database=device-db;TrustServerCertificate=True;Connection Timeout=30;
+
+  user-ms:
+    build:
+      context: ./UserMS/UserMS  # Adjust if necessary
+      dockerfile: Dockerfile  # Ensure this matches the actual Dockerfile name
+    ports:
+      - "7151:80"  # Adjust ports as needed
+    networks:
+      - app-network
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal;Database=user-db;TrustServerCertificate=True;Connection Timeout=30;
+
+  frontend:
+    build:
+      context: ./FE
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  device_data:
+  user_data:
