@@ -7,6 +7,7 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=YourStrong!Passw0rd  # Required to start SQL Server
+      - MSSQL_PID=Developer
     ports:
       - "1434:1433"  # Host port 1434 mapped to container port 1433
     volumes:
@@ -20,6 +21,7 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=YourStrong!Passw0rd  # Required to start SQL Server
+      - MSSQL_PID=Developer
     ports:
       - "1435:1433"  # Change to avoid conflict with device-db
     volumes:
@@ -36,7 +38,10 @@ services:
     networks:
       - app-network
     environment:
-      - ConnectionStrings__DefaultConnection=Server=host.docker.internal;Database=device-db;TrustServerCertificate=True;Connection Timeout=30;
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal
+      - Database=device-db 
+      - TrustServerCertificate=True
+      - Connection Timeout=30
 
   user-ms:
     build:
@@ -47,11 +52,13 @@ services:
     networks:
       - app-network
     environment:
-      - ConnectionStrings__DefaultConnection=Server=host.docker.internal;Database=user-db;TrustServerCertificate=True;Connection Timeout=30;
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal
+      - Database=user-db
+      - TrustServerCertificate=True
+      - Connection Timeout=30
 
   frontend:
-    build:
-      context: ./FE
+    image: kaan_frontend
     ports:
       - "8080:80"
     networks:

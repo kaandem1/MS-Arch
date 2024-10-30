@@ -48,7 +48,7 @@ namespace UserMS.Logic.ServiceLayer.Services
                     int newUserId = user.Id;
 
                     var content = new StringContent(JsonSerializer.Serialize(new { userId = newUserId }), Encoding.UTF8, "application/json");
-                    var response = await _httpClient.PostAsync("https://localhost:7155/api/PersonReference", content);
+                    var response = await _httpClient.PostAsync("http://host.docker.internal:7155/api/PersonReference", content);
 
                     if (!response.IsSuccessStatusCode)
                     {
@@ -74,7 +74,7 @@ namespace UserMS.Logic.ServiceLayer.Services
                 try
                 {
                     //var responseClearDevices = await _httpClient.PatchAsync($"https://device-ms:7155/api/Device/clear/{id}", null);
-                    var responseClearDevices = await _httpClient.PatchAsync($"https://localhost:7155/api/Device/clear/{id}", null);
+                    var responseClearDevices = await _httpClient.PatchAsync($"http://host.docker.internal:7155/api/Device/clear/{id}", null);
 
                     if (!responseClearDevices.IsSuccessStatusCode)
                     {
@@ -83,7 +83,7 @@ namespace UserMS.Logic.ServiceLayer.Services
 
                     await _userRepository.DeleteByIdAsync(id);
                     //var responseDelete = await _httpClient.DeleteAsync($"https://device-ms:7155/api/PersonReference/{id}");
-                    var responseDelete = await _httpClient.DeleteAsync($"https://localhost:7155/api/PersonReference/{id}");
+                    var responseDelete = await _httpClient.DeleteAsync($"http://host.docker.internal:7155/api/PersonReference/{id}");
 
                     if (!responseDelete.IsSuccessStatusCode)
                     {

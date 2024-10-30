@@ -25,7 +25,7 @@ namespace DeviceMS.API.Controllers
             _mapper = mapper;
         }
 
-        [Authorize]
+        [AllowAnonymous]
         [HttpPost]
         [ProducesResponseType(typeof(PersonReferenceDTO), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
