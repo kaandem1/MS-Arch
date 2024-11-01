@@ -99,6 +99,22 @@ export class UserDetailsComponent implements OnInit {
     this.userIdStr = this.jwtService.getUserId();
   }
 
+  deleteUser(): void {
+    if (this.userId) {
+        this.userService.deleteUser(this.userId).subscribe(
+            () => {
+                this.showToast("success", "User deleted successfully!");
+                this.router.navigate(['/user-list']);
+            },
+            error => {
+                console.error("Delete failed", error);
+                this.showToast("error", "User deletion failed.");
+            }
+        );
+    }
+}
+
+
   updateUser(formValue: any): void {
     if (this.isAdmin && this.user && this.userIdStr) {
       const updatedUser: UserShow = {

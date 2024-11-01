@@ -86,7 +86,6 @@ namespace UserMS.Data.RepositoryLayer.Repository
             if (user != null)
             {
                 _dbContext.Users.Remove(user);
-
                 await _dbContext.SaveChangesAsync();
             }
         }

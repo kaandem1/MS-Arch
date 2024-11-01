@@ -101,7 +101,7 @@ builder.Services.AddCors(options => {
     options.AddPolicy(
         name: CORSOpenPolicy,
         builder => {
-            builder.WithOrigins("http://localhost:4200", "http://localhost:8080","http://frontend:8080")
+            builder.WithOrigins("http://localhost:8080")
                    .AllowAnyHeader()
                    .AllowAnyMethod()
                    .AllowCredentials();

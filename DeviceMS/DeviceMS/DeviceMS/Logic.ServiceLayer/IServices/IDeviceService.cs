@@ -22,5 +22,7 @@ namespace DeviceMS.Logic.ServiceLayer.IServices
 
         Task<List<Device>> GetUnownedDevicesAsync();
 
+        Task DeleteByIdAsync(int deviceId);
+
     }
 }

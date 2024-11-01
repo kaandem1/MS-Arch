@@ -96,5 +96,9 @@ namespace DeviceMS.Logic.ServiceLayer.Services
             return await _deviceRepository.GetUnownedDevicesAsync();
         }
 
+        public async Task DeleteByIdAsync(int deviceId)
+        {
+            await _deviceRepository.DeleteByIdAsync(deviceId);
+        }
     }
 }

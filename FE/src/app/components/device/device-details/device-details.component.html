@@ -7,6 +7,9 @@
       <button *ngIf="isAdmin" type="button" class="rounded-full" (click)="toggleForm()">
         <i class="fas fa-pen text-2xl mt-4"></i>
       </button>
+      <button *ngIf="isAdmin" (click)="deleteDevice()" class="icon-button">
+        <i class="fas fa-ban text-2xl"></i>
+      </button>
     </app-item-header>
   </div>
 

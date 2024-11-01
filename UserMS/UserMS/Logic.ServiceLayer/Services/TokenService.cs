@@ -11,7 +11,7 @@ namespace UserMS.Logic.ServiceLayer.Services
 {
     public class TokenService : ITokenService
     {
-        private const int ExpirationMinutes = 30;
+        private const int ExpirationMinutes = 90;
 
         private AuthenticationOptions _options;
 
@@ -39,7 +39,7 @@ namespace UserMS.Logic.ServiceLayer.Services
                new SecurityTokenDescriptor
                {
                    Subject = new ClaimsIdentity(claims),
-                   Expires = DateTime.UtcNow.AddMinutes(30),
+                   Expires = DateTime.UtcNow.AddMinutes(90),
                    Issuer = _options.ValidIssuer,
                    Audience = _options.ValidAudience,
                    SigningCredentials = credentials

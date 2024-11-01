@@ -48,7 +48,7 @@ namespace DeviceMS.API.Controllers
             return Ok();
         }
 
-        [Authorize]
+        [AllowAnonymous]
         [HttpDelete("{userId}")]
         public async Task<ActionResult> DeletePersonReferenceAsync([FromRoute] int userId)
         {
@@ -60,7 +60,7 @@ namespace DeviceMS.API.Controllers
         }
 
 
-        [Authorize]
+        [AllowAnonymous]
         [HttpGet]
         [ProducesResponseType(typeof(List<PersonReferenceDTO>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

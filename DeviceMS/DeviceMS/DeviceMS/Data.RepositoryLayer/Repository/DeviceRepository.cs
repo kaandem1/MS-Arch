@@ -58,6 +58,7 @@ namespace DeviceMS.Data.RepositoryLayer.Repository
             var device = await _dbContext.Devices.FirstOrDefaultAsync(d => d.Id == id);
             if (device != null)
             {
+                _dbContext.Devices.Remove(device);
                 await _dbContext.SaveChangesAsync();
             }
         }

@@ -35,6 +35,7 @@ export class DeviceDetailsComponent implements OnInit {
       this.deviceId = +params['id'];
       this.loadDeviceDetails();
       this.checkIfAdmin();
+      
     });
   }
 
@@ -42,6 +43,7 @@ export class DeviceDetailsComponent implements OnInit {
     if (this.deviceId !== null) {
       this.deviceService.getDeviceById(this.deviceId).subscribe(device => {
         this.device = device;
+        //console.log(this.deviceId);
       }, error => {
         console.error('Error fetching device details:', error);
       });
@@ -51,6 +53,23 @@ export class DeviceDetailsComponent implements OnInit {
   toggleForm(): void {
     this.showForm = !this.showForm;
   }
+
+  deleteDevice(): void {
+    if (this.deviceId) {
+      console.log('Delete button clicked for device ID:', this.deviceId);
+  
+      this.deviceService.deleteDevice(this.deviceId).subscribe(
+        () => {
+          this.showToast('success', 'Device deleted successfully.');
+        },
+        (error) => {
+          console.error('Error deleting device:', error);
+          this.showToast('error', 'Failed to delete device.');
+        }
+      );
+    }
+  }
+  
 
   updateDevice(formValue: any): void {
     if (this.deviceId !== null && this.device) {

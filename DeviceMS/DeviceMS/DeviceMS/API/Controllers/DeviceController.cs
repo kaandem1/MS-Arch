@@ -186,7 +186,7 @@ namespace DeviceMS.API.Controllers
             }
         }
 
-        [Authorize]
+        [AllowAnonymous]
         [HttpPatch("clear/{userId}")]
         public async Task<IActionResult> ClearDevicesForUserAsync(int userId)
         {
@@ -231,6 +231,35 @@ namespace DeviceMS.API.Controllers
 
             return Ok(deviceDTOs);
         }
+
+        [Authorize]
+        [HttpDelete("{deviceId}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> DeleteByIdAsync(int deviceId)
+        {
+            _logger.LogInformation("Attempting to delete device with ID {DeviceId}", deviceId);
+
+            var device = await _deviceService.GetAsync(deviceId);
+            if (device == null)
+            {
+                _logger.LogError("Device with ID {DeviceId} not found", deviceId);
+                return NotFound();
+            }
+
+            try
+            {
+                await _deviceService.DeleteByIdAsync(deviceId);
+                _logger.LogInformation("Successfully deleted device with ID {DeviceId}", deviceId);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error deleting device with ID {DeviceId}", deviceId);
+                return BadRequest("An error occurred while deleting the device.");
+            }
+        }
+
 
 
     }
