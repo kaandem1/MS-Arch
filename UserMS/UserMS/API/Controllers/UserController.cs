@@ -139,7 +139,7 @@ namespace UserMS.API.Controllers
 
 
         [AllowAnonymous]
-        [HttpPatch("/change-password")]
+        [HttpPatch("change-password")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> ChangePasswordAsync([FromBody] UserChangePasswordDTO userChangePasswordDTO)
@@ -290,7 +290,7 @@ namespace UserMS.API.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("/login")]
+        [HttpPost("login")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<string>> LoginAsync([FromBody] UserLoginDTO userLoginDTO)

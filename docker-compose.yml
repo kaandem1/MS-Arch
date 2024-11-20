@@ -1,15 +1,49 @@
-version: '3.8'  # You can keep this line
+version: '3.8'
 
 services:
+  traefik:
+    image: traefik:v3.2
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--entryPoints.web.address=:80"
+      - "--entryPoints.websecure.address=:443"
+      - "--entryPoints.traefik.address=:8081"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8081:8081"
+    networks:
+      - app-network
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - "./traefik-certificates:/certificates"
+  
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672" 
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.rabbitmq.rule=Host(`rabbitmq.localhost`)"
+      - "traefik.http.services.rabbitmq.loadbalancer.server.port=15672"
+    networks:
+      - app-network
+    
   device-db:
     image: mcr.microsoft.com/mssql/server
     container_name: device-db
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=YourStrong!Passw0rd  # Required to start SQL Server
+      - SA_PASSWORD=YourStrong!Passw0rd
       - MSSQL_PID=Developer
     ports:
-      - "1434:1433"  # Host port 1434 mapped to container port 1433
+      - "1434:1433"
     volumes:
       - device_data:/var/opt/mssql
     networks:
@@ -20,10 +54,10 @@ services:
     container_name: user-db
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=YourStrong!Passw0rd  # Required to start SQL Server
+      - SA_PASSWORD=YourStrong!Passw0rd
       - MSSQL_PID=Developer
     ports:
-      - "1435:1433"  # Change to avoid conflict with device-db
+      - "1435:1433"
     volumes:
       - user_data:/var/opt/mssql
     networks:
@@ -31,38 +65,52 @@ services:
 
   device-ms:
     build:
-      context: ./DeviceMS/DeviceMS/DeviceMS  # Path to your Dockerfile
-      dockerfile: Dockerfile  # Ensure this matches the actual Dockerfile name if it's different
-    ports:
-      - "7155:80"  # Adjust ports as needed
+      context: ./DeviceMS/DeviceMS/DeviceMS
+      dockerfile: Dockerfile
     networks:
       - app-network
     environment:
       - ConnectionStrings__DefaultConnection=Server=host.docker.internal
-      - Database=device-db 
+      - Database=device-db
       - TrustServerCertificate=True
       - Connection Timeout=30
+      - RabbitMQ__HostName=rabbitmq
+      - RabbitMQ__Port=5672
+      - RabbitMQ__User=admin
+      - RabbitMQ__Password=admin
+    labels:
+    - "traefik.enable=true"
+    - "traefik.http.routers.device-ms.rule=PathPrefix(`/api/Device`) || PathPrefix(`/api/PersonReference`)"
+    - "traefik.http.services.device-ms.loadbalancer.server.port=7155"
 
   user-ms:
     build:
-      context: ./UserMS/UserMS  # Adjust if necessary
-      dockerfile: Dockerfile  # Ensure this matches the actual Dockerfile name
-    ports:
-      - "7151:80"  # Adjust ports as needed
+      context: ./UserMS/UserMS
+      dockerfile: Dockerfile
     networks:
       - app-network
     environment:
       - ConnectionStrings__DefaultConnection=Server=host.docker.internal
-      - Database=user-db
+      - Database=device-db
       - TrustServerCertificate=True
       - Connection Timeout=30
+      - RabbitMQ__HostName=rabbitmq
+      - RabbitMQ__Port=5672
+      - RabbitMQ__User=admin
+      - RabbitMQ__Password=admin
+    labels:
+    - "traefik.enable=true"
+    - "traefik.http.routers.user-ms.rule=PathPrefix(`/api/User`)"
+    - "traefik.http.services.user-ms.loadbalancer.server.port=7151"   
 
   frontend:
     image: kaan_frontend
-    ports:
-      - "8080:80"
     networks:
       - app-network
+    labels:
+    - "traefik.enable=true"
+    - "traefik.http.routers.frontend.rule=Host(`localhost`)"
+    - "traefik.http.services.frontend.loadbalancer.server.port=8080"
 
 networks:
   app-network:

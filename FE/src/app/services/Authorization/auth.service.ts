@@ -12,7 +12,7 @@ import { User } from '../../interfaces/User';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:7151';
+  private apiUrl = 'http://localhost';
 
   constructor(
     private http: HttpClient,

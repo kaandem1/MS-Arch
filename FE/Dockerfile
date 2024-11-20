@@ -30,8 +30,6 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Copy the build output to Nginx's html directory
 COPY --from=build /app/dist/kaanergize-ng/browser /usr/share/nginx/html/
 
-# Expose port 80
-EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 
