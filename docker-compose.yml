@@ -9,6 +9,9 @@ services:
       - "--entryPoints.web.address=:80"
       - "--entryPoints.websecure.address=:443"
       - "--entryPoints.traefik.address=:8081"
+      - "--accesslog=true"
+      - "--accesslog.filepath=/var/log/traefik/access.log"
+      - "--log.level=DEBUG"
     ports:
       - "80:80"
       - "443:443"
@@ -109,6 +112,7 @@ services:
       - app-network
     labels:
     - "traefik.enable=true"
+    - "traefik.port=8080" 
     - "traefik.http.routers.frontend.rule=Host(`localhost`)"
     - "traefik.http.services.frontend.loadbalancer.server.port=8080"
 
