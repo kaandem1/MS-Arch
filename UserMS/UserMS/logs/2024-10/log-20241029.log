@@ -1,0 +1,2005 @@
+[12:27:42 DBG] Hosting starting
+[12:27:42 INF] User profile is available. Using 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[12:27:43 DBG] Reading data from file 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys\key-ecac6b21-68f0-4cc8-99a1-58c655fd7c96.xml'.
+[12:27:43 DBG] Found key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96}.
+[12:27:43 DBG] Considering key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} with expiration date 2025-01-20 06:32:51Z as default key.
+[12:27:43 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:27:43 DBG] Decrypting secret element using Windows DPAPI.
+[12:27:43 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:27:43 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[12:27:43 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[12:27:43 DBG] Using key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} as the default key.
+[12:27:43 DBG] Key ring with default key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} was loaded during application startup.
+[12:27:43 DBG] Using development certificate: CN=localhost (Thumbprint: 483DCE1C48C5459E772E751BB169AAF690CD4851)
+[12:27:43 INF] Now listening on: https://localhost:7151
+[12:27:43 INF] Application started. Press Ctrl+C to shut down.
+[12:27:43 INF] Hosting environment: Development
+[12:27:43 INF] Content root path: C:\Users\Kaan Demirezenler\Desktop\UTCN24-25\DS\src\UserMS\UserMS\
+[12:27:43 DBG] Hosting started
+[12:27:43 DBG] Connection id "0HN7O0H9GVN5G" received FIN.
+[12:27:43 DBG] Connection id "0HN7O0H9GVN5G" accepted.
+[12:27:43 DBG] Connection id "0HN7O0H9GVN5G" started.
+[12:27:43 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[12:27:43 DBG] Connection id "0HN7O0H9GVN5G" stopped.
+[12:27:43 DBG] Connection id "0HN7O0H9GVN5G" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:27:44 DBG] Connection id "0HN7O0H9GVN5H" accepted.
+[12:27:44 DBG] Connection id "0HN7O0H9GVN5H" started.
+[12:27:45 DBG] Connection 0HN7O0H9GVN5H established using the following protocol: "Tls13"
+[12:27:45 DBG] Wildcard detected, all requests with hosts will be allowed.
+[12:27:45 DBG] Response markup is scheduled to include browser refresh script injection.
+[12:27:46 DBG] HTTP GET /swagger/index.html responded 200 in 579.9191 ms
+[12:27:46 DBG] Response markup was updated to include browser refresh script injection.
+[12:27:46 DBG] HTTP GET /swagger/index.js responded 200 in 7.6870 ms
+[12:27:46 DBG] HTTP GET /swagger/v1/swagger.json responded 200 in 347.2149 ms
+[12:27:48 DBG] Connection id "0HN7O0H9GVN5H" received FIN.
+[12:27:48 DBG] Connection id "0HN7O0H9GVN5H" is closed. The last processed stream ID was 9.
+[12:27:48 DBG] Connection id "0HN7O0H9GVN5H" sending FIN because: "The client closed the connection."
+[12:27:48 DBG] Connection id "0HN7O0H9GVN5H" stopped.
+[12:29:31 DBG] Connection id "0HN7O0H9GVN5I" accepted.
+[12:29:31 DBG] Connection id "0HN7O0H9GVN5I" started.
+[12:29:31 DBG] Connection 0HN7O0H9GVN5I established using the following protocol: "Tls13"
+[12:29:31 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:32 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:32 INF] CORS policy execution successful.
+[12:29:32 DBG] The request is a preflight request.
+[12:29:32 DBG] HTTP OPTIONS /login responded 204 in 27.3466 ms
+[12:29:32 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:32 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:32 INF] CORS policy execution successful.
+[12:29:32 INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[12:29:32 DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+[12:29:32 DBG] Connection id "0HN7O0H9GVN5I", Request id "0HN7O0H9GVN5I:00000003": started reading request body.
+[12:29:32 DBG] Connection id "0HN7O0H9GVN5I", Request id "0HN7O0H9GVN5I:00000003": done reading request body.
+[12:29:32 INF] Trying to login...
+[12:29:33 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:29:33 DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Email == __email_0 && u.Password == __password_1)'
+[12:29:33 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Country (string) Required, 1], [Property: User.Email (string) Required MaxLength(100), 2], [Property: User.FirstName (string) Required, 3], [Property: User.LastName (string) Required, 4], [Property: User.Password (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.Status (UserStatus) Required, 7] }
+            SELECT TOP(1) u.Id, u.Country, u.Email, u.FirstName, u.LastName, u.Password, u.Role, u.Status
+            FROM Users AS u
+            WHERE (u.Email == @__email_0) && (u.Password == @__password_1)), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        UserMS.Core.DomainLayer.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[12:29:33 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:29:33 DBG] Created DbCommand for 'ExecuteReader' (56ms).
+[12:29:33 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:29:34 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:29:34 DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 100), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+[12:29:34 INF] Executed DbCommand (204ms) [Parameters=[@__email_0='?' (Size = 100), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+[12:29:34 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:29:34 DBG] A data reader was disposed.
+[12:29:34 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:29:34 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:29:34 INF] User found: {"Id":19,"FirstName":"Bilge","LastName":"Damn","Email":"bilge@gmail.com","Password":"14zwwZcmVerK55SucGMaWFzh92GGJraVHSY0lcOT3dU=","Country":"France","Role":"Guest","Status":"Active","$type":"User"}
+[12:29:34 INF] Password: L@ssw0rd
+[12:29:34 DBG] HTTP POST /login responded 200 in 2823.2760 ms
+[12:29:34 DBG] 'AppDbContext' disposed.
+[12:29:38 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:38 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:38 INF] CORS policy execution successful.
+[12:29:38 DBG] The request is a preflight request.
+[12:29:38 DBG] HTTP OPTIONS /login responded 204 in 2.7413 ms
+[12:29:38 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:38 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:38 INF] CORS policy execution successful.
+[12:29:38 INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[12:29:38 DBG] Connection id "0HN7O0H9GVN5I", Request id "0HN7O0H9GVN5I:00000007": started reading request body.
+[12:29:38 DBG] Connection id "0HN7O0H9GVN5I", Request id "0HN7O0H9GVN5I:00000007": done reading request body.
+[12:29:38 INF] Trying to login...
+[12:29:38 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:29:38 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:29:38 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:29:38 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:29:38 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:29:38 DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 100), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+[12:29:38 INF] Executed DbCommand (10ms) [Parameters=[@__email_0='?' (Size = 100), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+[12:29:38 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:29:38 DBG] A data reader was disposed.
+[12:29:38 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:29:38 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:29:38 INF] User found: {"Id":18,"FirstName":"Kaan","LastName":"Demirez","Email":"kaan@gmail.com","Password":"14zwwZcmVerK55SucGMaWFzh92GGJraVHSY0lcOT3dU=","Country":"Romania","Role":"Admin","Status":"Active","$type":"User"}
+[12:29:38 INF] Password: L@ssw0rd
+[12:29:38 DBG] HTTP POST /login responded 200 in 41.4394 ms
+[12:29:38 DBG] 'AppDbContext' disposed.
+[12:29:40 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:40 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:40 INF] CORS policy execution successful.
+[12:29:40 DBG] The request is a preflight request.
+[12:29:40 DBG] HTTP OPTIONS /api/User responded 204 in 4.3338 ms
+[12:29:40 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:40 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:40 INF] CORS policy execution successful.
+[12:29:40 DBG] Successfully validated the token.
+[12:29:40 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:29:40 DBG] Authorization was successful.
+[12:29:40 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:29:40 DBG] Compiling query expression: 
+'DbSet<User>()'
+[12:29:40 DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Country (string) Required, 1], [Property: User.Email (string) Required MaxLength(100), 2], [Property: User.FirstName (string) Required, 3], [Property: User.LastName (string) Required, 4], [Property: User.Password (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.Status (UserStatus) Required, 7] }
+        SELECT u.Id, u.Country, u.Email, u.FirstName, u.LastName, u.Password, u.Role, u.Status
+        FROM Users AS u), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+    UserMS.Core.DomainLayer.Data.AppDbContext, 
+    False, 
+    False, 
+    True
+)'
+[12:29:40 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:29:40 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:29:40 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:29:40 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:29:40 DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+[12:29:40 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+[12:29:40 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:29:40 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:29:40 DBG] A data reader was disposed.
+[12:29:40 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:29:40 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:29:41 INF] Found user: [{"Id":18,"Email":"kaan@gmail.com","FirstName":"Kaan","LastName":"Demirez","Country":"Romania","Role":"Admin","$type":"UserDTO"},{"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}]
+[12:29:41 DBG] HTTP GET /api/User responded 200 in 231.3214 ms
+[12:29:41 DBG] 'AppDbContext' disposed.
+[12:29:41 DBG] Connection id "0HN7O0H9GVN5I" received FIN.
+[12:29:41 DBG] Connection id "0HN7O0H9GVN5I" is closed. The last processed stream ID was 11.
+[12:29:41 DBG] Connection id "0HN7O0H9GVN5I" sending FIN because: "The client closed the connection."
+[12:29:41 DBG] Connection id "0HN7O0H9GVN5I" stopped.
+[12:29:43 DBG] Connection id "0HN7O0H9GVN5J" accepted.
+[12:29:43 DBG] Connection id "0HN7O0H9GVN5J" started.
+[12:29:43 DBG] Connection 0HN7O0H9GVN5J established using the following protocol: "Tls13"
+[12:29:43 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:43 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:43 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:43 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:43 INF] CORS policy execution successful.
+[12:29:43 INF] CORS policy execution successful.
+[12:29:43 DBG] The request is a preflight request.
+[12:29:43 DBG] The request is a preflight request.
+[12:29:43 DBG] HTTP OPTIONS /api/User/19 responded 204 in 2.0911 ms
+[12:29:43 DBG] HTTP OPTIONS /api/User/19 responded 204 in 2.3297 ms
+[12:29:43 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:43 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:43 INF] CORS policy execution successful.
+[12:29:43 DBG] Successfully validated the token.
+[12:29:43 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:29:43 DBG] Authorization was successful.
+[12:29:43 INF] Trying to retrieve user with id 19
+[12:29:43 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:29:43 DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Id == __id_0)'
+[12:29:43 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Country (string) Required, 1], [Property: User.Email (string) Required MaxLength(100), 2], [Property: User.FirstName (string) Required, 3], [Property: User.LastName (string) Required, 4], [Property: User.Password (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.Status (UserStatus) Required, 7] }
+            SELECT TOP(1) u.Id, u.Country, u.Email, u.FirstName, u.LastName, u.Password, u.Role, u.Status
+            FROM Users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        UserMS.Core.DomainLayer.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[12:29:43 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:29:43 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:29:43 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:29:43 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:29:43 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:29:43 INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:29:43 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:29:43 DBG] A data reader was disposed.
+[12:29:43 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:29:43 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:29:43 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:29:43 DBG] HTTP GET /api/User/19 responded 200 in 51.7335 ms
+[12:29:43 DBG] 'AppDbContext' disposed.
+[12:29:43 DBG] Static files was skipped as the request already matched an endpoint.
+[12:29:43 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:29:43 INF] CORS policy execution successful.
+[12:29:43 DBG] Successfully validated the token.
+[12:29:43 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:29:43 DBG] Authorization was successful.
+[12:29:43 INF] Trying to retrieve user with id 19
+[12:29:43 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:29:43 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:29:43 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[12:29:43 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:29:43 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:29:43 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:29:43 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:29:43 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:29:43 DBG] A data reader was disposed.
+[12:29:43 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:29:43 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:29:43 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:29:43 DBG] HTTP GET /api/User/19 responded 200 in 30.7118 ms
+[12:29:43 DBG] 'AppDbContext' disposed.
+[12:29:46 DBG] Connection id "0HN7O0H9GVN5J" received FIN.
+[12:29:46 DBG] Connection id "0HN7O0H9GVN5J" is closed. The last processed stream ID was 7.
+[12:29:46 DBG] Connection id "0HN7O0H9GVN5J" sending FIN because: "The client closed the connection."
+[12:29:46 DBG] Connection id "0HN7O0H9GVN5J" stopped.
+[12:30:12 DBG] Connection id "0HN7O0H9GVN5K" accepted.
+[12:30:12 DBG] Connection id "0HN7O0H9GVN5K" started.
+[12:30:12 DBG] Connection 0HN7O0H9GVN5K established using the following protocol: "Tls13"
+[12:30:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:30:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:30:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:30:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:30:12 INF] CORS policy execution successful.
+[12:30:12 INF] CORS policy execution successful.
+[12:30:12 DBG] The request is a preflight request.
+[12:30:12 DBG] The request is a preflight request.
+[12:30:12 DBG] HTTP OPTIONS /api/User/19 responded 204 in 23.3631 ms
+[12:30:12 DBG] HTTP OPTIONS /api/User/19 responded 204 in 20.4704 ms
+[12:30:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:30:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:30:12 INF] CORS policy execution successful.
+[12:30:12 DBG] Successfully validated the token.
+[12:30:12 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:30:12 DBG] Authorization was successful.
+[12:30:12 INF] Trying to retrieve user with id 19
+[12:30:12 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:30:12 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:30:12 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[12:30:12 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:30:12 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:30:12 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:30:12 INF] Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:30:12 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:30:12 DBG] A data reader was disposed.
+[12:30:12 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:30:12 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:30:12 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:30:12 DBG] HTTP GET /api/User/19 responded 200 in 56.8247 ms
+[12:30:12 DBG] 'AppDbContext' disposed.
+[12:30:12 DBG] Static files was skipped as the request already matched an endpoint.
+[12:30:12 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:30:12 INF] CORS policy execution successful.
+[12:30:12 DBG] Successfully validated the token.
+[12:30:12 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:30:12 DBG] Authorization was successful.
+[12:30:12 INF] Trying to retrieve user with id 19
+[12:30:12 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:30:12 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:30:12 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[12:30:12 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:30:12 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:30:12 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:30:12 INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:30:12 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:30:12 DBG] A data reader was disposed.
+[12:30:12 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:30:12 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:30:12 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:30:12 DBG] HTTP GET /api/User/19 responded 200 in 46.7522 ms
+[12:30:12 DBG] 'AppDbContext' disposed.
+[12:30:16 DBG] Connection id "0HN7O0H9GVN5K" received FIN.
+[12:30:16 DBG] Connection id "0HN7O0H9GVN5K" is closed. The last processed stream ID was 7.
+[12:30:16 DBG] Connection id "0HN7O0H9GVN5K" sending FIN because: "The client closed the connection."
+[12:30:16 DBG] Connection id "0HN7O0H9GVN5K" stopped.
+[12:31:32 DBG] HttpMessageHandler expired after 120000ms for client ''
+[12:31:42 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:31:42 DBG] Ending HttpMessageHandler cleanup cycle after 0.0584ms - processed: 0 items - remaining: 1 items
+[12:31:52 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:31:52 DBG] Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 1 items
+[12:32:02 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:32:02 DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+[12:32:12 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:32:12 DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+[12:32:22 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:32:22 DBG] Ending HttpMessageHandler cleanup cycle after 0.003ms - processed: 0 items - remaining: 1 items
+[12:32:32 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:32:32 DBG] Ending HttpMessageHandler cleanup cycle after 6.6781ms - processed: 1 items - remaining: 0 items
+[12:35:52 DBG] Connection id "0HN7O0H9GVN5L" accepted.
+[12:35:52 DBG] Connection id "0HN7O0H9GVN5L" started.
+[12:35:52 DBG] Connection 0HN7O0H9GVN5L established using the following protocol: "Tls13"
+[12:35:52 DBG] Static files was skipped as the request already matched an endpoint.
+[12:35:52 DBG] Static files was skipped as the request already matched an endpoint.
+[12:35:52 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:35:52 INF] CORS policy execution successful.
+[12:35:52 DBG] The request is a preflight request.
+[12:35:52 DBG] HTTP OPTIONS /api/User/19 responded 204 in 4.7418 ms
+[12:35:52 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:35:53 INF] CORS policy execution successful.
+[12:35:53 DBG] The request is a preflight request.
+[12:35:53 DBG] HTTP OPTIONS /api/User/19 responded 204 in 80.4537 ms
+[12:35:53 DBG] Static files was skipped as the request already matched an endpoint.
+[12:35:53 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:35:53 INF] CORS policy execution successful.
+[12:35:53 DBG] Successfully validated the token.
+[12:35:53 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:35:53 DBG] Authorization was successful.
+[12:35:53 INF] Trying to retrieve user with id 19
+[12:35:53 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:35:53 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:35:53 DBG] Created DbCommand for 'ExecuteReader' (11ms).
+[12:35:53 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:35:53 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:35:53 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:35:53 INF] Executed DbCommand (225ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:35:53 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:35:53 DBG] A data reader was disposed.
+[12:35:53 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:35:53 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:35:53 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:35:53 DBG] HTTP GET /api/User/19 responded 200 in 351.9082 ms
+[12:35:53 DBG] 'AppDbContext' disposed.
+[12:35:53 DBG] Static files was skipped as the request already matched an endpoint.
+[12:35:53 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:35:53 INF] CORS policy execution successful.
+[12:35:53 DBG] Successfully validated the token.
+[12:35:53 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:35:53 DBG] Authorization was successful.
+[12:35:53 INF] Trying to retrieve user with id 19
+[12:35:53 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:35:53 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:35:53 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:35:53 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:35:53 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:35:53 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:35:53 INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:35:53 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:35:53 DBG] A data reader was disposed.
+[12:35:53 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:35:53 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:35:53 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:35:53 DBG] HTTP GET /api/User/19 responded 200 in 85.7886 ms
+[12:35:53 DBG] 'AppDbContext' disposed.
+[12:36:12 DBG] Connection id "0HN7O0H9GVN5L" received FIN.
+[12:36:12 DBG] Connection id "0HN7O0H9GVN5L" is closed. The last processed stream ID was 7.
+[12:36:12 DBG] Connection id "0HN7O0H9GVN5L" sending FIN because: "The client closed the connection."
+[12:36:12 DBG] Connection id "0HN7O0H9GVN5L" stopped.
+[12:36:13 DBG] Connection id "0HN7O0H9GVN5M" accepted.
+[12:36:13 DBG] Connection id "0HN7O0H9GVN5M" started.
+[12:36:13 DBG] Connection 0HN7O0H9GVN5M established using the following protocol: "Tls13"
+[12:36:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:13 INF] CORS policy execution successful.
+[12:36:13 DBG] The request is a preflight request.
+[12:36:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:13 INF] CORS policy execution successful.
+[12:36:13 DBG] The request is a preflight request.
+[12:36:13 DBG] HTTP OPTIONS /api/User/19 responded 204 in 4.3475 ms
+[12:36:13 DBG] HTTP OPTIONS /api/User/19 responded 204 in 5.4582 ms
+[12:36:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:13 INF] CORS policy execution successful.
+[12:36:13 DBG] Successfully validated the token.
+[12:36:13 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:36:13 DBG] Authorization was successful.
+[12:36:13 INF] Trying to retrieve user with id 19
+[12:36:13 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:36:13 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:36:13 DBG] Created DbCommand for 'ExecuteReader' (31ms).
+[12:36:13 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:36:13 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:36:13 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:13 INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:13 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:36:13 DBG] A data reader was disposed.
+[12:36:13 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:36:13 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:36:13 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:36:13 DBG] HTTP GET /api/User/19 responded 200 in 175.2565 ms
+[12:36:13 DBG] 'AppDbContext' disposed.
+[12:36:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:13 INF] CORS policy execution successful.
+[12:36:13 DBG] Successfully validated the token.
+[12:36:13 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:36:13 DBG] Authorization was successful.
+[12:36:13 INF] Trying to retrieve user with id 19
+[12:36:13 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:36:13 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:36:13 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:36:13 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:36:13 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:36:13 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:13 INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:13 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:36:13 DBG] A data reader was disposed.
+[12:36:13 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:36:13 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:36:13 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:36:13 DBG] HTTP GET /api/User/19 responded 200 in 32.1261 ms
+[12:36:13 DBG] 'AppDbContext' disposed.
+[12:36:37 DBG] Connection id "0HN7O0H9GVN5M" received FIN.
+[12:36:37 DBG] Connection id "0HN7O0H9GVN5M" is closed. The last processed stream ID was 7.
+[12:36:37 DBG] Connection id "0HN7O0H9GVN5M" sending FIN because: "The client closed the connection."
+[12:36:37 DBG] Connection id "0HN7O0H9GVN5M" stopped.
+[12:36:47 DBG] Connection id "0HN7O0H9GVN5N" accepted.
+[12:36:47 DBG] Connection id "0HN7O0H9GVN5N" started.
+[12:36:47 DBG] Connection 0HN7O0H9GVN5N established using the following protocol: "Tls13"
+[12:36:47 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:47 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:47 INF] CORS policy execution successful.
+[12:36:47 DBG] The request is a preflight request.
+[12:36:47 DBG] HTTP OPTIONS /api/User/19 responded 204 in 17.9173 ms
+[12:36:47 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:47 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:47 INF] CORS policy execution successful.
+[12:36:47 DBG] The request is a preflight request.
+[12:36:47 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:47 DBG] HTTP OPTIONS /api/User/19 responded 204 in 18.9759 ms
+[12:36:47 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:47 INF] CORS policy execution successful.
+[12:36:47 DBG] Successfully validated the token.
+[12:36:47 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:36:47 DBG] Authorization was successful.
+[12:36:47 INF] Trying to retrieve user with id 19
+[12:36:47 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:36:47 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:36:47 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[12:36:47 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:36:47 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:36:47 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:47 INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:47 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:36:47 DBG] A data reader was disposed.
+[12:36:47 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:36:47 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:36:47 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:36:47 DBG] HTTP GET /api/User/19 responded 200 in 89.3947 ms
+[12:36:47 DBG] 'AppDbContext' disposed.
+[12:36:47 DBG] Static files was skipped as the request already matched an endpoint.
+[12:36:47 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:36:47 INF] CORS policy execution successful.
+[12:36:47 DBG] Successfully validated the token.
+[12:36:47 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:36:47 DBG] Authorization was successful.
+[12:36:47 INF] Trying to retrieve user with id 19
+[12:36:47 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:36:47 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:36:47 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:36:47 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:36:47 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:36:47 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:47 INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:36:47 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:36:47 DBG] A data reader was disposed.
+[12:36:47 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:36:47 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:36:47 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:36:47 DBG] HTTP GET /api/User/19 responded 200 in 39.2430 ms
+[12:36:47 DBG] 'AppDbContext' disposed.
+[12:36:47 DBG] Connection id "0HN7O0H9GVN5N" received FIN.
+[12:36:47 DBG] Connection id "0HN7O0H9GVN5N" is closed. The last processed stream ID was 7.
+[12:36:47 DBG] Connection id "0HN7O0H9GVN5N" sending FIN because: "The client closed the connection."
+[12:36:47 DBG] Connection id "0HN7O0H9GVN5N" stopped.
+[12:37:53 DBG] HttpMessageHandler expired after 120000ms for client ''
+[12:38:03 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:38:03 DBG] Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+[12:38:13 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:38:13 DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+[12:38:23 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:38:23 DBG] Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+[12:38:33 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:38:33 DBG] Ending HttpMessageHandler cleanup cycle after 0.0045ms - processed: 0 items - remaining: 1 items
+[12:38:43 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:38:43 DBG] Ending HttpMessageHandler cleanup cycle after 0.0029ms - processed: 0 items - remaining: 1 items
+[12:38:53 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:38:53 DBG] Ending HttpMessageHandler cleanup cycle after 0.0014ms - processed: 0 items - remaining: 1 items
+[12:39:03 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:39:03 DBG] Ending HttpMessageHandler cleanup cycle after 0.0014ms - processed: 0 items - remaining: 1 items
+[12:39:08 DBG] Connection id "0HN7O0H9GVN5O" accepted.
+[12:39:08 DBG] Connection id "0HN7O0H9GVN5O" started.
+[12:39:08 DBG] Connection 0HN7O0H9GVN5O established using the following protocol: "Tls13"
+[12:39:08 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:08 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:08 INF] CORS policy execution successful.
+[12:39:08 DBG] The request is a preflight request.
+[12:39:08 DBG] HTTP OPTIONS /api/User/19 responded 204 in 2.3944 ms
+[12:39:08 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:08 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:08 INF] CORS policy execution successful.
+[12:39:08 DBG] Successfully validated the token.
+[12:39:08 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:39:08 DBG] Authorization was successful.
+[12:39:08 INF] Trying to retrieve user with id 19
+[12:39:08 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:39:08 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:08 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:39:08 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:39:08 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:39:08 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:08 INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:08 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:08 DBG] A data reader was disposed.
+[12:39:08 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:39:08 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:39:08 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:39:08 DBG] HTTP GET /api/User/19 responded 200 in 70.9157 ms
+[12:39:08 DBG] 'AppDbContext' disposed.
+[12:39:08 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:08 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:08 INF] CORS policy execution successful.
+[12:39:08 DBG] Successfully validated the token.
+[12:39:08 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:39:08 DBG] Authorization was successful.
+[12:39:08 INF] Trying to retrieve user with id 19
+[12:39:08 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:39:08 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:08 DBG] Created DbCommand for 'ExecuteReader' (5ms).
+[12:39:08 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:39:08 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:39:08 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:08 INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:08 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:08 DBG] A data reader was disposed.
+[12:39:08 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:39:08 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:39:08 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:39:08 DBG] HTTP GET /api/User/19 responded 200 in 71.4693 ms
+[12:39:08 DBG] 'AppDbContext' disposed.
+[12:39:13 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:39:13 DBG] Ending HttpMessageHandler cleanup cycle after 0.007ms - processed: 1 items - remaining: 0 items
+[12:39:14 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:14 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:14 INF] CORS policy execution successful.
+[12:39:14 DBG] The request is a preflight request.
+[12:39:14 DBG] HTTP OPTIONS /api/User responded 204 in 2.3818 ms
+[12:39:14 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:14 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:14 INF] CORS policy execution successful.
+[12:39:14 DBG] Successfully validated the token.
+[12:39:14 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:39:14 DBG] Authorization was successful.
+[12:39:14 DBG] Connection id "0HN7O0H9GVN5O", Request id "0HN7O0H9GVN5O:00000009": started reading request body.
+[12:39:14 DBG] Connection id "0HN7O0H9GVN5O", Request id "0HN7O0H9GVN5O:00000009": done reading request body.
+[12:39:14 INF] Trying to update user with id
+[12:39:14 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:39:14 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:14 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:39:14 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:14 INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:14 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:14 DBG] A data reader was disposed.
+[12:39:14 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:14 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:39:14 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:14 INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:14 DBG] A data reader was disposed.
+[12:39:14 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] The unchanged property 'User.Country' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:39:14 DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:14 DBG] The unchanged property 'User.FirstName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:39:14 DBG] The unchanged property 'User.LastName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:39:14 DBG] SaveChanges starting for 'AppDbContext'.
+[12:39:14 DBG] DetectChanges starting for 'AppDbContext'.
+[12:39:14 DBG] DetectChanges completed for 'AppDbContext'.
+[12:39:14 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:39:14 DBG] Beginning transaction with isolation level 'Unspecified'.
+[12:39:14 DBG] Began transaction with isolation level 'ReadCommitted'.
+[12:39:15 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:15 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:39:15 DBG] Executing DbCommand [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Country] = @p0, [Email] = @p1, [FirstName] = @p2, [LastName] = @p3, [Password] = @p4, [Role] = @p5, [Status] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+[12:39:15 INF] Executed DbCommand (14ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Country] = @p0, [Email] = @p1, [FirstName] = @p2, [LastName] = @p3, [Password] = @p4, [Role] = @p5, [Status] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+[12:39:15 DBG] A data reader was disposed.
+[12:39:15 DBG] Committing transaction.
+[12:39:15 DBG] Committed transaction.
+[12:39:15 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:39:15 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:39:15 DBG] Disposing transaction.
+[12:39:15 DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:15 DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[12:39:15 INF] Successfully updated: {"OriginalUser":{"Id":18,"Email":"kaan@gmail.com","FirstName":"Kaan","LastName":"Demirez","Country":"Romania","Role":"Admin","$type":"UserDTO"},"ModifiedUser":{"Id":18,"Email":"kaan@gmail.com","FirstName":"test","LastName":"test","Country":"test","Role":"Admin","$type":"UserDTO"}}
+[12:39:15 DBG] HTTP PUT /api/User responded 200 in 386.8129 ms
+[12:39:15 DBG] 'AppDbContext' disposed.
+[12:39:16 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:16 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:16 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:16 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:16 INF] CORS policy execution successful.
+[12:39:16 INF] CORS policy execution successful.
+[12:39:16 DBG] The request is a preflight request.
+[12:39:16 DBG] The request is a preflight request.
+[12:39:16 DBG] HTTP OPTIONS /api/User/19 responded 204 in 21.1626 ms
+[12:39:16 DBG] HTTP OPTIONS /api/User/19 responded 204 in 23.8569 ms
+[12:39:16 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:16 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:16 INF] CORS policy execution successful.
+[12:39:16 DBG] Successfully validated the token.
+[12:39:16 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:39:16 DBG] Authorization was successful.
+[12:39:16 INF] Trying to retrieve user with id 19
+[12:39:16 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:39:16 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:16 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[12:39:16 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:39:16 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:39:16 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:16 INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:16 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:16 DBG] A data reader was disposed.
+[12:39:16 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:39:16 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:39:16 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:39:16 DBG] HTTP GET /api/User/19 responded 200 in 87.2085 ms
+[12:39:16 DBG] 'AppDbContext' disposed.
+[12:39:16 DBG] Static files was skipped as the request already matched an endpoint.
+[12:39:16 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:39:16 INF] CORS policy execution successful.
+[12:39:16 DBG] Successfully validated the token.
+[12:39:16 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:39:16 DBG] Authorization was successful.
+[12:39:16 INF] Trying to retrieve user with id 19
+[12:39:16 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:39:16 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:39:16 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:39:16 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:39:16 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:39:16 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:16 INF] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:39:16 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:39:16 DBG] A data reader was disposed.
+[12:39:16 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:39:16 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:39:16 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:39:16 DBG] HTTP GET /api/User/19 responded 200 in 106.6442 ms
+[12:39:16 DBG] 'AppDbContext' disposed.
+[12:39:17 DBG] Connection id "0HN7O0H9GVN5O" received FIN.
+[12:39:17 DBG] Connection id "0HN7O0H9GVN5O" is closed. The last processed stream ID was 17.
+[12:39:17 DBG] Connection id "0HN7O0H9GVN5O" sending FIN because: "The client closed the connection."
+[12:39:17 DBG] Connection id "0HN7O0H9GVN5O" stopped.
+[12:41:08 DBG] HttpMessageHandler expired after 120000ms for client ''
+[12:41:18 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:41:18 DBG] Ending HttpMessageHandler cleanup cycle after 0.0038ms - processed: 0 items - remaining: 1 items
+[12:41:28 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:41:28 DBG] Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+[12:41:38 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:41:38 DBG] Ending HttpMessageHandler cleanup cycle after 0.0014ms - processed: 0 items - remaining: 1 items
+[12:41:48 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:41:48 DBG] Ending HttpMessageHandler cleanup cycle after 0.0024ms - processed: 0 items - remaining: 1 items
+[12:41:58 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:41:58 DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+[12:42:08 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:42:08 DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items
+[12:42:18 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:42:18 DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+[12:42:28 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:42:28 DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+[12:42:51 DBG] Hosting starting
+[12:42:51 INF] User profile is available. Using 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[12:42:51 DBG] Reading data from file 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys\key-ecac6b21-68f0-4cc8-99a1-58c655fd7c96.xml'.
+[12:42:51 DBG] Found key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96}.
+[12:42:51 DBG] Considering key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} with expiration date 2025-01-20 06:32:51Z as default key.
+[12:42:51 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:42:51 DBG] Decrypting secret element using Windows DPAPI.
+[12:42:51 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:42:51 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[12:42:51 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[12:42:51 DBG] Using key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} as the default key.
+[12:42:51 DBG] Key ring with default key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} was loaded during application startup.
+[12:42:51 DBG] Using development certificate: CN=localhost (Thumbprint: 483DCE1C48C5459E772E751BB169AAF690CD4851)
+[12:42:51 INF] Now listening on: https://localhost:7151
+[12:42:51 INF] Application started. Press Ctrl+C to shut down.
+[12:42:51 INF] Hosting environment: Development
+[12:42:51 INF] Content root path: C:\Users\Kaan Demirezenler\Desktop\UTCN24-25\DS\src\UserMS\UserMS\
+[12:42:51 DBG] Hosting started
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQ9" accepted.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQ9" started.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQA" accepted.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQA" started.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQC" accepted.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQB" accepted.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQC" started.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQB" started.
+[12:42:51 DBG] Connection id "0HN7O0PO6MIQA" received FIN.
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQ9" received FIN.
+[12:42:52 DBG] Connection 0HN7O0PO6MIQC established using the following protocol: "Tls13"
+[12:42:52 DBG] Connection 0HN7O0PO6MIQB established using the following protocol: "Tls13"
+[12:42:52 DBG] Connection 0HN7O0PO6MIQ9 established using the following protocol: "Tls13"
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQ9" is closed. The last processed stream ID was 0.
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQ9" sending FIN because: "The client closed the connection."
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQ9" stopped.
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQD" accepted.
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQD" started.
+[12:42:52 DBG] Connection 0HN7O0PO6MIQD established using the following protocol: "Tls13"
+[12:42:52 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQA" stopped.
+[12:42:52 DBG] Connection id "0HN7O0PO6MIQA" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:42:52 DBG] Wildcard detected, all requests with hosts will be allowed.
+[12:42:52 DBG] Wildcard detected, all requests with hosts will be allowed.
+[12:42:52 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:52 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:52 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:52 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:52 INF] CORS policy execution successful.
+[12:42:52 INF] CORS policy execution successful.
+[12:42:52 DBG] The request is a preflight request.
+[12:42:52 DBG] The request is a preflight request.
+[12:42:52 DBG] HTTP OPTIONS /api/User/19 responded 204 in 38.3476 ms
+[12:42:52 DBG] HTTP OPTIONS /api/User/19 responded 204 in 38.3398 ms
+[12:42:52 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:52 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:52 INF] CORS policy execution successful.
+[12:42:52 DBG] Response markup is scheduled to include browser refresh script injection.
+[12:42:53 DBG] Successfully validated the token.
+[12:42:53 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:42:53 DBG] Authorization was successful.
+[12:42:53 DBG] HTTP GET /swagger/index.html responded 200 in 541.6838 ms
+[12:42:53 DBG] Response markup was updated to include browser refresh script injection.
+[12:42:53 DBG] HTTP GET /swagger/index.js responded 200 in 6.9618 ms
+[12:42:53 DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+[12:42:53 INF] Trying to retrieve user with id 19
+[12:42:53 DBG] HTTP GET /swagger/v1/swagger.json responded 200 in 281.6250 ms
+[12:42:54 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:42:54 DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Id == __id_0)'
+[12:42:54 DBG] Connection id "0HN7O0PO6MIQD" received FIN.
+[12:42:54 DBG] Connection id "0HN7O0PO6MIQD" is closed. The last processed stream ID was 9.
+[12:42:54 DBG] Connection id "0HN7O0PO6MIQD" sending FIN because: "The client closed the connection."
+[12:42:54 DBG] Connection id "0HN7O0PO6MIQD" stopped.
+[12:42:54 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Country (string) Required, 1], [Property: User.Email (string) Required MaxLength(100), 2], [Property: User.FirstName (string) Required, 3], [Property: User.LastName (string) Required, 4], [Property: User.Password (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.Status (UserStatus) Required, 7] }
+            SELECT TOP(1) u.Id, u.Country, u.Email, u.FirstName, u.LastName, u.Password, u.Role, u.Status
+            FROM Users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        UserMS.Core.DomainLayer.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[12:42:54 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:42:55 DBG] Created DbCommand for 'ExecuteReader' (55ms).
+[12:42:55 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:42:55 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:42:55 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:42:55 INF] Executed DbCommand (113ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:42:55 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:42:55 DBG] A data reader was disposed.
+[12:42:55 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:42:55 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:55 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:55 INF] CORS policy execution successful.
+[12:42:55 DBG] Successfully validated the token.
+[12:42:55 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:42:55 DBG] Authorization was successful.
+[12:42:55 INF] Trying to retrieve user with id 19
+[12:42:55 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:42:55 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:42:55 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:42:55 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[12:42:55 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:42:55 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:42:55 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:42:55 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:42:55 INF] Executed DbCommand (54ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:42:56 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:42:56 DBG] A data reader was disposed.
+[12:42:56 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:42:56 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:42:56 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:42:56 DBG] HTTP GET /api/User/19 responded 200 in 268.0232 ms
+[12:42:56 DBG] HTTP GET /api/User/19 responded 200 in 3519.6620 ms
+[12:42:56 DBG] Static files was skipped as the request already matched an endpoint.
+[12:42:56 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:42:56 DBG] 'AppDbContext' disposed.
+[12:42:56 DBG] 'AppDbContext' disposed.
+[12:42:56 INF] CORS policy execution successful.
+[12:42:56 DBG] Successfully validated the token.
+[12:42:56 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:42:56 DBG] Authorization was successful.
+[12:42:56 INF] Trying to retrieve user with id 19
+[12:42:56 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:42:56 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:42:56 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:42:56 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:42:56 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:42:56 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:42:56 INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:42:56 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:42:56 DBG] A data reader was disposed.
+[12:42:56 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:42:56 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:42:56 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:42:56 DBG] HTTP GET /api/User/19 responded 200 in 146.3080 ms
+[12:42:56 DBG] 'AppDbContext' disposed.
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQC" received FIN.
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQB" received FIN.
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQC" is closed. The last processed stream ID was 0.
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQB" is closed. The last processed stream ID was 9.
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQC" sending FIN because: "The client closed the connection."
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQB" sending FIN because: "The client closed the connection."
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQC" stopped.
+[12:42:58 DBG] Connection id "0HN7O0PO6MIQB" stopped.
+[12:43:01 DBG] Connection id "0HN7O0PO6MIQE" accepted.
+[12:43:01 DBG] Connection id "0HN7O0PO6MIQE" started.
+[12:43:01 DBG] Connection 0HN7O0PO6MIQE established using the following protocol: "Tls13"
+[12:43:01 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:01 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:01 INF] CORS policy execution successful.
+[12:43:01 DBG] The request is a preflight request.
+[12:43:01 DBG] HTTP OPTIONS /api/User responded 204 in 2.1492 ms
+[12:43:01 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:01 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:01 INF] CORS policy execution successful.
+[12:43:01 DBG] Successfully validated the token.
+[12:43:01 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:43:01 DBG] Authorization was successful.
+[12:43:01 DBG] Connection id "0HN7O0PO6MIQE", Request id "0HN7O0PO6MIQE:00000003": started reading request body.
+[12:43:01 DBG] Connection id "0HN7O0PO6MIQE", Request id "0HN7O0PO6MIQE:00000003": done reading request body.
+[12:43:01 INF] Trying to update user with id
+[12:43:01 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:43:01 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:43:01 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:43:01 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:01 INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:01 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:43:01 DBG] A data reader was disposed.
+[12:43:01 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:43:01 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:43:01 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:01 INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:01 DBG] A data reader was disposed.
+[12:43:01 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:43:01 DBG] SaveChanges starting for 'AppDbContext'.
+[12:43:01 DBG] DetectChanges starting for 'AppDbContext'.
+[12:43:01 DBG] DetectChanges completed for 'AppDbContext'.
+[12:43:01 DBG] SaveChanges completed for 'AppDbContext' with 0 entities written to the database.
+[12:43:01 INF] Successfully updated: {"OriginalUser":{"Id":18,"Email":"kaan@gmail.com","FirstName":"test","LastName":"test","Country":"test","Role":"Admin","$type":"UserDTO"},"ModifiedUser":{"Id":18,"Email":"kaan@gmail.com","FirstName":"test","LastName":"test","Country":"test","Role":"Admin","$type":"UserDTO"}}
+[12:43:01 DBG] HTTP PUT /api/User responded 200 in 138.0490 ms
+[12:43:01 DBG] 'AppDbContext' disposed.
+[12:43:03 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:03 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:03 INF] CORS policy execution successful.
+[12:43:03 DBG] The request is a preflight request.
+[12:43:03 DBG] HTTP OPTIONS /api/User/19 responded 204 in 17.3814 ms
+[12:43:03 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:03 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:03 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:03 INF] CORS policy execution successful.
+[12:43:03 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:03 DBG] The request is a preflight request.
+[12:43:03 INF] CORS policy execution successful.
+[12:43:03 DBG] HTTP OPTIONS /api/User/19 responded 204 in 34.6589 ms
+[12:43:03 DBG] Successfully validated the token.
+[12:43:03 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:43:03 DBG] Authorization was successful.
+[12:43:03 INF] Trying to retrieve user with id 19
+[12:43:03 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:43:03 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:43:03 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:43:03 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:43:03 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:43:03 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:03 INF] Executed DbCommand (40ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:03 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:43:03 DBG] A data reader was disposed.
+[12:43:03 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:43:03 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:43:03 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:43:03 DBG] HTTP GET /api/User/19 responded 200 in 153.4113 ms
+[12:43:03 DBG] 'AppDbContext' disposed.
+[12:43:03 DBG] Static files was skipped as the request already matched an endpoint.
+[12:43:03 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:43:03 INF] CORS policy execution successful.
+[12:43:03 DBG] Successfully validated the token.
+[12:43:03 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:43:03 DBG] Authorization was successful.
+[12:43:03 INF] Trying to retrieve user with id 19
+[12:43:03 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:43:03 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:43:03 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[12:43:03 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:43:03 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:43:03 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:03 INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:43:03 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:43:03 DBG] A data reader was disposed.
+[12:43:03 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:43:03 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:43:03 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:43:03 DBG] HTTP GET /api/User/19 responded 200 in 77.7074 ms
+[12:43:03 DBG] 'AppDbContext' disposed.
+[12:43:08 DBG] Connection id "0HN7O0PO6MIQE" received FIN.
+[12:43:08 DBG] Connection id "0HN7O0PO6MIQE" is closed. The last processed stream ID was 11.
+[12:43:08 DBG] Connection id "0HN7O0PO6MIQE" sending FIN because: "The client closed the connection."
+[12:43:08 DBG] Connection id "0HN7O0PO6MIQE" stopped.
+[12:44:53 DBG] HttpMessageHandler expired after 120000ms for client ''
+[12:45:03 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:45:03 DBG] Ending HttpMessageHandler cleanup cycle after 0.0357ms - processed: 0 items - remaining: 1 items
+[12:45:13 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:45:13 DBG] Ending HttpMessageHandler cleanup cycle after 0.0028ms - processed: 0 items - remaining: 1 items
+[12:45:23 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:45:23 DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+[12:45:33 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:45:33 DBG] Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+[12:45:43 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:45:43 DBG] Ending HttpMessageHandler cleanup cycle after 0.0037ms - processed: 0 items - remaining: 1 items
+[12:45:53 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:45:53 DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+[12:46:03 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:46:03 DBG] Ending HttpMessageHandler cleanup cycle after 0.0025ms - processed: 0 items - remaining: 1 items
+[12:46:13 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:46:13 DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 1 items
+[12:46:23 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:46:23 DBG] Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 1 items
+[12:46:33 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:46:33 DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+[12:46:43 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:46:43 DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items
+[12:46:53 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:46:53 DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 1 items
+[12:47:03 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:47:03 DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 1 items
+[12:47:13 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:47:13 DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+[12:47:23 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:47:23 DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 1 items
+[12:47:33 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:47:33 DBG] Ending HttpMessageHandler cleanup cycle after 0.0027ms - processed: 0 items - remaining: 1 items
+[12:47:43 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:47:43 DBG] Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 1 items
+[12:47:53 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:47:53 DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 1 items
+[12:48:03 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:48:03 DBG] Ending HttpMessageHandler cleanup cycle after 0.0021ms - processed: 0 items - remaining: 1 items
+[12:48:13 DBG] Connection id "0HN7O0PO6MIQF" accepted.
+[12:48:13 DBG] Connection id "0HN7O0PO6MIQF" started.
+[12:48:13 DBG] Connection 0HN7O0PO6MIQF established using the following protocol: "Tls13"
+[12:48:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:13 INF] CORS policy execution successful.
+[12:48:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:13 DBG] The request is a preflight request.
+[12:48:13 INF] CORS policy execution successful.
+[12:48:13 DBG] The request is a preflight request.
+[12:48:13 DBG] HTTP OPTIONS /api/User/19 responded 204 in 85.7668 ms
+[12:48:13 DBG] HTTP OPTIONS /api/User/19 responded 204 in 85.7631 ms
+[12:48:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:13 INF] CORS policy execution successful.
+[12:48:13 DBG] Successfully validated the token.
+[12:48:13 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:13 DBG] Authorization was successful.
+[12:48:13 INF] Trying to retrieve user with id 19
+[12:48:13 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:13 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:13 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:48:13 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:48:13 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:48:13 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:13 INF] Executed DbCommand (25ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:13 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:13 DBG] A data reader was disposed.
+[12:48:13 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:48:13 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:48:13 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:48:13 DBG] HTTP GET /api/User/19 responded 200 in 202.7258 ms
+[12:48:13 DBG] 'AppDbContext' disposed.
+[12:48:13 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:13 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:13 INF] CORS policy execution successful.
+[12:48:13 DBG] Successfully validated the token.
+[12:48:13 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:13 DBG] Authorization was successful.
+[12:48:13 INF] Trying to retrieve user with id 19
+[12:48:13 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:13 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:13 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:48:13 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:48:13 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:48:13 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:13 INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:13 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:13 DBG] A data reader was disposed.
+[12:48:13 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:48:13 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:48:13 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:48:13 DBG] HTTP GET /api/User/19 responded 200 in 26.9718 ms
+[12:48:13 DBG] 'AppDbContext' disposed.
+[12:48:13 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:48:13 DBG] Ending HttpMessageHandler cleanup cycle after 0.003ms - processed: 0 items - remaining: 1 items
+[12:48:18 DBG] Connection id "0HN7O0PO6MIQF" received FIN.
+[12:48:18 DBG] Connection id "0HN7O0PO6MIQF" is closed. The last processed stream ID was 7.
+[12:48:18 DBG] Connection id "0HN7O0PO6MIQF" sending FIN because: "The client closed the connection."
+[12:48:18 DBG] Connection id "0HN7O0PO6MIQF" stopped.
+[12:48:23 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:48:23 DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+[12:48:27 DBG] Connection id "0HN7O0PO6MIQG" accepted.
+[12:48:27 DBG] Connection id "0HN7O0PO6MIQG" started.
+[12:48:27 DBG] Connection 0HN7O0PO6MIQG established using the following protocol: "Tls13"
+[12:48:27 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:27 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:27 INF] CORS policy execution successful.
+[12:48:27 DBG] The request is a preflight request.
+[12:48:27 DBG] HTTP OPTIONS /api/User/19 responded 204 in 2.2224 ms
+[12:48:27 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:27 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:27 INF] CORS policy execution successful.
+[12:48:27 DBG] Successfully validated the token.
+[12:48:27 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:27 DBG] Authorization was successful.
+[12:48:27 INF] Trying to retrieve user with id 19
+[12:48:27 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:27 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:27 DBG] Created DbCommand for 'ExecuteReader' (4ms).
+[12:48:27 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:48:27 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:48:27 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:27 INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:27 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:27 DBG] A data reader was disposed.
+[12:48:27 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:48:27 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:48:27 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:48:27 DBG] HTTP GET /api/User/19 responded 200 in 45.9627 ms
+[12:48:27 DBG] 'AppDbContext' disposed.
+[12:48:27 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:27 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:27 INF] CORS policy execution successful.
+[12:48:27 DBG] Successfully validated the token.
+[12:48:27 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:27 DBG] Authorization was successful.
+[12:48:27 INF] Trying to retrieve user with id 19
+[12:48:27 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:27 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:27 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:48:27 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:48:27 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:48:27 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:27 INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:27 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:27 DBG] A data reader was disposed.
+[12:48:27 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:48:27 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:48:27 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:48:27 DBG] HTTP GET /api/User/19 responded 200 in 35.1967 ms
+[12:48:27 DBG] 'AppDbContext' disposed.
+[12:48:36 DBG] Hosting starting
+[12:48:36 INF] User profile is available. Using 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[12:48:36 DBG] Reading data from file 'C:\Users\Kaan Demirezenler\AppData\Local\ASP.NET\DataProtection-Keys\key-ecac6b21-68f0-4cc8-99a1-58c655fd7c96.xml'.
+[12:48:36 DBG] Found key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96}.
+[12:48:36 DBG] Considering key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} with expiration date 2025-01-20 06:32:51Z as default key.
+[12:48:36 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:48:36 DBG] Decrypting secret element using Windows DPAPI.
+[12:48:36 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:48:36 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[12:48:36 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[12:48:36 DBG] Using key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} as the default key.
+[12:48:36 DBG] Key ring with default key {ecac6b21-68f0-4cc8-99a1-58c655fd7c96} was loaded during application startup.
+[12:48:37 DBG] Using development certificate: CN=localhost (Thumbprint: 483DCE1C48C5459E772E751BB169AAF690CD4851)
+[12:48:37 INF] Now listening on: https://localhost:7151
+[12:48:37 INF] Application started. Press Ctrl+C to shut down.
+[12:48:37 INF] Hosting environment: Development
+[12:48:37 INF] Content root path: C:\Users\Kaan Demirezenler\Desktop\UTCN24-25\DS\src\UserMS\UserMS\
+[12:48:37 DBG] Hosting started
+[12:48:37 DBG] Connection id "0HN7O0SV6B7IV" accepted.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7IV" started.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7J0" accepted.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7J0" started.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7IV" received FIN.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7J0" received FIN.
+[12:48:37 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[12:48:37 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[12:48:37 DBG] Connection id "0HN7O0SV6B7IV" stopped.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7J0" stopped.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7J1" accepted.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7J1" started.
+[12:48:37 DBG] Connection id "0HN7O0SV6B7J0" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:48:37 DBG] Connection id "0HN7O0SV6B7IV" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:48:38 DBG] Connection 0HN7O0SV6B7J1 established using the following protocol: "Tls13"
+[12:48:38 DBG] Wildcard detected, all requests with hosts will be allowed.
+[12:48:38 DBG] Response markup is scheduled to include browser refresh script injection.
+[12:48:38 DBG] HTTP GET /swagger/index.html responded 200 in 399.3167 ms
+[12:48:38 DBG] HTTP GET /swagger/index.js responded 200 in 1.9993 ms
+[12:48:38 DBG] Response markup was updated to include browser refresh script injection.
+[12:48:39 DBG] HTTP GET /swagger/v1/swagger.json responded 200 in 256.3967 ms
+[12:48:40 DBG] Connection id "0HN7O0SV6B7J1" received FIN.
+[12:48:40 DBG] Connection id "0HN7O0SV6B7J1" is closed. The last processed stream ID was 9.
+[12:48:40 DBG] Connection id "0HN7O0SV6B7J1" sending FIN because: "The client closed the connection."
+[12:48:40 DBG] Connection id "0HN7O0SV6B7J1" stopped.
+[12:48:41 DBG] Connection id "0HN7O0SV6B7J2" accepted.
+[12:48:41 DBG] Connection id "0HN7O0SV6B7J2" started.
+[12:48:41 DBG] Connection 0HN7O0SV6B7J2 established using the following protocol: "Tls13"
+[12:48:41 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:41 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:41 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:41 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:41 INF] CORS policy execution successful.
+[12:48:41 INF] CORS policy execution successful.
+[12:48:41 DBG] The request is a preflight request.
+[12:48:41 DBG] The request is a preflight request.
+[12:48:41 DBG] HTTP OPTIONS /api/User/19 responded 204 in 63.5014 ms
+[12:48:41 DBG] HTTP OPTIONS /api/User/19 responded 204 in 63.4486 ms
+[12:48:41 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:41 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:41 INF] CORS policy execution successful.
+[12:48:42 DBG] Successfully validated the token.
+[12:48:42 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:42 DBG] Authorization was successful.
+[12:48:42 DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+[12:48:42 INF] Trying to retrieve user with id 19
+[12:48:43 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:43 DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Id == __id_0)'
+[12:48:44 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Country (string) Required, 1], [Property: User.Email (string) Required MaxLength(100), 2], [Property: User.FirstName (string) Required, 3], [Property: User.LastName (string) Required, 4], [Property: User.Password (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.Status (UserStatus) Required, 7] }
+            SELECT TOP(1) u.Id, u.Country, u.Email, u.FirstName, u.LastName, u.Password, u.Role, u.Status
+            FROM Users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        UserMS.Core.DomainLayer.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[12:48:44 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:44 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:44 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:44 INF] CORS policy execution successful.
+[12:48:44 DBG] Successfully validated the token.
+[12:48:44 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:44 DBG] Authorization was successful.
+[12:48:44 INF] Trying to retrieve user with id 19
+[12:48:44 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:44 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:44 DBG] Created DbCommand for 'ExecuteReader' (9ms).
+[12:48:44 DBG] Created DbCommand for 'ExecuteReader' (148ms).
+[12:48:44 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:48:44 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:45 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:45 INF] Executed DbCommand (97ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:45 INF] Executed DbCommand (97ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:45 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:45 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:45 DBG] A data reader was disposed.
+[12:48:45 DBG] A data reader was disposed.
+[12:48:45 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:48:45 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:48:45 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:48:45 DBG] Static files was skipped as the request already matched an endpoint.
+[12:48:45 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:45 INF] CORS policy execution successful.
+[12:48:45 DBG] Successfully validated the token.
+[12:48:45 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:45 DBG] HTTP GET /api/User/19 responded 200 in 1204.1899 ms
+[12:48:45 DBG] Authorization was successful.
+[12:48:45 DBG] HTTP GET /api/User/19 responded 200 in 3798.3201 ms
+[12:48:45 INF] Trying to retrieve user with id 19
+[12:48:45 DBG] 'AppDbContext' disposed.
+[12:48:45 DBG] 'AppDbContext' disposed.
+[12:48:45 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:48:45 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:48:45 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:48:45 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:45 INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:48:45 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:48:45 DBG] A data reader was disposed.
+[12:48:45 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:48:45 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:48:45 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:48:45 DBG] HTTP GET /api/User/19 responded 200 in 80.2374 ms
+[12:48:45 DBG] 'AppDbContext' disposed.
+[12:48:48 DBG] Connection id "0HN7O0SV6B7J2" received FIN.
+[12:48:48 DBG] Connection id "0HN7O0SV6B7J2" is closed. The last processed stream ID was 9.
+[12:48:48 DBG] Connection id "0HN7O0SV6B7J2" sending FIN because: "The client closed the connection."
+[12:48:48 DBG] Connection id "0HN7O0SV6B7J2" stopped.
+[12:48:52 DBG] Connection id "0HN7O0SV6B7J3" accepted.
+[12:48:52 DBG] Connection id "0HN7O0SV6B7J3" started.
+[12:48:52 DBG] Connection 0HN7O0SV6B7J3 established using the following protocol: "Tls13"
+[12:48:52 DBG] OPTIONS requests are not supported
+[12:48:52 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:52 INF] CORS policy execution successful.
+[12:48:52 DBG] The request is a preflight request.
+[12:48:52 DBG] HTTP OPTIONS /api/User/users/update/19 responded 204 in 2.7506 ms
+[12:48:52 DBG] PUT requests are not supported
+[12:48:52 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:48:52 INF] CORS policy execution successful.
+[12:48:52 DBG] Successfully validated the token.
+[12:48:52 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:48:52 DBG] HTTP PUT /api/User/users/update/19 responded 404 in 1.5788 ms
+[12:48:52 DBG] Connection id "0HN7O0SV6B7J3", Request id "0HN7O0SV6B7J3:00000003": started reading request body.
+[12:48:52 DBG] Connection id "0HN7O0SV6B7J3", Request id "0HN7O0SV6B7J3:00000003": done reading request body.
+[12:48:53 DBG] Connection id "0HN7O0SV6B7J3" received FIN.
+[12:48:53 DBG] Connection id "0HN7O0SV6B7J3" is closed. The last processed stream ID was 3.
+[12:48:53 DBG] Connection id "0HN7O0SV6B7J3" sending FIN because: "The client closed the connection."
+[12:48:53 DBG] Connection id "0HN7O0SV6B7J3" stopped.
+[12:49:30 DBG] Connection id "0HN7O0SV6B7J4" accepted.
+[12:49:30 DBG] Connection id "0HN7O0SV6B7J4" started.
+[12:49:30 DBG] Connection 0HN7O0SV6B7J4 established using the following protocol: "Tls13"
+[12:49:30 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:30 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:30 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:30 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:30 INF] CORS policy execution successful.
+[12:49:30 INF] CORS policy execution successful.
+[12:49:30 DBG] The request is a preflight request.
+[12:49:30 DBG] HTTP OPTIONS /api/User/19 responded 204 in 21.9351 ms
+[12:49:30 DBG] The request is a preflight request.
+[12:49:30 DBG] HTTP OPTIONS /api/User/19 responded 204 in 57.6865 ms
+[12:49:30 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:30 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:30 INF] CORS policy execution successful.
+[12:49:30 DBG] Successfully validated the token.
+[12:49:30 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:30 DBG] Authorization was successful.
+[12:49:30 INF] Trying to retrieve user with id 19
+[12:49:30 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:30 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:30 DBG] Created DbCommand for 'ExecuteReader' (3ms).
+[12:49:30 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:30 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:30 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:30 INF] Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:30 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:30 DBG] A data reader was disposed.
+[12:49:30 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:30 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:30 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:49:30 DBG] HTTP GET /api/User/19 responded 200 in 84.3853 ms
+[12:49:30 DBG] 'AppDbContext' disposed.
+[12:49:30 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:30 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:30 INF] CORS policy execution successful.
+[12:49:30 DBG] Successfully validated the token.
+[12:49:30 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:30 DBG] Authorization was successful.
+[12:49:30 INF] Trying to retrieve user with id 19
+[12:49:30 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:30 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:30 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:49:30 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:30 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:30 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:30 INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:30 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:30 DBG] A data reader was disposed.
+[12:49:30 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:30 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:30 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:49:30 DBG] HTTP GET /api/User/19 responded 200 in 35.9437 ms
+[12:49:30 DBG] 'AppDbContext' disposed.
+[12:49:33 DBG] Connection id "0HN7O0SV6B7J4" received FIN.
+[12:49:33 DBG] Connection id "0HN7O0SV6B7J4" is closed. The last processed stream ID was 7.
+[12:49:33 DBG] Connection id "0HN7O0SV6B7J4" sending FIN because: "The client closed the connection."
+[12:49:33 DBG] Connection id "0HN7O0SV6B7J4" stopped.
+[12:49:41 DBG] Connection id "0HN7O0SV6B7J5" accepted.
+[12:49:41 DBG] Connection id "0HN7O0SV6B7J5" started.
+[12:49:41 DBG] Connection 0HN7O0SV6B7J5 established using the following protocol: "Tls13"
+[12:49:41 DBG] OPTIONS requests are not supported
+[12:49:41 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:41 INF] CORS policy execution successful.
+[12:49:41 DBG] The request is a preflight request.
+[12:49:41 DBG] HTTP OPTIONS /api/User/User/19 responded 204 in 1.6243 ms
+[12:49:41 DBG] PUT requests are not supported
+[12:49:41 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:41 INF] CORS policy execution successful.
+[12:49:41 DBG] Successfully validated the token.
+[12:49:41 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:41 DBG] HTTP PUT /api/User/User/19 responded 404 in 2.6341 ms
+[12:49:41 DBG] Connection id "0HN7O0SV6B7J5", Request id "0HN7O0SV6B7J5:00000003": started reading request body.
+[12:49:41 DBG] Connection id "0HN7O0SV6B7J5", Request id "0HN7O0SV6B7J5:00000003": done reading request body.
+[12:49:43 DBG] Connection id "0HN7O0SV6B7J5" received FIN.
+[12:49:43 DBG] Connection id "0HN7O0SV6B7J5" is closed. The last processed stream ID was 3.
+[12:49:43 DBG] Connection id "0HN7O0SV6B7J5" sending FIN because: "The client closed the connection."
+[12:49:43 DBG] Connection id "0HN7O0SV6B7J5" stopped.
+[12:49:50 DBG] Connection id "0HN7O0SV6B7J6" accepted.
+[12:49:50 DBG] Connection id "0HN7O0SV6B7J6" started.
+[12:49:50 DBG] Connection 0HN7O0SV6B7J6 established using the following protocol: "Tls13"
+[12:49:50 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:50 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:50 INF] CORS policy execution successful.
+[12:49:50 DBG] The request is a preflight request.
+[12:49:50 DBG] HTTP OPTIONS /api/User/19 responded 204 in 2.9041 ms
+[12:49:50 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:50 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:50 INF] CORS policy execution successful.
+[12:49:50 DBG] Successfully validated the token.
+[12:49:50 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:50 DBG] Authorization was successful.
+[12:49:50 INF] Trying to retrieve user with id 19
+[12:49:50 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:50 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:50 DBG] Created DbCommand for 'ExecuteReader' (2ms).
+[12:49:50 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:50 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:50 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:50 INF] Executed DbCommand (39ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:50 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:50 DBG] A data reader was disposed.
+[12:49:50 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:50 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:50 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:49:50 DBG] HTTP GET /api/User/19 responded 200 in 90.4281 ms
+[12:49:50 DBG] 'AppDbContext' disposed.
+[12:49:50 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:50 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:50 INF] CORS policy execution successful.
+[12:49:50 DBG] Successfully validated the token.
+[12:49:50 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:50 DBG] Authorization was successful.
+[12:49:50 INF] Trying to retrieve user with id 19
+[12:49:50 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:50 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:50 DBG] Created DbCommand for 'ExecuteReader' (4ms).
+[12:49:50 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:50 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:50 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:50 INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:50 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:50 DBG] A data reader was disposed.
+[12:49:50 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:50 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:50 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"}
+[12:49:50 DBG] HTTP GET /api/User/19 responded 200 in 78.1962 ms
+[12:49:50 DBG] 'AppDbContext' disposed.
+[12:49:53 DBG] Connection id "0HN7O0SV6B7J6" received FIN.
+[12:49:53 DBG] Connection id "0HN7O0SV6B7J6" is closed. The last processed stream ID was 5.
+[12:49:53 DBG] Connection id "0HN7O0SV6B7J6" sending FIN because: "The client closed the connection."
+[12:49:53 DBG] Connection id "0HN7O0SV6B7J6" stopped.
+[12:49:54 DBG] Connection id "0HN7O0SV6B7J7" accepted.
+[12:49:54 DBG] Connection id "0HN7O0SV6B7J7" started.
+[12:49:54 DBG] Connection 0HN7O0SV6B7J7 established using the following protocol: "Tls13"
+[12:49:54 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:54 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:54 INF] CORS policy execution successful.
+[12:49:54 DBG] The request is a preflight request.
+[12:49:54 DBG] HTTP OPTIONS /api/User/19 responded 204 in 1.7052 ms
+[12:49:54 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:54 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:54 INF] CORS policy execution successful.
+[12:49:54 DBG] Successfully validated the token.
+[12:49:54 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:54 DBG] Authorization was successful.
+[12:49:54 DBG] Connection id "0HN7O0SV6B7J7", Request id "0HN7O0SV6B7J7:00000003": started reading request body.
+[12:49:54 DBG] Connection id "0HN7O0SV6B7J7", Request id "0HN7O0SV6B7J7:00000003": done reading request body.
+[12:49:54 INF] Trying to update user with ID: 19
+[12:49:54 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:54 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:54 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:49:54 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:54 INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:54 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:54 DBG] A data reader was disposed.
+[12:49:54 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:54 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:49:54 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:54 INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:54 DBG] A data reader was disposed.
+[12:49:54 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] The unchanged property 'User.Country' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:49:54 DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:54 DBG] The unchanged property 'User.FirstName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:49:54 DBG] The unchanged property 'User.LastName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:49:54 DBG] SaveChanges starting for 'AppDbContext'.
+[12:49:54 DBG] DetectChanges starting for 'AppDbContext'.
+[12:49:54 DBG] DetectChanges completed for 'AppDbContext'.
+[12:49:54 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Beginning transaction with isolation level 'Unspecified'.
+[12:49:54 DBG] Began transaction with isolation level 'ReadCommitted'.
+[12:49:54 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:54 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:49:54 DBG] Executing DbCommand [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Country] = @p0, [Email] = @p1, [FirstName] = @p2, [LastName] = @p3, [Password] = @p4, [Role] = @p5, [Status] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+[12:49:54 INF] Executed DbCommand (23ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Country] = @p0, [Email] = @p1, [FirstName] = @p2, [LastName] = @p3, [Password] = @p4, [Role] = @p5, [Status] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+[12:49:54 DBG] A data reader was disposed.
+[12:49:54 DBG] Committing transaction.
+[12:49:54 DBG] Committed transaction.
+[12:49:54 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:54 DBG] Disposing transaction.
+[12:49:54 DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:54 DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[12:49:54 INF] Successfully updated: {"OriginalUser":{"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Damn","Country":"France","Role":"Guest","$type":"UserDTO"},"ModifiedUser":{"Id":19,"Email":"bilge@gmail.com","FirstName":"sadas","LastName":"asda","Country":"asd","Role":"Guest","$type":"UserDTO"}}
+[12:49:54 DBG] HTTP PUT /api/User/19 responded 200 in 292.8145 ms
+[12:49:54 DBG] 'AppDbContext' disposed.
+[12:49:56 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:56 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:56 INF] CORS policy execution successful.
+[12:49:56 DBG] Successfully validated the token.
+[12:49:56 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:56 DBG] Authorization was successful.
+[12:49:56 INF] Trying to retrieve user with id 19
+[12:49:56 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:56 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:56 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:49:56 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:56 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:56 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:56 INF] Executed DbCommand (34ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:56 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:56 DBG] A data reader was disposed.
+[12:49:56 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:56 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:56 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"sadas","LastName":"asda","Country":"asd","Role":"Guest","$type":"UserDTO"}
+[12:49:56 DBG] HTTP GET /api/User/19 responded 200 in 104.4206 ms
+[12:49:56 DBG] 'AppDbContext' disposed.
+[12:49:56 DBG] Static files was skipped as the request already matched an endpoint.
+[12:49:56 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:49:56 INF] CORS policy execution successful.
+[12:49:56 DBG] Successfully validated the token.
+[12:49:56 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:49:56 DBG] Authorization was successful.
+[12:49:56 INF] Trying to retrieve user with id 19
+[12:49:56 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:49:56 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:49:56 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:49:56 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:49:56 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:49:56 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:56 INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:49:56 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:49:56 DBG] A data reader was disposed.
+[12:49:56 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:49:56 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:49:56 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"sadas","LastName":"asda","Country":"asd","Role":"Guest","$type":"UserDTO"}
+[12:49:56 DBG] HTTP GET /api/User/19 responded 200 in 78.0546 ms
+[12:49:56 DBG] 'AppDbContext' disposed.
+[12:50:03 DBG] Connection id "0HN7O0SV6B7J7" received FIN.
+[12:50:03 DBG] Connection id "0HN7O0SV6B7J7" is closed. The last processed stream ID was 7.
+[12:50:03 DBG] Connection id "0HN7O0SV6B7J7" sending FIN because: "The client closed the connection."
+[12:50:03 DBG] Connection id "0HN7O0SV6B7J7" stopped.
+[12:50:08 DBG] Connection id "0HN7O0SV6B7J8" accepted.
+[12:50:08 DBG] Connection id "0HN7O0SV6B7J8" started.
+[12:50:08 DBG] Connection 0HN7O0SV6B7J8 established using the following protocol: "Tls13"
+[12:50:08 DBG] Static files was skipped as the request already matched an endpoint.
+[12:50:08 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:50:08 INF] CORS policy execution successful.
+[12:50:08 DBG] The request is a preflight request.
+[12:50:08 DBG] HTTP OPTIONS /api/User/19 responded 204 in 1.1589 ms
+[12:50:08 DBG] Static files was skipped as the request already matched an endpoint.
+[12:50:08 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:50:08 INF] CORS policy execution successful.
+[12:50:08 DBG] Successfully validated the token.
+[12:50:08 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:50:08 DBG] Authorization was successful.
+[12:50:08 DBG] Connection id "0HN7O0SV6B7J8", Request id "0HN7O0SV6B7J8:00000003": started reading request body.
+[12:50:08 DBG] Connection id "0HN7O0SV6B7J8", Request id "0HN7O0SV6B7J8:00000003": done reading request body.
+[12:50:08 INF] Trying to update user with ID: 19
+[12:50:08 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:50:08 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:50:08 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:50:08 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:08 INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:08 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:50:08 DBG] A data reader was disposed.
+[12:50:08 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:50:08 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:50:08 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:08 INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:08 DBG] A data reader was disposed.
+[12:50:08 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] The unchanged property 'User.Country' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:50:08 DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:50:08 DBG] The unchanged property 'User.FirstName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:50:08 DBG] The unchanged property 'User.LastName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+[12:50:08 DBG] SaveChanges starting for 'AppDbContext'.
+[12:50:08 DBG] DetectChanges starting for 'AppDbContext'.
+[12:50:08 DBG] DetectChanges completed for 'AppDbContext'.
+[12:50:08 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Beginning transaction with isolation level 'Unspecified'.
+[12:50:08 DBG] Began transaction with isolation level 'ReadCommitted'.
+[12:50:08 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:50:08 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[12:50:08 DBG] Executing DbCommand [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Country] = @p0, [Email] = @p1, [FirstName] = @p2, [LastName] = @p3, [Password] = @p4, [Role] = @p5, [Status] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+[12:50:08 INF] Executed DbCommand (5ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Country] = @p0, [Email] = @p1, [FirstName] = @p2, [LastName] = @p3, [Password] = @p4, [Role] = @p5, [Status] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+[12:50:08 DBG] A data reader was disposed.
+[12:50:08 DBG] Committing transaction.
+[12:50:08 DBG] Committed transaction.
+[12:50:08 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:50:08 DBG] Disposing transaction.
+[12:50:08 DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:50:08 DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[12:50:08 INF] Successfully updated: {"OriginalUser":{"Id":19,"Email":"bilge@gmail.com","FirstName":"sadas","LastName":"asda","Country":"asd","Role":"Guest","$type":"UserDTO"},"ModifiedUser":{"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Test","Country":"Romania","Role":"Guest","$type":"UserDTO"}}
+[12:50:08 DBG] HTTP PUT /api/User/19 responded 200 in 53.9431 ms
+[12:50:08 DBG] 'AppDbContext' disposed.
+[12:50:10 DBG] Static files was skipped as the request already matched an endpoint.
+[12:50:10 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:50:10 INF] CORS policy execution successful.
+[12:50:10 DBG] Successfully validated the token.
+[12:50:10 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:50:10 DBG] Authorization was successful.
+[12:50:10 INF] Trying to retrieve user with id 19
+[12:50:10 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:50:10 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:50:10 DBG] Created DbCommand for 'ExecuteReader' (8ms).
+[12:50:10 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:50:10 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:50:10 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:10 INF] Executed DbCommand (85ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:10 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:50:10 DBG] A data reader was disposed.
+[12:50:10 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:50:10 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:50:10 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Test","Country":"Romania","Role":"Guest","$type":"UserDTO"}
+[12:50:10 DBG] HTTP GET /api/User/19 responded 200 in 189.5980 ms
+[12:50:10 DBG] 'AppDbContext' disposed.
+[12:50:10 DBG] Static files was skipped as the request already matched an endpoint.
+[12:50:10 DBG] The request has an origin header: 'http://localhost:4200'.
+[12:50:10 INF] CORS policy execution successful.
+[12:50:10 DBG] Successfully validated the token.
+[12:50:10 DBG] AuthenticationScheme: Bearer was successfully authenticated.
+[12:50:10 DBG] Authorization was successful.
+[12:50:10 INF] Trying to retrieve user with id 19
+[12:50:10 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[12:50:10 DBG] Creating DbCommand for 'ExecuteReader'.
+[12:50:10 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[12:50:10 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[12:50:10 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[12:50:10 DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:10 INF] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+[12:50:10 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[12:50:10 DBG] A data reader was disposed.
+[12:50:10 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[12:50:10 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[12:50:10 INF] Found user: {"Id":19,"Email":"bilge@gmail.com","FirstName":"Bilge","LastName":"Test","Country":"Romania","Role":"Guest","$type":"UserDTO"}
+[12:50:10 DBG] HTTP GET /api/User/19 responded 200 in 82.8379 ms
+[12:50:10 DBG] 'AppDbContext' disposed.
+[12:50:13 DBG] Connection id "0HN7O0SV6B7J8" received FIN.
+[12:50:13 DBG] Connection id "0HN7O0SV6B7J8" is closed. The last processed stream ID was 7.
+[12:50:13 DBG] Connection id "0HN7O0SV6B7J8" sending FIN because: "The client closed the connection."
+[12:50:13 DBG] Connection id "0HN7O0SV6B7J8" stopped.
+[12:50:42 DBG] HttpMessageHandler expired after 120000ms for client ''
+[12:50:52 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:50:52 DBG] Ending HttpMessageHandler cleanup cycle after 0.0481ms - processed: 0 items - remaining: 1 items
+[12:51:02 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:51:02 DBG] Ending HttpMessageHandler cleanup cycle after 0.0043ms - processed: 0 items - remaining: 1 items
+[12:51:12 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:51:12 DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+[12:51:22 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:51:22 DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 1 items
+[12:51:32 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:51:32 DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+[12:51:42 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:51:42 DBG] Ending HttpMessageHandler cleanup cycle after 0.0037ms - processed: 0 items - remaining: 1 items
+[12:51:52 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:51:52 DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 1 items
+[12:52:02 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:52:02 DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+[12:52:12 DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+[12:52:12 DBG] Ending HttpMessageHandler cleanup cycle after 0.5535ms - processed: 1 items - remaining: 0 items
+[13:07:26 DBG] Connection id "0HN7O0SV6B7J9" accepted.
+[13:07:26 DBG] Connection id "0HN7O0SV6B7J9" started.
+[13:07:26 DBG] Connection 0HN7O0SV6B7J9 established using the following protocol: "Tls13"
+[13:07:26 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:26 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:26 INF] CORS policy execution successful.
+[13:07:26 DBG] The request is a preflight request.
+[13:07:26 DBG] HTTP OPTIONS /login responded 204 in 5.0717 ms
+[13:07:26 DBG] Static files was skipped as the request already matched an endpoint.
+[13:07:26 DBG] The request has an origin header: 'http://localhost:4200'.
+[13:07:26 INF] CORS policy execution successful.
+[13:07:26 INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+[13:07:26 INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+[13:07:26 DBG] Connection id "0HN7O0SV6B7J9", Request id "0HN7O0SV6B7J9:00000003": started reading request body.
+[13:07:26 DBG] Connection id "0HN7O0SV6B7J9", Request id "0HN7O0SV6B7J9:00000003": done reading request body.
+[13:07:26 INF] Trying to login...
+[13:07:26 INF] Entity Framework Core 6.0.20 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+[13:07:26 DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Email == __email_0 && u.Password == __password_1)'
+[13:07:26 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Country (string) Required, 1], [Property: User.Email (string) Required MaxLength(100), 2], [Property: User.FirstName (string) Required, 3], [Property: User.LastName (string) Required, 4], [Property: User.Password (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.Status (UserStatus) Required, 7] }
+            SELECT TOP(1) u.Id, u.Country, u.Email, u.FirstName, u.LastName, u.Password, u.Role, u.Status
+            FROM Users AS u
+            WHERE (u.Email == @__email_0) && (u.Password == @__password_1)), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        UserMS.Core.DomainLayer.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[13:07:26 DBG] Creating DbCommand for 'ExecuteReader'.
+[13:07:26 DBG] Created DbCommand for 'ExecuteReader' (1ms).
+[13:07:26 DBG] Opening connection to database 'user-db' on server 'localhost'.
+[13:07:26 DBG] Opened connection to database 'user-db' on server 'localhost'.
+[13:07:26 DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 100), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+[13:07:26 INF] Executed DbCommand (25ms) [Parameters=[@__email_0='?' (Size = 100), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Country], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+[13:07:26 DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[13:07:26 DBG] A data reader was disposed.
+[13:07:26 DBG] Closing connection to database 'user-db' on server 'localhost'.
+[13:07:26 DBG] Closed connection to database 'user-db' on server 'localhost'.
+[13:07:26 INF] User found: {"Id":18,"FirstName":"test","LastName":"test","Email":"kaan@gmail.com","Password":"14zwwZcmVerK55SucGMaWFzh92GGJraVHSY0lcOT3dU=","Country":"test","Role":"Admin","Status":"Active","$type":"User"}
+[13:07:26 INF] Password: L@ssw0rd
+[13:07:26 DBG] HTTP POST /login responded 200 in 487.1950 ms
+[13:07:26 DBG] 'AppDbContext' disposed.
+[13:07:35 DBG] Connection id "0HN7O0SV6B7J9" received FIN.
+[13:07:35 DBG] Connection id "0HN7O0SV6B7J9" is closed. The last processed stream ID was 3.
+[13:07:35 DBG] Connection id "0HN7O0SV6B7J9" sending FIN because: "The client closed the connection."
+[13:07:35 DBG] Connection id "0HN7O0SV6B7J9" stopped.

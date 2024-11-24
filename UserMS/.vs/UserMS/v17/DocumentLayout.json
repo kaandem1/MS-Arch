@@ -1,0 +1,549 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\logs\\2024-10\\log-20241029.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\logs\\2024-10\\log-20241029.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\logic.servicelayer\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\logic.servicelayer\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\data.repositorylayer\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\data.repositorylayer\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\data.repositorylayer\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\data.repositorylayer\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\logic.servicelayer\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\logic.servicelayer\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\logic.servicelayer\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\logic.servicelayer\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\logic.servicelayer\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\logic.servicelayer\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\logic.servicelayer\\helpers\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\logic.servicelayer\\helpers\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\logic.servicelayer\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\logic.servicelayer\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\data.repositorylayer\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\data.repositorylayer\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\core.domainlayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\core.domainlayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\core.domainlayer\\enums\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\core.domainlayer\\enums\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\core.domainlayer\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\core.domainlayer\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\core.domainlayer\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\core.domainlayer\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\core.domainlayer\\configuration\\passwordencryptionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\core.domainlayer\\configuration\\passwordencryptionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\core.domainlayer\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\core.domainlayer\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\core.domainlayer\\configuration\\authenticationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\core.domainlayer\\configuration\\authenticationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\middleware\\abstractexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\middleware\\abstractexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\mapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\mapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\dtomodels\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\dtomodels\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\dtomodels\\userresetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\dtomodels\\userresetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\dtomodels\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\dtomodels\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\dtomodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\dtomodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\dtomodels\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\dtomodels\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\api\\dtomodels\\userchangepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\api\\dtomodels\\userchangepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\migrations\\20241022075309_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\migrations\\20241022075309_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\userms\\userms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69E03D48-BB55-4511-8743-A2327A48043B}|UserMS\\UserMS.csproj|solutionrelative:userms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "log-20241029.log",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\logs\\2024-10\\log-20241029.log",
+              "RelativeDocumentMoniker": "UserMS\\logs\\2024-10\\log-20241029.log",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\logs\\2024-10\\log-20241029.log",
+              "RelativeToolTip": "UserMS\\logs\\2024-10\\log-20241029.log",
+              "ViewState": "AQIAAGUHAAAAAAAAAAAhwHoHAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-24T09:23:55.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Helpers\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "UserMS\\Logic.ServiceLayer\\Helpers\\PasswordHelper.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Helpers\\PasswordHelper.cs",
+              "RelativeToolTip": "UserMS\\Logic.ServiceLayer\\Helpers\\PasswordHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "RelativeDocumentMoniker": "UserMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "RelativeToolTip": "UserMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwDUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\IServices\\ITokenService.cs",
+              "RelativeDocumentMoniker": "UserMS\\Logic.ServiceLayer\\IServices\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\IServices\\ITokenService.cs",
+              "RelativeToolTip": "UserMS\\Logic.ServiceLayer\\IServices\\ITokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\IServices\\IUserService.cs",
+              "RelativeDocumentMoniker": "UserMS\\Logic.ServiceLayer\\IServices\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\IServices\\IUserService.cs",
+              "RelativeToolTip": "UserMS\\Logic.ServiceLayer\\IServices\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "UserMS\\API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAswI0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Program.cs",
+              "RelativeDocumentMoniker": "UserMS\\Program.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Program.cs",
+              "RelativeToolTip": "UserMS\\Program.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAqwKMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "UserMS\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Properties\\launchSettings.json",
+              "RelativeToolTip": "UserMS\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-24T09:23:55.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "UserMS\\Logic.ServiceLayer\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Services\\UserService.cs",
+              "RelativeToolTip": "UserMS\\Logic.ServiceLayer\\Services\\UserService.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAAwEsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Data.RepositoryLayer\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "UserMS\\Data.RepositoryLayer\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Data.RepositoryLayer\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "UserMS\\Data.RepositoryLayer\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Data.RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "UserMS\\Data.RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Data.RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "RelativeToolTip": "UserMS\\Data.RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Dockerfile",
+              "RelativeDocumentMoniker": "UserMS\\Dockerfile",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Dockerfile",
+              "RelativeToolTip": "UserMS\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-24T09:23:55.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "UserMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "UserMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Models\\User.cs",
+              "RelativeDocumentMoniker": "UserMS\\Core.DomainLayer\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Models\\User.cs",
+              "RelativeToolTip": "UserMS\\Core.DomainLayer\\Models\\User.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "UserMS\\Logic.ServiceLayer\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Logic.ServiceLayer\\Services\\TokenService.cs",
+              "RelativeToolTip": "UserMS\\Logic.ServiceLayer\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "UserMS\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\appsettings.Development.json",
+              "RelativeToolTip": "UserMS\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-24T09:23:55.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Enums\\UserStatus.cs",
+              "RelativeDocumentMoniker": "UserMS\\Core.DomainLayer\\Enums\\UserStatus.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Enums\\UserStatus.cs",
+              "RelativeToolTip": "UserMS\\Core.DomainLayer\\Enums\\UserStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "UserMS\\Core.DomainLayer\\Enums\\UserRole.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Enums\\UserRole.cs",
+              "RelativeToolTip": "UserMS\\Core.DomainLayer\\Enums\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "UserMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "UserMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ConnectionOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "RelativeDocumentMoniker": "UserMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "RelativeToolTip": "UserMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AbstractExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "UserMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA9wAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "RelativeToolTip": "UserMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserUpdateDTO.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\DTOModels\\UserUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserUpdateDTO.cs",
+              "RelativeToolTip": "UserMS\\API\\DTOModels\\UserUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserResetPasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserResetPasswordDTO.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\DTOModels\\UserResetPasswordDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserResetPasswordDTO.cs",
+              "RelativeToolTip": "UserMS\\API\\DTOModels\\UserResetPasswordDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserLoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserLoginDTO.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\DTOModels\\UserLoginDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserLoginDTO.cs",
+              "RelativeToolTip": "UserMS\\API\\DTOModels\\UserLoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserDTO.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\DTOModels\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserDTO.cs",
+              "RelativeToolTip": "UserMS\\API\\DTOModels\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserCreateDTO.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\DTOModels\\UserCreateDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserCreateDTO.cs",
+              "RelativeToolTip": "UserMS\\API\\DTOModels\\UserCreateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PasswordEncryptionOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Configuration\\PasswordEncryptionOptions.cs",
+              "RelativeDocumentMoniker": "UserMS\\Core.DomainLayer\\Configuration\\PasswordEncryptionOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Configuration\\PasswordEncryptionOptions.cs",
+              "RelativeToolTip": "UserMS\\Core.DomainLayer\\Configuration\\PasswordEncryptionOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthenticationOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "RelativeDocumentMoniker": "UserMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "RelativeToolTip": "UserMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20241022075309_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Migrations\\20241022075309_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "UserMS\\Migrations\\20241022075309_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Migrations\\20241022075309_InitialCreate.Designer.cs",
+              "RelativeToolTip": "UserMS\\Migrations\\20241022075309_InitialCreate.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "UserMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "UserMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserChangePasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserChangePasswordDTO.cs",
+              "RelativeDocumentMoniker": "UserMS\\API\\DTOModels\\UserChangePasswordDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\API\\DTOModels\\UserChangePasswordDTO.cs",
+              "RelativeToolTip": "UserMS\\API\\DTOModels\\UserChangePasswordDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:23:55.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\appsettings.json",
+              "RelativeDocumentMoniker": "UserMS\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\UserMS\\UserMS\\appsettings.json",
+              "RelativeToolTip": "UserMS\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-24T09:23:55.624Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

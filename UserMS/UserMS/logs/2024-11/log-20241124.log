@@ -1,0 +1,83 @@
+[11:24:19 DBG] Hosting starting
+[11:24:19 INF] User profile is available. Using 'C:\Users\Kaan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[11:24:19 DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+[11:24:19 DBG] Policy resolution states that a new key should be added to the key ring.
+[11:24:19 INF] Creating key {e3c8f132-9793-42dc-a650-e7cebb937acd} with creation date 2024-11-24 09:24:19Z, activation date 2024-11-24 09:24:19Z, and expiration date 2025-02-22 09:24:19Z.
+[11:24:19 DBG] Descriptor deserializer type for key {e3c8f132-9793-42dc-a650-e7cebb937acd} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+[11:24:19 DBG] No key escrow sink found. Not writing key {e3c8f132-9793-42dc-a650-e7cebb937acd} to escrow.
+[11:24:19 DBG] Encrypting to Windows DPAPI for current user account (DESKTOP-EVJ05EQ\Kaan).
+[11:24:19 INF] Writing data to file 'C:\Users\Kaan\AppData\Local\ASP.NET\DataProtection-Keys\key-e3c8f132-9793-42dc-a650-e7cebb937acd.xml'.
+[11:24:19 DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+[11:24:19 DBG] Reading data from file 'C:\Users\Kaan\AppData\Local\ASP.NET\DataProtection-Keys\key-e3c8f132-9793-42dc-a650-e7cebb937acd.xml'.
+[11:24:19 DBG] Found key {e3c8f132-9793-42dc-a650-e7cebb937acd}.
+[11:24:19 DBG] Considering key {e3c8f132-9793-42dc-a650-e7cebb937acd} with expiration date 2025-02-22 09:24:19Z as default key.
+[11:24:19 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[11:24:19 DBG] Decrypting secret element using Windows DPAPI.
+[11:24:19 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[11:24:19 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[11:24:19 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[11:24:19 DBG] Using key {e3c8f132-9793-42dc-a650-e7cebb937acd} as the default key.
+[11:24:19 DBG] Key ring with default key {e3c8f132-9793-42dc-a650-e7cebb937acd} was loaded during application startup.
+[11:24:19 DBG] Using development certificate: CN=localhost (Thumbprint: C1BB6751BFFEB2E9AD7479BFEAE97050B4FD493F)
+[11:24:19 INF] Now listening on: https://localhost:7151
+[11:24:19 INF] Application started. Press Ctrl+C to shut down.
+[11:24:19 INF] Hosting environment: Development
+[11:24:19 INF] Content root path: C:\Users\Kaan\Desktop\ds2024_30443_demirezenler_bilge_assignment_2\UserMS\UserMS\
+[11:24:19 DBG] Hosting started
+[11:24:20 DBG] Connection id "0HN8CD73BLCDK" accepted.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDL" accepted.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDK" started.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDL" started.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDL" received FIN.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDK" received FIN.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDM" accepted.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDM" started.
+[11:24:20 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[11:24:20 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[11:24:20 DBG] Connection id "0HN8CD73BLCDL" stopped.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDK" stopped.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDK" sending FIN because: "The Socket transport's send loop completed gracefully."
+[11:24:20 DBG] Connection id "0HN8CD73BLCDL" sending FIN because: "The Socket transport's send loop completed gracefully."
+[11:24:20 DBG] Connection id "0HN8CD73BLCDN" accepted.
+[11:24:20 DBG] Connection id "0HN8CD73BLCDN" started.
+[11:24:20 DBG] Connection 0HN8CD73BLCDM established using the following protocol: "Tls13"
+[11:24:20 DBG] Connection 0HN8CD73BLCDN established using the following protocol: "Tls13"
+[11:24:20 DBG] Wildcard detected, all requests with hosts will be allowed.
+[11:24:20 DBG] HTTP GET /swagger responded 301 in 34.9655 ms
+[11:24:21 DBG] Response markup is scheduled to include Browser Link script injection.
+[11:24:21 DBG] Response markup is scheduled to include browser refresh script injection.
+[11:24:21 DBG] HTTP GET /swagger/index.html responded 200 in 182.0397 ms
+[11:24:21 DBG] Response markup was updated to include Browser Link script injection.
+[11:24:21 DBG] Response markup was updated to include browser refresh script injection.
+[11:24:21 DBG] HTTP GET /swagger/index.js responded 200 in 11.9689 ms
+[11:24:21 INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+[11:24:21 DBG] HTTP GET /swagger/index.css responded 200 in 28.5952 ms
+[11:24:21 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[11:24:21 DBG] HTTP GET /swagger/swagger-ui.css responded 200 in 29.6395 ms
+[11:24:21 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[11:24:21 DBG] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 95.1704 ms
+[11:24:21 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[11:24:21 DBG] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 204.0866 ms
+[11:24:21 INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[11:24:21 DBG] HTTP GET /swagger/favicon-32x32.png responded 200 in 2.0045 ms
+[11:24:21 DBG] HTTP GET /swagger/v1/swagger.json responded 200 in 323.8829 ms
+[11:24:26 DBG] Connection id "0HN8CD73BLCDM" received FIN.
+[11:24:26 DBG] Connection id "0HN8CD73BLCDN" received FIN.
+[11:24:26 DBG] Connection id "0HN8CD73BLCDM" is closed. The last processed stream ID was 21.
+[11:24:26 DBG] Connection id "0HN8CD73BLCDN" is closed. The last processed stream ID was 0.
+[11:24:26 DBG] Connection id "0HN8CD73BLCDM" sending FIN because: "The Socket transport's send loop completed gracefully."
+[11:24:26 DBG] Connection id "0HN8CD73BLCDN" sending FIN because: "The Socket transport's send loop completed gracefully."
+[11:24:26 DBG] Connection id "0HN8CD73BLCDN" stopped.
+[11:24:26 DBG] Connection id "0HN8CD73BLCDM" stopped.
