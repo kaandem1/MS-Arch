@@ -1,0 +1,496 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\logic.servicelayer\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\logic.servicelayer\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\logic.servicelayer\\services\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\logic.servicelayer\\services\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\mapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\mapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\core.domainlayer\\models\\personreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\core.domainlayer\\models\\personreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\data.repositorylayer\\repository\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\data.repositorylayer\\repository\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\data.repositorylayer\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\data.repositorylayer\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\data.repositorylayer\\irepository\\idevicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\data.repositorylayer\\irepository\\idevicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\core.domainlayer\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\core.domainlayer\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\core.domainlayer\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\core.domainlayer\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\devicems.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\devicems.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\dtomodels\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\dtomodels\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\dtomodels\\devicecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\dtomodels\\devicecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\controllers\\personreferencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\controllers\\personreferencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\logic.servicelayer\\iservices\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\logic.servicelayer\\iservices\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\data.repositorylayer\\irepository\\ipersonreferencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\data.repositorylayer\\irepository\\ipersonreferencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\middleware\\abstractexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\middleware\\abstractexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\logic.servicelayer\\services\\personreferenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\logic.servicelayer\\services\\personreferenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\logic.servicelayer\\iservices\\ipersonreferenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\logic.servicelayer\\iservices\\ipersonreferenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\logic.servicelayer\\helpers\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\logic.servicelayer\\helpers\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\data.repositorylayer\\repository\\personreferencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\data.repositorylayer\\repository\\personreferencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\core.domainlayer\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\core.domainlayer\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\core.domainlayer\\configuration\\authenticationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\core.domainlayer\\configuration\\authenticationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\dtomodels\\personreferencedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\dtomodels\\personreferencedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicems\\devicems\\devicems\\api\\dtomodels\\deviceupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2019D78E-6DF3-4460-BD34-CCB8D57A6A20}|DeviceMS\\DeviceMS.csproj|solutionrelative:devicems\\api\\dtomodels\\deviceupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Program.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Program.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Program.cs",
+              "RelativeToolTip": "DeviceMS\\Program.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAqwGcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Logic.ServiceLayer\\Services\\DeviceService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Services\\DeviceService.cs",
+              "RelativeToolTip": "DeviceMS\\Logic.ServiceLayer\\Services\\DeviceService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DeviceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\DeviceDTO.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\DTOModels\\DeviceDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\DeviceDTO.cs",
+              "RelativeToolTip": "DeviceMS\\API\\DTOModels\\DeviceDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IDeviceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\IRepository\\IDeviceRepository.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Data.RepositoryLayer\\IRepository\\IDeviceRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\IRepository\\IDeviceRepository.cs",
+              "RelativeToolTip": "DeviceMS\\Data.RepositoryLayer\\IRepository\\IDeviceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonReference.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Models\\PersonReference.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Core.DomainLayer\\Models\\PersonReference.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Models\\PersonReference.cs",
+              "RelativeToolTip": "DeviceMS\\Core.DomainLayer\\Models\\PersonReference.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "DeviceMS\\Data.RepositoryLayer\\IRepository\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeviceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\Repository\\DeviceRepository.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Data.RepositoryLayer\\Repository\\DeviceRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\Repository\\DeviceRepository.cs",
+              "RelativeToolTip": "DeviceMS\\Data.RepositoryLayer\\Repository\\DeviceRepository.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAcwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeviceMS.csproj",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\DeviceMS.csproj",
+              "RelativeDocumentMoniker": "DeviceMS\\DeviceMS.csproj",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\DeviceMS.csproj",
+              "RelativeToolTip": "DeviceMS\\DeviceMS.csproj",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvw0AAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-23T10:04:37.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "RelativeToolTip": "DeviceMS\\API\\MapperProfile\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RabbitMQProducer.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Services\\RabbitMQProducer.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Logic.ServiceLayer\\Services\\RabbitMQProducer.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Services\\RabbitMQProducer.cs",
+              "RelativeToolTip": "DeviceMS\\Logic.ServiceLayer\\Services\\RabbitMQProducer.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAUwD0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:05:02.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DeviceMS\\Core.DomainLayer\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "DeviceMS\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\appsettings.Development.json",
+              "RelativeToolTip": "DeviceMS\\appsettings.Development.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAnwBoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-23T10:04:37.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DeviceCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\DeviceCreateDTO.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\DTOModels\\DeviceCreateDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\DeviceCreateDTO.cs",
+              "RelativeToolTip": "DeviceMS\\API\\DTOModels\\DeviceCreateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Models\\Device.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Core.DomainLayer\\Models\\Device.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Models\\Device.cs",
+              "RelativeToolTip": "DeviceMS\\Core.DomainLayer\\Models\\Device.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IDeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\IServices\\IDeviceService.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Logic.ServiceLayer\\IServices\\IDeviceService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\IServices\\IDeviceService.cs",
+              "RelativeToolTip": "DeviceMS\\Logic.ServiceLayer\\IServices\\IDeviceService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA5wBgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PersonReferenceController.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\Controllers\\PersonReferenceController.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\Controllers\\PersonReferenceController.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\Controllers\\PersonReferenceController.cs",
+              "RelativeToolTip": "DeviceMS\\API\\Controllers\\PersonReferenceController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAswD4AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\Controllers\\DeviceController.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\Controllers\\DeviceController.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\Controllers\\DeviceController.cs",
+              "RelativeToolTip": "DeviceMS\\API\\Controllers\\DeviceController.cs",
+              "ViewState": "AQIAAOEAAAAAAAAAAMBkwPUAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IPersonReferenceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\IRepository\\IPersonReferenceRepository.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Data.RepositoryLayer\\IRepository\\IPersonReferenceRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\IRepository\\IPersonReferenceRepository.cs",
+              "RelativeToolTip": "DeviceMS\\Data.RepositoryLayer\\IRepository\\IPersonReferenceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AbstractExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "DeviceMS\\API\\Middleware\\AbstractExceptionHandlerMiddleware.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PersonReferenceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\Repository\\PersonReferenceRepository.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Data.RepositoryLayer\\Repository\\PersonReferenceRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Data.RepositoryLayer\\Repository\\PersonReferenceRepository.cs",
+              "RelativeToolTip": "DeviceMS\\Data.RepositoryLayer\\Repository\\PersonReferenceRepository.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "RelativeToolTip": "DeviceMS\\Logic.ServiceLayer\\Helpers\\Validator.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPersonReferenceService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\IServices\\IPersonReferenceService.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Logic.ServiceLayer\\IServices\\IPersonReferenceService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\IServices\\IPersonReferenceService.cs",
+              "RelativeToolTip": "DeviceMS\\Logic.ServiceLayer\\IServices\\IPersonReferenceService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PersonReferenceService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Services\\PersonReferenceService.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Logic.ServiceLayer\\Services\\PersonReferenceService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Services\\PersonReferenceService.cs",
+              "RelativeToolTip": "DeviceMS\\Logic.ServiceLayer\\Services\\PersonReferenceService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "DeviceMS\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PersonReferenceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\PersonReferenceDTO.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\DTOModels\\PersonReferenceDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\PersonReferenceDTO.cs",
+              "RelativeToolTip": "DeviceMS\\API\\DTOModels\\PersonReferenceDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeviceUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\DeviceUpdateDTO.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\API\\DTOModels\\DeviceUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\API\\DTOModels\\DeviceUpdateDTO.cs",
+              "RelativeToolTip": "DeviceMS\\API\\DTOModels\\DeviceUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthenticationOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "RelativeToolTip": "DeviceMS\\Core.DomainLayer\\Configuration\\AuthenticationOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ConnectionOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "RelativeDocumentMoniker": "DeviceMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "RelativeToolTip": "DeviceMS\\Core.DomainLayer\\Configuration\\ConnectionOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:04:37.52Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<div class="flex justify-end items-center mb-6">
+    <button (click)="toggleEditDevices()" 
+            class="px-4 py-2 rounded-lg bg-green-500 text-white font-semibold hover:bg-green-600 shadow-md transition duration-300">
+      Edit Devices
+    </button>
+  </div>
+
+  <div *ngIf="devices && devices.length > 0">
+    <h3 class="text-green-600 font-bold text-2xl mb-4">User's Devices</h3>
+    <ul class="list-none p-0">
+      <li *ngFor="let device of devices" class="device-card p-4 border border-gray-200 rounded-lg mb-2 shadow-sm hover:shadow-lg transition duration-300">
+        <div class="flex justify-between items-center">
+          <a [routerLink]="['/device-details', device.id]" class="device-name font-medium text-lg text-blue-600 hover:text-blue-800">
+            {{ device.deviceName }}
+          </a>
+          <button *ngIf="isEditDevices" (click)="removeDevice(device.id)" class="text-red-600 hover:text-red-800">
+            <i class="fas fa-minus-circle text-xl"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngIf="!devices || devices.length === 0" class="text-red-600">
+    <p>No devices found for this user.</p>
+  </div>
+
+  <div *ngIf="isEditDevices && unownedDevices.length > 0" class="mt-6">
+    <h3 class="text-green-600 font-bold text-2xl mb-4">Unowned Devices</h3>
+    <ul class="list-none p-0">
+      <li *ngFor="let device of unownedDevices" class="device-card p-4 border border-gray-200 rounded-lg mb-2 shadow-sm hover:shadow-lg transition duration-300">
+        <div class="flex justify-between items-center">
+          <span class="device-name font-medium text-lg">{{ device.deviceName }}</span>
+          <button (click)="assignDeviceToUser(device.id)" class="text-green-600 hover:text-green-800">
+            <i class="fas fa-plus-circle text-xl"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,33 @@
+<nav class="sticky top-0 z-50 bg-green-50">
+  <ng-container *ngIf="displayNavBar">
+    <div class="z-10">
+      <div class="nav-bar">
+        <div>
+          <div class="flex items-center text-green-600 text-4xl m-4 mx-10 font-Quicksand font-bold">
+            <button (click)="display = true" class="text-green-600 bg-transparent border-none cursor-pointer font-bold">
+              Kaanergize
+            </button>
+          </div>
+        </div>
+
+        <div class="HalfNav">
+          <form (ngSubmit)="onSearch()">
+            <input 
+              [(ngModel)]="searchTerm" 
+              name="searchTerm" 
+              class="border-solid border-green-600 border-2 bg-green-300 rounded-full w-[35rem] focus:bg-green-400 focus:outline-none h-10 p-4 select-none text-gray-800" 
+              placeholder="Search for Devices"
+            >
+          </form>
+        </div>
+      </div>
+
+      <p-sidebar [visible]="display">
+        <ng-template pTemplate="headless">
+          <p-button class="absolute" (onClick)="display = false"><i class="pi pi-times text-xl text-green-800"></i></p-button>
+          <home-menu></home-menu>
+        </ng-template>
+      </p-sidebar>
+    </div>
+  </ng-container>
+</nav>
