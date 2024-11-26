@@ -40,13 +40,6 @@ namespace DeviceMS.Logic.ServiceLayer.Services
         public async Task<Device> CreateAsync(Device device)
         {
             var createdDevice = await _deviceRepository.InsertAsync(device);
-            var deviceInfoDTO = new DeviceInfoDTO
-            {
-                Id = createdDevice.Id,
-                MaxHourlyCons = createdDevice.MaxHourlyCons
-            };
-
-            _rabbitMQProducer.SendDeviceInfo(deviceInfoDTO);
 
             return createdDevice;
         }

@@ -1,12 +1,241 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\services\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\services\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\models\\devicemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\models\\devicemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\models\\deviceconsumption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\models\\deviceconsumption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\repositorylayer\\deviceinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\repositorylayer\\deviceinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\services\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\services\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\models\\dtomodels\\deviceinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\models\\dtomodels\\deviceinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\mcms\\mcms\\repositorylayer\\ideviceconsumptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCDC190-113B-4EA2-B6C9-95590A372012}|MCMS\\MCMS.csproj|solutionrelative:mcms\\repositorylayer\\ideviceconsumptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MCMS\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MCMS\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-26T14:45:22.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeviceMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Models\\DeviceMessage.cs",
+              "RelativeDocumentMoniker": "MCMS\\Models\\DeviceMessage.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Models\\DeviceMessage.cs",
+              "RelativeToolTip": "MCMS\\Models\\DeviceMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:02:59.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConnectionOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Configuration\\ConnectionOptions.cs",
+              "RelativeDocumentMoniker": "MCMS\\Configuration\\ConnectionOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Configuration\\ConnectionOptions.cs",
+              "RelativeToolTip": "MCMS\\Configuration\\ConnectionOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T08:18:03.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RabbitMQConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Services\\RabbitMQConsumer.cs",
+              "RelativeDocumentMoniker": "MCMS\\Services\\RabbitMQConsumer.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Services\\RabbitMQConsumer.cs",
+              "RelativeToolTip": "MCMS\\Services\\RabbitMQConsumer.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAiwF0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T08:49:00.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDeviceConsumptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\RepositoryLayer\\IDeviceConsumptionRepository.cs",
+              "RelativeDocumentMoniker": "MCMS\\RepositoryLayer\\IDeviceConsumptionRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\RepositoryLayer\\IDeviceConsumptionRepository.cs",
+              "RelativeToolTip": "MCMS\\RepositoryLayer\\IDeviceConsumptionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:14:01.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Program.cs",
+              "RelativeDocumentMoniker": "MCMS\\Program.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Program.cs",
+              "RelativeToolTip": "MCMS\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:12:21.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "MCMS\\Services\\DeviceService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Services\\DeviceService.cs",
+              "RelativeToolTip": "MCMS\\Services\\DeviceService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAowDkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:03:10.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeviceInfoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\RepositoryLayer\\DeviceInfoRepository.cs",
+              "RelativeDocumentMoniker": "MCMS\\RepositoryLayer\\DeviceInfoRepository.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\RepositoryLayer\\DeviceInfoRepository.cs",
+              "RelativeToolTip": "MCMS\\RepositoryLayer\\DeviceInfoRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:12:30.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MCMS\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "MCMS\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:00:31.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeviceConsumption.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Models\\DeviceConsumption.cs",
+              "RelativeDocumentMoniker": "MCMS\\Models\\DeviceConsumption.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Models\\DeviceConsumption.cs",
+              "RelativeToolTip": "MCMS\\Models\\DeviceConsumption.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T08:55:11.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Services\\IDeviceService.cs",
+              "RelativeDocumentMoniker": "MCMS\\Services\\IDeviceService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Services\\IDeviceService.cs",
+              "RelativeToolTip": "MCMS\\Services\\IDeviceService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:52:40.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeviceInfoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Models\\DTOModels\\DeviceInfoDTO.cs",
+              "RelativeDocumentMoniker": "MCMS\\Models\\DTOModels\\DeviceInfoDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\Models\\DTOModels\\DeviceInfoDTO.cs",
+              "RelativeToolTip": "MCMS\\Models\\DTOModels\\DeviceInfoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T08:49:15.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\appsettings.json",
+              "RelativeDocumentMoniker": "MCMS\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\MCMS\\MCMS\\appsettings.json",
+              "RelativeToolTip": "MCMS\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-25T18:37:49.899Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

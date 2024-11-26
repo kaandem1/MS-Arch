@@ -6,7 +6,7 @@ namespace DeviceMS.API.DTOModels
     {
         public int Id { get; set; }
         public float MaxHourlyCons { get; set; }
-
+        public string Operation { get; set; } 
 
     }
 }

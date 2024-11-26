@@ -2,6 +2,7 @@ using MCMS.Data;
 using MCMS.Services;
 using MCMS.RepositoryLayer;
 using MCMS.Models;
+using MCMS.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -12,10 +13,10 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 string CORSOpenPolicy = "OpenCORSPolicy";
-
+ConectionOptions conectionsOptions = builder.Configuration.GetSection(ConectionOptions.Connection).Get<ConectionOptions>();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<AppDbContext>(
+        options => options.UseSqlServer(conectionsOptions.DefaultConection));
 
 // Logging configuration
 builder.Host.UseSerilog((context, config) =>
@@ -29,8 +30,9 @@ builder.Host.UseSerilog((context, config) =>
                         outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}");
 });
 
-builder.Services.AddScoped<IDeviceInfoRepository, DeviceInfoRepository>();
-builder.Services.AddScoped<IMeasurementRepository, MeasurementRepository>();
+builder.Services.AddScoped<IDeviceConsumptionRepository, DeviceInfoRepository>();
+builder.Services.AddScoped<IDeviceService, DeviceService>();
+builder.Services.AddSingleton<RabbitMQConsumer>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
@@ -45,7 +47,6 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "MCMS API", Version = "v1" });
 });
-
 
 builder.Services.AddCors(options =>
 {
@@ -87,5 +88,9 @@ app.UseCors(CORSOpenPolicy);
 app.UseAuthorization();
 
 app.MapControllers();
+
+var rabbitMQConsumer = app.Services.GetRequiredService<RabbitMQConsumer>();
+await rabbitMQConsumer.StartListeningAsync();
+
 
 app.Run();

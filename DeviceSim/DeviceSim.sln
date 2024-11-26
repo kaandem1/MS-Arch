@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceSim", "DeviceSim\DeviceSim.csproj", "{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC134E9A-85CF-41FD-81B0-3338024D3F77}
+	EndGlobalSection
+EndGlobal

@@ -6,6 +6,6 @@ namespace MCMS.Models.DTOModels
     {
         public int Id { get; set; }
         public float MaxHourlyCons { get; set; }
-        public ICollection<Measurement> Measurements { get; set; } = new List<Measurement>();
+        public string Operation { get; set; } 
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeviceMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc395d246f88c6c5779edfc699c6137e624895e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d226081f70dd2891a9a50757e6b48e320467f0bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeviceMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeviceMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

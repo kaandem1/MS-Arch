@@ -45,6 +45,8 @@
 		<Folder Include="Controllers\" />
 		<Folder Include="logs\" />
 		<Folder Include="Models\DTOModels\" />
+		<Folder Include="Migrations\" />
+		<Folder Include="Configuration\" />
 		<Folder Include="Services\" />
 	</ItemGroup>
 

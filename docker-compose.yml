@@ -19,7 +19,7 @@ services:
     networks:
       - app-network
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - "/var/run/docker.sock:/var/run/docker.sock"
       - "./traefik-certificates:/certificates"
   
   rabbitmq:
@@ -31,6 +31,11 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: admin
       RABBITMQ_DEFAULT_PASS: admin
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:15672"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.rabbitmq.rule=Host(`rabbitmq.localhost`)"
@@ -39,20 +44,6 @@ services:
     networks:
       - app-network
     
-  device-db:
-    image: mcr.microsoft.com/mssql/server
-    container_name: device-db
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=YourStrong!Passw0rd
-      - MSSQL_PID=Developer
-    ports:
-      - "1434:1433"
-    volumes:
-      - device_data:/var/opt/mssql
-    networks:
-      - app-network
-  
   user-db:
     image: mcr.microsoft.com/mssql/server
     container_name: user-db
@@ -67,15 +58,29 @@ services:
     networks:
       - app-network
 
-  mcms-db:
+  device-db:
     image: mcr.microsoft.com/mssql/server
-    container_name: mcms-db
+    container_name: device-db
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=YourStrong!Passw0rd
       - MSSQL_PID=Developer
     ports:
-      - "1436:1433"
+      - "1434:1433"
+    volumes:
+      - device_data:/var/opt/mssql
+    networks:
+      - app-network
+
+  mc-db:
+    image: mcr.microsoft.com/mssql/server
+    container_name: mc-db
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Passw0rd
+      - MSSQL_PID=Developer
+    ports:
+      - "1437:1433"
     volumes:
       - mc_data:/var/opt/mssql
     networks:
@@ -85,8 +90,13 @@ services:
     build:
       context: ./DeviceMS/DeviceMS/DeviceMS
       dockerfile: Dockerfile
+    depends_on:
+      - device-db
+      - rabbitmq
     networks:
       - app-network
+    ports:
+      - 7155:80
     environment:
       - ConnectionStrings__DefaultConnection=Server=host.docker.internal
       - Database=device-db
@@ -99,18 +109,23 @@ services:
     labels:
     - "traefik.enable=true"
     - "traefik.http.routers.device-ms.rule=PathPrefix(`/api/Device`) || PathPrefix(`/api/PersonReference`)"
-    - "traefik.http.services.device-ms.loadbalancer.server.port=7155"
+    - "traefik.http.services.device-ms.loadbalancer.server.port=80"
     - "traefik.docker.network=app-network"
 
   mc-ms:
     build:
       context: ./MCMS/MCMS
       dockerfile: Dockerfile
+    depends_on:
+      - mc-db
+      - rabbitmq
     networks:
       - app-network
+    ports:
+      - 7282:80
     environment:
       - ConnectionStrings__DefaultConnection=Server=host.docker.internal
-      - Database=mcms-db
+      - Database=mc-db
       - TrustServerCertificate=True
       - Connection Timeout=30
       - RabbitMQ__HostName=rabbitmq
@@ -119,18 +134,22 @@ services:
       - RabbitMQ__Password=admin
     labels:
     - "traefik.enable=true"
-    - "traefik.http.services.device-ms.loadbalancer.server.port=7159"
+    - "traefik.http.services.mc-ms.loadbalancer.server.port=80"
     - "traefik.docker.network=app-network"
 
   user-ms:
     build:
       context: ./UserMS/UserMS
       dockerfile: Dockerfile
+    depends_on:
+      - user-db
     networks:
       - app-network
+    ports:
+      - 7151:80
     environment:
       - ConnectionStrings__DefaultConnection=Server=host.docker.internal
-      - Database=device-db
+      - Database=user-db
       - TrustServerCertificate=True
       - Connection Timeout=30
       - RabbitMQ__HostName=rabbitmq
@@ -140,8 +159,25 @@ services:
     labels:
     - "traefik.enable=true"
     - "traefik.http.routers.user-ms.rule=PathPrefix(`/api/User`)"
-    - "traefik.http.services.user-ms.loadbalancer.server.port=7151" 
+    - "traefik.http.services.user-ms.loadbalancer.server.port=80" 
     - "traefik.docker.network=app-network"
+
+  device-sim:
+    build:
+      context: ./DeviceSim/DeviceSim
+      dockerfile: Dockerfile
+    container_name: device-sim
+    volumes:
+      - ./sensor.csv:/app/sensor.csv
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=admin
+      - RABBITMQ_PASSWORD=admin
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
 
   frontend:
     image: kaan_frontend
@@ -149,7 +185,6 @@ services:
       - app-network
     labels:
     - "traefik.enable=true"
-    - "traefik.port=8080" 
     - "traefik.http.routers.frontend.rule=Host(`localhost`)"
     - "traefik.http.services.frontend.loadbalancer.server.port=8080"
     - "traefik.docker.network=app-network"

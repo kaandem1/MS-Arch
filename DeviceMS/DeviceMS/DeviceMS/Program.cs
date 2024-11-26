@@ -63,6 +63,15 @@ builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddControllers();
 
+builder.Services.AddSingleton<RabbitMQProducer>(sp =>
+{
+    var configuration = sp.GetRequiredService<IConfiguration>();
+    string hostName = configuration["RabbitMQ:HostName"]; 
+    string userName = configuration["RabbitMQ:UserName"];
+    string password = configuration["RabbitMQ:Password"];
+    return new RabbitMQProducer(hostName, userName, password);
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -101,7 +110,7 @@ builder.Services.AddCors(options => {
     options.AddPolicy(
         name: CORSOpenPolicy,
         builder => {
-            builder.WithOrigins("http://localhost:8080")
+            builder.WithOrigins("http://localhost:8080","http://localhost")
                    .AllowAnyHeader()
                    .AllowAnyMethod()
                    .AllowCredentials();

@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\devicesimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\devicesimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\devicesim.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\devicesim.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\devicemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\devicemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\irabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\irabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\devicesim\\devicesim\\devicesimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C790AFAE-ED05-4B74-9590-D21A7E7EF8F5}|DeviceSim\\DeviceSim.csproj|solutionrelative:devicesim\\devicesimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeviceSim",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceSim.csproj",
+              "RelativeDocumentMoniker": "DeviceSim\\DeviceSim.csproj",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceSim.csproj",
+              "RelativeToolTip": "DeviceSim\\DeviceSim.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-26T11:14:52.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeviceMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceMessage.cs",
+              "RelativeDocumentMoniker": "DeviceSim\\DeviceMessage.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceMessage.cs",
+              "RelativeToolTip": "DeviceSim\\DeviceMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:21:00.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRabbitMQProducer.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\IRabbitMQProducer.cs",
+              "RelativeDocumentMoniker": "DeviceSim\\IRabbitMQProducer.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\IRabbitMQProducer.cs",
+              "RelativeToolTip": "DeviceSim\\IRabbitMQProducer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:19:46.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\appsettings.json",
+              "RelativeDocumentMoniker": "DeviceSim\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\appsettings.json",
+              "RelativeToolTip": "DeviceSim\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-26T11:15:01.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RabbitMQProducer.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\RabbitMQProducer.cs",
+              "RelativeDocumentMoniker": "DeviceSim\\RabbitMQProducer.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\RabbitMQProducer.cs",
+              "RelativeToolTip": "DeviceSim\\RabbitMQProducer.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwCYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:13:39.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeviceSimulator.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceSimulator.cs",
+              "RelativeDocumentMoniker": "DeviceSim\\DeviceSimulator.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceSimulator.cs",
+              "RelativeToolTip": "DeviceSim\\DeviceSimulator.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAEwDUAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:13:12.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeviceSimService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceSimService.cs",
+              "RelativeDocumentMoniker": "DeviceSim\\DeviceSimService.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\DeviceSimService.cs",
+              "RelativeToolTip": "DeviceSim\\DeviceSimService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:12:23.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\Program.cs",
+              "RelativeDocumentMoniker": "DeviceSim\\Program.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceSim\\DeviceSim\\Program.cs",
+              "RelativeToolTip": "DeviceSim\\Program.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAvwDYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:05:56.284Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

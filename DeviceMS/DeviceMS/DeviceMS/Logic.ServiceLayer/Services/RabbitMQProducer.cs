@@ -8,6 +8,7 @@ using DeviceMS.API.DTOModels;
 
 namespace DeviceMS.Logic.ServiceLayer.Services
 {
+   
     public class RabbitMQProducer
     {
         private readonly string _hostName;
@@ -23,40 +24,45 @@ namespace DeviceMS.Logic.ServiceLayer.Services
 
         public void SendDeviceInfo(DeviceInfoDTO deviceInfo)
         {
-            var factory = new ConnectionFactory
+            int retries = 0;
+            const int maxRetries = 10;
+            const int retryDelay = 5000;
+
+            while (retries < maxRetries)
             {
-                HostName = "rabbitmq",
-                UserName = "admin",
-                Password = "admin"
-            };
+                try
+                {
+                    var factory = new ConnectionFactory
+                    {
+                        HostName = "host.docker.internal",
+                        UserName = "admin",
+                        Password = "admin",
+                        Port = 5672,
+                        VirtualHost = "/"
+                    };
 
-            // Create a connection
-            using var connection = factory.CreateConnection("DeviceMS-Producer");
-            // Create a channel
-            using var channel = connection.CreateModel();
+                    using var connection = factory.CreateConnection("DeviceMS-Producer");
+                    using var channel = connection.CreateModel();
 
-            string queueName = "DeviceInfoQueue";
+                    string queueName = "DeviceInfoQueue";
+                    channel.QueueDeclare(queue: queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
 
-            // Ensure the queue exists in case the consumer hasn't declared it yet
-            channel.QueueDeclare(
-                queue: queueName,
-                durable: true,
-                exclusive: false,
-                autoDelete: false,
-                arguments: null);
+                    var message = JsonSerializer.Serialize(deviceInfo);
+                    var body = Encoding.UTF8.GetBytes(message);
 
-            // Serialize the deviceInfo object to JSON
-            var message = JsonSerializer.Serialize(deviceInfo);
-            var body = Encoding.UTF8.GetBytes(message);
+                    channel.BasicPublish(exchange: "", routingKey: queueName, basicProperties: null, body: body);
 
-            // Publish the message to the queue
-            channel.BasicPublish(
-                exchange: "",
-                routingKey: queueName,
-                basicProperties: null,
-                body: body);
-
-            Console.WriteLine($"[x] Sent device info: Id={deviceInfo.Id}, MaxHourlyCons={deviceInfo.MaxHourlyCons}");
+                    Console.WriteLine($"[x] Sent message: {message}");
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    retries++;
+                    Console.WriteLine($"Failed to send message. Retry {retries}/{maxRetries}. Error: {ex.Message}");
+                    if (retries == maxRetries) throw;
+                    Task.Delay(retryDelay).Wait();
+                }
+            }
         }
     }
 }

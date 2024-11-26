@@ -1,11 +1,13 @@
 using MCMS.Data;
-using MCMS.Models.DTOModels;
+using MCMS.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MCMS.RepositoryLayer
 {
-    public class DeviceInfoRepository : IDeviceInfoRepository
+    public class DeviceInfoRepository : IDeviceConsumptionRepository
     {
         private readonly AppDbContext _dbContext;
 
@@ -14,42 +16,43 @@ namespace MCMS.RepositoryLayer
             _dbContext = dbContext;
         }
 
-        public async Task<DeviceInfoDTO> FindByIdAsync(int id)
+        public async Task<DeviceConsumption> FindByIdAsync(int id)
         {
-            return await _dbContext.Devices.FirstOrDefaultAsync(d => d.Id == id);
+            return await _dbContext.DeviceConsumptions
+                                    .FirstOrDefaultAsync(d => d.DeviceId == id);
         }
 
-        public async Task<DeviceInfoDTO> InsertAsync(DeviceInfoDTO entity)
+        public async Task<DeviceConsumption> InsertAsync(DeviceConsumption entity)
         {
-            await _dbContext.Devices.AddAsync(entity);
+            await _dbContext.DeviceConsumptions.AddAsync(entity);
             await _dbContext.SaveChangesAsync();
 
             return entity;
         }
 
-        public async Task UpdateAsync(DeviceInfoDTO entity)
+        public async Task UpdateAsync(DeviceConsumption entity)
         {
-            _dbContext.Devices.Attach(entity);
+            _dbContext.DeviceConsumptions.Attach(entity);
             _dbContext.Entry(entity).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }
 
         public async Task DeleteByIdAsync(int id)
         {
-            var device = await _dbContext.Devices.FirstOrDefaultAsync(d => d.Id == id);
+            var device = await _dbContext.DeviceConsumptions
+                                         .FirstOrDefaultAsync(d => d.DeviceId == id);
             if (device != null)
             {
-                _dbContext.Devices.Remove(device);
+                _dbContext.DeviceConsumptions.Remove(device);
                 await _dbContext.SaveChangesAsync();
             }
         }
 
-        public async Task<IEnumerable<DeviceInfoDTO>> GetByDeviceIdAsync(int deviceId)
+        public async Task<IEnumerable<DeviceConsumption>> GetByDeviceIdAsync(int deviceId)
         {
-            return await _dbContext.Devices
-                                   .Where(d => d.Id == deviceId)
+            return await _dbContext.DeviceConsumptions
+                                   .Where(d => d.DeviceId == deviceId)
                                    .ToListAsync();
         }
-
     }
 }
