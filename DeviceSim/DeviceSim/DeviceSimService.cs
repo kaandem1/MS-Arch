@@ -19,16 +19,15 @@ namespace DeviceSim
             _logger = logger;
         }
 
-        public Task StartAsync(CancellationToken cancellationToken)
+        public async Task StartAsync(CancellationToken cancellationToken)
         {
             _logger.LogInformation("Device Simulator Service is starting.");
 
-            Task.Delay(30000).Wait();
+            await Task.Delay(30000, cancellationToken);
 
             _timer = new Timer(ExecuteDeviceSimulators, null, TimeSpan.Zero, TimeSpan.FromSeconds(10));
-
-            return Task.CompletedTask;
         }
+
 
 
         private async void ExecuteDeviceSimulators(object state)

@@ -18,7 +18,6 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(
         options => options.UseSqlServer(conectionsOptions.DefaultConection));
 
-// Logging configuration
 builder.Host.UseSerilog((context, config) =>
 {
     config.MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
@@ -32,10 +31,12 @@ builder.Host.UseSerilog((context, config) =>
 
 builder.Services.AddScoped<IDeviceConsumptionRepository, DeviceInfoRepository>();
 builder.Services.AddScoped<IDeviceService, DeviceService>();
-builder.Services.AddSingleton<RabbitMQConsumer>();
+
+builder.Services.AddScoped<RabbitMQConsumer>();
 
 builder.Services.AddAutoMapper(typeof(Program));
-
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -53,7 +54,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: CORSOpenPolicy,
         policy =>
         {
-            policy.WithOrigins("http://localhost:8080")
+            policy.WithOrigins("http://localhost:8080", "http://localhost")
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials();
@@ -62,10 +63,9 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
     app.UseSerilogRequestLogging(options =>
     {
         options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
@@ -77,6 +77,9 @@ if (app.Environment.IsDevelopment())
             diagnosticContext.Set("ResponseStatusCode", httpContext.Response.StatusCode);
         };
     });
+
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 else
 {
@@ -86,11 +89,13 @@ else
 app.UseHttpsRedirection();
 app.UseCors(CORSOpenPolicy);
 app.UseAuthorization();
-
 app.MapControllers();
 
-var rabbitMQConsumer = app.Services.GetRequiredService<RabbitMQConsumer>();
-await rabbitMQConsumer.StartListeningAsync();
 
+using (var scope = app.Services.CreateScope())
+ {
+     var rabbitMQConsumer = scope.ServiceProvider.GetRequiredService<RabbitMQConsumer>();
+     await rabbitMQConsumer.StartListeningAsync();
+}
 
 app.Run();

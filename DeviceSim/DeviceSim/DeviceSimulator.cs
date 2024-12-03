@@ -1,16 +1,19 @@
 ﻿using CsvHelper;
-using CsvHelper.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace DeviceSim
 {
     public interface IDeviceSimulator
     {
+        void StartSimulation();
         Task SendSimulatedValuesAsync();
     }
 
@@ -19,10 +22,10 @@ namespace DeviceSim
         private readonly IConfiguration _configuration;
         private readonly IRabbitMQProducer _rabbitMQProducer;
         private readonly ILogger<DeviceSimulator> _logger;
-        private readonly List<DeviceConfig> _deviceConfigs;
-        private readonly List<DeviceMeasurement> _csvData;
-
-        private readonly Dictionary<string, float> _lastSentValues;
+        private readonly string _csvFilePath;
+        private readonly List<string> _deviceIds;
+        private readonly Dictionary<string, System.Timers.Timer> _timers;
+        private readonly Dictionary<string, StreamReader> _csvReaders;
 
         public DeviceSimulator(IConfiguration configuration, IRabbitMQProducer rabbitMQProducer, ILogger<DeviceSimulator> logger)
         {
@@ -30,109 +33,98 @@ namespace DeviceSim
             _rabbitMQProducer = rabbitMQProducer;
             _logger = logger;
 
-            _deviceConfigs = _configuration.GetSection("DeviceConfigs").Get<List<DeviceConfig>>();
-            _csvData = ReadCsvData("sensor.csv");
+            _csvFilePath = Path.Combine(Directory.GetCurrentDirectory(), "sensor.csv");
+            _deviceIds = _configuration.GetSection("DeviceConfigs").Get<List<DeviceConfig>>().ConvertAll(d => d.DeviceId);
+            _timers = new Dictionary<string, System.Timers.Timer>();
+            _csvReaders = new Dictionary<string, StreamReader>();
 
-            _lastSentValues = new Dictionary<string, float>();
+            InitializeCsvReaders();
         }
 
         public async Task SendSimulatedValuesAsync()
         {
-            if (!_deviceConfigs.Any() || !_csvData.Any())
+            foreach (var deviceId in _deviceIds)
             {
-                _logger.LogError("Device configurations or CSV data is empty. Cannot start simulation.");
+                await SimulateDeviceMeasurement(deviceId);
+            }
+        }
+
+        public void StartSimulation()
+        {
+            if (_deviceIds.Count == 0)
+            {
+                _logger.LogError("No device configurations found. Simulation aborted.");
                 return;
             }
 
-            int index = 0;
-            int measurementCount = _csvData.Count;
-
-            while (true)
+            foreach (var deviceId in _deviceIds)
             {
-                var measurement = _csvData[index];
-                var timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-                await SendDeviceMessageAsync("11", measurement.Value, timestamp);
-                await SendDeviceMessageAsync("12", measurement.Value, timestamp);
-
-                index = (index + 1) % measurementCount;
-                await Task.Delay(10000);
+                StartDeviceTimer(deviceId);
             }
         }
 
-        private async Task SendDeviceMessageAsync(string deviceId, float measurementValue, long timestamp)
+        private void InitializeCsvReaders()
         {
-            if (!_lastSentValues.ContainsKey(deviceId) || _lastSentValues[deviceId] != measurementValue)
+            foreach (var deviceId in _deviceIds)
             {
-                var message = new DeviceMessage
+                try
                 {
-                    Timestamp = timestamp,
-                    DeviceId = deviceId,
-                    MeasurementValue = measurementValue
-                };
-
-                await _rabbitMQProducer.SendMessageAsync(message);
-                _logger.LogInformation($"Device {deviceId}: Value = {measurementValue}");
-
-                _lastSentValues[deviceId] = measurementValue;
-            }
-            else
-            {
-                _logger.LogInformation($"Device {deviceId}: No value change, skipping message.");
+                    _csvReaders[deviceId] = new StreamReader(new FileStream(_csvFilePath, FileMode.Open, FileAccess.Read));
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError($"Error initializing CSV reader for device {deviceId}: {ex.Message}");
+                }
             }
         }
 
-        private List<DeviceMeasurement> ReadCsvData(string filePath)
+        private void StartDeviceTimer(string deviceId)
         {
-            var measurements = new List<DeviceMeasurement>();
+            var timer = new System.Timers.Timer(10000);
+            timer.Elapsed += async (sender, e) => await SimulateDeviceMeasurement(deviceId);
+            timer.AutoReset = true;
+            timer.Enabled = true;
+            _timers[deviceId] = timer;
+        }
 
+        private async Task SimulateDeviceMeasurement(string deviceId)
+        {
             try
             {
-                string fullPath = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-
-                if (!File.Exists(fullPath))
+                if (_csvReaders[deviceId].EndOfStream)
                 {
-                    _logger.LogError($"CSV file not found: {fullPath}");
-                    return measurements;
+                    _logger.LogInformation($"End of CSV file reached for device {deviceId}. Resetting reader.");
+                    _csvReaders[deviceId].BaseStream.Seek(0, SeekOrigin.Begin);
+                    _csvReaders[deviceId].DiscardBufferedData();
                 }
 
-                using (var reader = new StreamReader(fullPath))
-                using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
+                var line = _csvReaders[deviceId].ReadLine();
+                if (float.TryParse(line, out var measurementValue))
                 {
-                    HasHeaderRecord = false,
-                }))
-                {
-                    csv.Context.RegisterClassMap<DeviceMeasurementMap>();
-
-                    measurements = csv.GetRecords<DeviceMeasurement>().ToList();
-
-                    _logger.LogInformation($"Loaded {measurements.Count} measurement(s) from {filePath}.");
-
-                    for (int i = 0; i < measurements.Count; i++)
+                    var message = new DeviceMessage
                     {
-                        _logger.LogInformation($"Measurement {i + 1}: Value = {measurements[i].Value}");
-                    }
+                        Timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+                        DeviceId = deviceId,
+                        MeasurementValue = measurementValue
+                    };
+
+                    await _rabbitMQProducer.SendMessageAsync(message);
+                    _logger.LogInformation($"Sent message from Device {deviceId}: {JsonSerializer.Serialize(message)}");
+                }
+                else
+                {
+                    _logger.LogWarning($"Invalid data in CSV for device {deviceId}: {line}");
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error reading CSV file: {ex.Message}");
+                _logger.LogError($"Error simulating measurement for device {deviceId}: {ex.Message}");
             }
-
-            return measurements;
         }
     }
 
-    public class DeviceMeasurement
+    public class DeviceConfig
     {
-        public float Value { get; set; }
+        public string DeviceId { get; set; }
     }
-
-    public class DeviceMeasurementMap : ClassMap<DeviceMeasurement>
-    {
-        public DeviceMeasurementMap()
-        {
-            Map(m => m.Value).Index(0);
-        }
-    }
-
 }

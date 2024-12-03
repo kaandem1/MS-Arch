@@ -18,8 +18,20 @@ namespace MCMS.RepositoryLayer
 
         public async Task<DeviceConsumption> FindByIdAsync(int id)
         {
-            return await _dbContext.DeviceConsumptions
-                                    .FirstOrDefaultAsync(d => d.DeviceId == id);
+            Console.WriteLine($"Querying database for DeviceConsumption with deviceId: {id}");
+            var consumption = await _dbContext.DeviceConsumptions
+                                              .FirstOrDefaultAsync(d => d.DeviceId == id);
+
+            if (consumption == null)
+            {
+                Console.WriteLine($"No consumption data found for deviceId: {id}");
+            }
+            else
+            {
+                Console.WriteLine($"Found consumption data for deviceId: {id}");
+            }
+
+            return consumption;
         }
 
         public async Task<DeviceConsumption> InsertAsync(DeviceConsumption entity)

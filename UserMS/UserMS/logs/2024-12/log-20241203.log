@@ -1,0 +1,70 @@
+[12:00:03 DBG] Hosting starting
+[12:00:03 INF] User profile is available. Using 'C:\Users\Kaan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[12:00:03 DBG] Reading data from file 'C:\Users\Kaan\AppData\Local\ASP.NET\DataProtection-Keys\key-e3c8f132-9793-42dc-a650-e7cebb937acd.xml'.
+[12:00:03 DBG] Found key {e3c8f132-9793-42dc-a650-e7cebb937acd}.
+[12:00:03 DBG] Considering key {e3c8f132-9793-42dc-a650-e7cebb937acd} with expiration date 2025-02-22 09:24:19Z as default key.
+[12:00:03 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:00:03 DBG] Decrypting secret element using Windows DPAPI.
+[12:00:03 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[12:00:03 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[12:00:03 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[12:00:03 DBG] Using key {e3c8f132-9793-42dc-a650-e7cebb937acd} as the default key.
+[12:00:03 DBG] Key ring with default key {e3c8f132-9793-42dc-a650-e7cebb937acd} was loaded during application startup.
+[12:00:04 DBG] Using development certificate: CN=localhost (Thumbprint: C1BB6751BFFEB2E9AD7479BFEAE97050B4FD493F)
+[12:00:04 INF] Now listening on: https://localhost:7151
+[12:00:04 INF] Application started. Press Ctrl+C to shut down.
+[12:00:04 INF] Hosting environment: Development
+[12:00:04 INF] Content root path: C:\Users\Kaan\Desktop\ds2024_30443_demirezenler_bilge_assignment_2\UserMS\UserMS\
+[12:00:04 DBG] Hosting started
+[12:00:04 DBG] Connection id "0HN8JG517SEDM" received FIN.
+[12:00:04 DBG] Connection id "0HN8JG517SEDL" received FIN.
+[12:00:04 DBG] Connection id "0HN8JG517SEDM" accepted.
+[12:00:04 DBG] Connection id "0HN8JG517SEDL" accepted.
+[12:00:04 DBG] Connection id "0HN8JG517SEDL" started.
+[12:00:04 DBG] Connection id "0HN8JG517SEDM" started.
+[12:00:04 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[12:00:04 DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+[12:00:04 DBG] Connection id "0HN8JG517SEDM" stopped.
+[12:00:04 DBG] Connection id "0HN8JG517SEDL" stopped.
+[12:00:04 DBG] Connection id "0HN8JG517SEDL" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:00:04 DBG] Connection id "0HN8JG517SEDM" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:00:04 DBG] Connection id "0HN8JG517SEDN" accepted.
+[12:00:04 DBG] Connection id "0HN8JG517SEDN" started.
+[12:00:04 DBG] Connection 0HN8JG517SEDN established using the following protocol: "Tls13"
+[12:00:05 DBG] Wildcard detected, all requests with hosts will be allowed.
+[12:00:05 DBG] Response markup is scheduled to include Browser Link script injection.
+[12:00:05 DBG] Response markup is scheduled to include browser refresh script injection.
+[12:00:05 DBG] HTTP GET /swagger/index.html responded 200 in 233.9829 ms
+[12:00:05 DBG] Response markup was updated to include Browser Link script injection.
+[12:00:05 DBG] HTTP GET /swagger/index.js responded 200 in 12.9654 ms
+[12:00:05 DBG] Response markup was updated to include browser refresh script injection.
+[12:00:05 INF] The file /swagger-ui-bundle.js was not modified
+[12:00:05 INF] The file /swagger-ui.css was not modified
+[12:00:05 INF] The file /index.css was not modified
+[12:00:05 INF] The file /swagger-ui-standalone-preset.js was not modified
+[12:00:05 DBG] Handled. Status code: 304 File: /index.css
+[12:00:05 DBG] Handled. Status code: 304 File: /swagger-ui-bundle.js
+[12:00:05 DBG] Handled. Status code: 304 File: /swagger-ui.css
+[12:00:05 DBG] Handled. Status code: 304 File: /swagger-ui-standalone-preset.js
+[12:00:05 DBG] HTTP GET /swagger/index.css responded 304 in 75.6108 ms
+[12:00:05 DBG] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 79.9211 ms
+[12:00:05 DBG] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 79.8561 ms
+[12:00:05 DBG] HTTP GET /swagger/swagger-ui.css responded 304 in 79.8894 ms
+[12:00:06 INF] The file /favicon-32x32.png was not modified
+[12:00:06 DBG] Handled. Status code: 304 File: /favicon-32x32.png
+[12:00:06 DBG] HTTP GET /swagger/favicon-32x32.png responded 304 in 1.0308 ms
+[12:00:06 DBG] HTTP GET /swagger/v1/swagger.json responded 200 in 232.6906 ms
+[12:00:09 DBG] Connection id "0HN8JG517SEDN" received FIN.
+[12:00:09 DBG] Connection id "0HN8JG517SEDN" is closed. The last processed stream ID was 19.
+[12:00:09 DBG] Connection id "0HN8JG517SEDN" sending FIN because: "The Socket transport's send loop completed gracefully."
+[12:00:09 DBG] Connection id "0HN8JG517SEDN" stopped.

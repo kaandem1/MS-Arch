@@ -56,8 +56,4 @@ namespace DeviceSim
         public string QueueName { get; set; }
     }
 
-    public class DeviceConfig
-    {
-        public int DeviceId { get; set; }
-    }
 }

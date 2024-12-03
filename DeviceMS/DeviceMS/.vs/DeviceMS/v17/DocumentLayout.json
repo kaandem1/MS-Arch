@@ -144,7 +144,7 @@
               "RelativeDocumentMoniker": "DeviceMS\\Logic.ServiceLayer\\Services\\RabbitMQProducer.cs",
               "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\DeviceMS\\DeviceMS\\DeviceMS\\Logic.ServiceLayer\\Services\\RabbitMQProducer.cs",
               "RelativeToolTip": "DeviceMS\\Logic.ServiceLayer\\Services\\RabbitMQProducer.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAQwEMAAAABAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwC4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T10:05:02.194Z",
               "EditorCaption": ""
@@ -171,8 +171,7 @@
               "RelativeToolTip": "DeviceMS\\API\\Controllers\\DeviceController.cs",
               "ViewState": "AQIAAOoAAAAAAAAAAAAmwCMBAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T10:04:37.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T10:04:37.483Z"
             },
             {
               "$type": "Document",

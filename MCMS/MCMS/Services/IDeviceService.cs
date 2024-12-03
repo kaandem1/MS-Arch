@@ -1,3 +1,4 @@
+using MCMS.Models;
 using MCMS.Models.DTOModels;
 using System.Threading.Tasks;
 
@@ -10,5 +11,6 @@ namespace MCMS.Services
         Task UpdateMaxHourlyConsAsync(int deviceId, float maxHourlyCons);
 
         Task DeleteDeviceAsync(int deviceId);
+        Task<DeviceConsumption> GetDeviceConsumptionAsync(int deviceId);
     }
 }

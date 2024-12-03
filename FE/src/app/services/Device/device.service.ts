@@ -7,6 +7,8 @@ import { DeviceUpdate } from '../../interfaces/DeviceUpdate';
 import { PersonReference } from '../../interfaces/PersonReference';
 import { deviceBaseUrl } from '../../constants/api-constants';
 import { deviceEndpoint } from '../../constants/api-constants';
+import { DeviceConsumption } from '../../interfaces/DeviceConsumption';
+import { deviceCons } from '../../constants/api-constants';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +16,7 @@ import { deviceEndpoint } from '../../constants/api-constants';
 export class DeviceService {
 
   private url = deviceBaseUrl + deviceEndpoint;
+  private apiUrl = deviceBaseUrl + deviceCons;
 
   constructor(private http: HttpClient) { }
 
@@ -60,4 +63,9 @@ export class DeviceService {
   getUnownedDevices(): Observable<Device[]> {
     return this.http.get<Device[]>(`${this.url}/unowned`);
   }
+
+  getDeviceConsumption(deviceId: number): Observable<DeviceConsumption> {
+    return this.http.get<DeviceConsumption>(`${this.apiUrl}/${deviceId}`);
+  }
+  
 }

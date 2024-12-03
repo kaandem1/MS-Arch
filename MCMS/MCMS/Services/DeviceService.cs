@@ -31,6 +31,11 @@ namespace MCMS.Services
             await _deviceConsumptionRepository.InsertAsync(deviceConsumption);
         }
 
+        public async Task<DeviceConsumption> GetDeviceConsumptionAsync(int deviceId)
+        {
+            return await _deviceConsumptionRepository.FindByIdAsync(deviceId);
+        }
+
         public async Task UpdateDeviceConsumptionAsync(int deviceId, long timestamp, float consumption)
         {
             var deviceConsumption = await _deviceConsumptionRepository.FindByIdAsync(deviceId);

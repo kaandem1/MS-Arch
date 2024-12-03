@@ -1,20 +1,46 @@
-<div class="z-[-10] absolute w-screen h-screen">
-  </div>
-  
-  <div class="h-[70svh]">
-    <div class="grid grid-cols-3 grid-rows-2">
+<div class="h-[70svh]">
+  <div class="grid grid-cols-3 grid-rows-2">
+    <div class="col-span-3 flex justify-center items-center">
+      <app-title></app-title>
+      <p-divider />
+      <p-divider />
+    </div>
 
-      <div class="flex justify-center items-center">     
-        <app-title></app-title>       
-        <p-divider />
-        <p-divider />
+    <div class="col-span-3">
+      <h3 class="text-center text-xl font-semibold">Devices for User</h3>
+      <ul>
+        <li *ngFor="let device of devices">
+          <p>{{ device.deviceName }} (ID: {{ device.id }})</p>
+          <button (click)="deviceId = device.id; loadDeviceConsumption()">View Consumption</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-3">
+      <div *ngIf="consumptionData">
+        <table class="table-auto w-full">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 text-left">Hour</th>
+              <th class="px-4 py-2 text-left">Consumption (kWh)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let entry of hourlyConsumption">
+              <td class="px-4 py-2">{{ entry.timestamp }}</td>
+              <td class="px-4 py-2">{{ entry.consumption | number:'1.2-2' }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-  
+      <div *ngIf="errorMessage" class="text-red-600">
+        {{ errorMessage }}
+      </div>
+    </div>
+
+    <div class="col-span-3 flex justify-center mt-4">
+      <label for="datePicker" class="mr-2">Select Date: </label>
+      <input type="date" [(ngModel)]="selectedDate" (change)="onDateChange()">
     </div>
   </div>
-  
-
-  
-  
-  
-  
+</div>

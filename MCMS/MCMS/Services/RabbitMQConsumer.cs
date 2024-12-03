@@ -13,11 +13,12 @@ namespace MCMS.Services
         private readonly IDeviceService _deviceService;
         private readonly string[] _hostnames = new[]
         {
-        "host.docker.internal",
-        "rabbitmq",
-        "localhost",
-        "172.17.0.1"
-    };
+            "host.docker.internal",
+            "rabbitmq",
+            "localhost",
+            "172.17.0.1"
+        };
+        private readonly Dictionary<int, List<(float, long)>> _deviceReadings = new Dictionary<int, List<(float, long)>>();
 
         public RabbitMQConsumer(IDeviceService deviceService)
         {
@@ -77,7 +78,7 @@ namespace MCMS.Services
         private async Task StartConsuming(IModel channel)
         {
             string deviceQueueName = "device-queue";
-            string deviceInfoQueueName = "deviceinfoqueue";
+            string deviceInfoQueueName = "DeviceInfoQueue";
 
             channel.QueueDeclare(queue: deviceQueueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
             channel.QueueDeclare(queue: deviceInfoQueueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
@@ -91,13 +92,13 @@ namespace MCMS.Services
 
                 try
                 {
-                    // Process the message as usual
+                    // Process the message based on routing key
                     if (ea.RoutingKey == deviceQueueName)
                     {
                         var deviceMessage = JsonSerializer.Deserialize<DeviceMessage>(message);
                         if (deviceMessage != null)
                         {
-                            ProcessDeviceMessage(deviceMessage);
+                            await ProcessDeviceMessage(deviceMessage);
                         }
                     }
                     else if (ea.RoutingKey == deviceInfoQueueName)
@@ -114,14 +115,12 @@ namespace MCMS.Services
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error processing message: {ex.Message}");
-
                     channel.BasicReject(ea.DeliveryTag, requeue: true);
                 }
             };
 
             channel.BasicConsume(queue: deviceQueueName, autoAck: false, consumer: consumer);
             channel.BasicConsume(queue: deviceInfoQueueName, autoAck: false, consumer: consumer);
-    
 
             Console.WriteLine("[x] Waiting for messages...");
             await Task.Delay(-1);
@@ -152,14 +151,51 @@ namespace MCMS.Services
             Console.WriteLine($"[x] Processed DeviceInfo message: {JsonSerializer.Serialize(deviceInfo)}");
         }
 
-        private void ProcessDeviceMessage(DeviceMessage deviceMessage)
+        private async Task ProcessDeviceMessage(DeviceMessage deviceMessage)
         {
             Console.WriteLine($"[x] Received Device Message:");
             Console.WriteLine($"    Timestamp: {deviceMessage.Timestamp}");
             Console.WriteLine($"    Device ID: {deviceMessage.DeviceId}");
             Console.WriteLine($"    Measurement Value: {deviceMessage.MeasurementValue}");
+
+            await ProcessHourlyConsumption(deviceMessage);
+        }
+
+        private async Task ProcessHourlyConsumption(DeviceMessage deviceMessage)
+        {
+            var deviceId = int.Parse(deviceMessage.DeviceId);
+            var deviceConsumption = await _deviceService.GetDeviceConsumptionAsync(deviceId);
+
+            if (deviceConsumption == null)
+            {
+                Console.WriteLine($"Device with ID {deviceId} not found in database.");
+                return;
+            }
+
+            if (!_deviceReadings.ContainsKey(deviceId))
+            {
+                _deviceReadings[deviceId] = new List<(float, long)>();
+            }
+
+            _deviceReadings[deviceId].Add((deviceMessage.MeasurementValue, deviceMessage.Timestamp));
+
+            if (_deviceReadings[deviceId].Count == 6)
+            {
+                var totalConsumption = _deviceReadings[deviceId].Sum(x => x.Item1);
+                var timestamp = _deviceReadings[deviceId].Last().Item2;
+
+                Console.WriteLine($"Device {deviceId} Hourly Consumption: {totalConsumption}");
+
+                deviceConsumption.HourlyConsumption[timestamp] = totalConsumption;
+
+                if (totalConsumption > deviceConsumption.MaxHourlyCons)
+                {
+                    Console.WriteLine($"WARNING: Device {deviceId} exceeded max hourly consumption!");
+                }
+
+                await _deviceService.UpdateDeviceConsumptionAsync(deviceId, timestamp, totalConsumption);
+                _deviceReadings[deviceId].Clear();
+            }
         }
     }
-
-
 }

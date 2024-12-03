@@ -82,6 +82,7 @@ import { MyDevicesComponent } from './components/user/my-devices/my-devices.comp
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -110,7 +111,8 @@ import { MyDevicesComponent } from './components/user/my-devices/my-devices.comp
     DeviceListItemComponent,
     DeviceDetailsComponent,
     UserDeviceListComponent,
-    MyDevicesComponent   
+    MyDevicesComponent,
+
     
   ],
   imports: [
