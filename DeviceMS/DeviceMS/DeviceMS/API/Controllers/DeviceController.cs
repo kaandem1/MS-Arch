@@ -305,8 +305,18 @@ namespace DeviceMS.API.Controllers
             }
         }
 
+        [AllowAnonymous]
+        [HttpGet("test")]
+        public ActionResult<string> GetTestMessage()
+        {
+            var xd = new Blabla{bbb = 1};
+            return Ok(xd);
+        }
 
-
+        public class Blabla 
+        {
+            public int bbb  { get; set; }
+        }
 
     }
 }

@@ -109,13 +109,7 @@ services:
     - "traefik.http.routers.device-ms.rule=PathPrefix(`/api/Device`) || PathPrefix(`/api/PersonReference`)"
     - "traefik.http.services.device-ms.loadbalancer.server.port=80"
     - "traefik.docker.network=app-network"
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-      update_config:
-        parallelism: 2
-        delay: 10s
+
 
   mc-ms:
     build:
@@ -140,13 +134,7 @@ services:
     - "traefik.http.routers.mc-ms.rule=PathPrefix(`/api/Consumption`)"
     - "traefik.http.services.mc-ms.loadbalancer.server.port=80"
     - "traefik.docker.network=app-network"
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-      update_config:
-        parallelism: 2
-        delay: 10s
+
 
 
   user-ms:
@@ -171,13 +159,6 @@ services:
     - "traefik.http.routers.user-ms.rule=PathPrefix(`/api/User`)"
     - "traefik.http.services.user-ms.loadbalancer.server.port=80" 
     - "traefik.docker.network=app-network"
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-      update_config:
-        parallelism: 2
-        delay: 10s
 
   device-sim:
     build:
