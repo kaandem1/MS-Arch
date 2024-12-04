@@ -11,12 +11,12 @@ namespace MCMS.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [AllowAnonymous]
-    public class DeviceConsumptionController : ControllerBase
+    public class ConsumptionController : ControllerBase
     {
         private readonly IDeviceService _deviceService;
-        private readonly ILogger<DeviceConsumptionController> _logger;
+        private readonly ILogger<ConsumptionController> _logger;
 
-        public DeviceConsumptionController(IDeviceService deviceService, ILogger<DeviceConsumptionController> logger)
+        public ConsumptionController(IDeviceService deviceService, ILogger<ConsumptionController> logger)
         {
             _deviceService = deviceService;
             _logger = logger;

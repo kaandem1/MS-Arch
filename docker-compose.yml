@@ -137,7 +137,7 @@ services:
       - RabbitMQ__Password=admin
     labels:
     - "traefik.enable=true"
-    - "traefik.http.routers.mc-ms.rule=PathPrefix(`/api/DeviceConsumption`)"
+    - "traefik.http.routers.mc-ms.rule=PathPrefix(`/api/Consumption`)"
     - "traefik.http.services.mc-ms.loadbalancer.server.port=80"
     - "traefik.docker.network=app-network"
     deploy:
