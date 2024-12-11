@@ -10,14 +10,24 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 using System.Text.Json.Serialization;
+using AuthenticationOptions = MCMS.Configuration.AuthenticationOptions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Builder;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 string CORSOpenPolicy = "OpenCORSPolicy";
 ConectionOptions conectionsOptions = builder.Configuration.GetSection(ConectionOptions.Connection).Get<ConectionOptions>();
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AppDbContext>(
-        options => options.UseSqlServer(conectionsOptions.DefaultConection));
+
+AuthenticationOptions authenticationOptions = builder.Configuration.GetSection(AuthenticationOptions.Auth).Get<AuthenticationOptions>();
+
+builder.Services.Configure<AuthenticationOptions>(builder.Configuration.GetSection(AuthenticationOptions.Auth));
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(conectionsOptions.DefaultConection));
 
 builder.Host.UseSerilog((context, config) =>
 {
@@ -34,6 +44,9 @@ builder.Services.AddScoped<IDeviceConsumptionRepository, DeviceInfoRepository>()
 builder.Services.AddScoped<IDeviceService, DeviceService>();
 
 builder.Services.AddScoped<RabbitMQConsumer>();
+
+//builder.Services.AddScoped<WebSocketService>();
+builder.Services.AddScoped<WebSocketService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();
@@ -62,8 +75,45 @@ builder.Services.AddCors(options =>
         });
 });
 
-var app = builder.Build();
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
 
+            ValidIssuer = authenticationOptions.ValidIssuer,
+            ValidAudience = authenticationOptions.ValidAudience,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(authenticationOptions.IssuerSecurityKey)
+            ),
+
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+builder.Services.AddHostedService<RabbitMQBackgroundService>();
+
+var app = builder.Build();
+app.UseWebSockets();
+
+var webSocketService = app.Services.GetRequiredService<WebSocketService>();
+
+app.Map("/ws", async context =>
+{
+    if (context.WebSockets.IsWebSocketRequest)
+    {
+        var webSocket = await context.WebSockets.AcceptWebSocketAsync();
+        await webSocketService.HandleWebSocketConnection(webSocket);
+    }
+    else
+    {
+        context.Response.StatusCode = 400;
+    }
+});
 
 if (app.Environment.IsDevelopment())
 {
@@ -74,29 +124,18 @@ if (app.Environment.IsDevelopment())
         {
             diagnosticContext.Set("RemoteIpAddress", httpContext.Connection.RemoteIpAddress?.ToString());
             diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
-            diagnosticContext.Set("RequestPath", httpContext.Request.Path);
-            diagnosticContext.Set("ResponseStatusCode", httpContext.Response.StatusCode);
         };
     });
 
     app.UseSwagger();
-    app.UseSwaggerUI();
-}
-else
-{
-    app.UseHsts();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MCMS API v1"));
 }
 
-app.UseHttpsRedirection();
 app.UseCors(CORSOpenPolicy);
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
-
-
-using (var scope = app.Services.CreateScope())
- {
-     var rabbitMQConsumer = scope.ServiceProvider.GetRequiredService<RabbitMQConsumer>();
-     await rabbitMQConsumer.StartListeningAsync();
-}
 
 app.Run();

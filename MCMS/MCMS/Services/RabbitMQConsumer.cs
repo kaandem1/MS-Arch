@@ -5,12 +5,16 @@ using RabbitMQ.Client.Events;
 using MCMS.Models.DTOModels;
 using MCMS.Models;
 using System.Threading.Tasks;
+using MCMS.Data;
+
 
 namespace MCMS.Services
 {
     public class RabbitMQConsumer
     {
         private readonly IDeviceService _deviceService;
+        private readonly AppDbContext _dbContext;
+        private readonly WebSocketService _webSocketService;
         private readonly string[] _hostnames = new[]
         {
             "host.docker.internal",
@@ -20,19 +24,21 @@ namespace MCMS.Services
         };
         private readonly Dictionary<int, List<(float, long)>> _deviceReadings = new Dictionary<int, List<(float, long)>>();
 
-        public RabbitMQConsumer(IDeviceService deviceService)
+        public RabbitMQConsumer(IDeviceService deviceService, AppDbContext dbContext, WebSocketService webSocketService)
         {
             _deviceService = deviceService;
+            _dbContext = dbContext;
+            _webSocketService = webSocketService;
         }
 
         private const int MaxRetries = 10;
         private const int RetryDelay = 5000;
 
-        public async Task StartListeningAsync()
+        public async Task StartListeningAsync(CancellationToken cancellationToken)
         {
             int retryCount = 0;
 
-            while (retryCount < MaxRetries)
+            while (retryCount < MaxRetries && !cancellationToken.IsCancellationRequested)
             {
                 foreach (var hostname in _hostnames)
                 {
@@ -52,7 +58,7 @@ namespace MCMS.Services
                         var channel = connection.CreateModel();
 
                         Console.WriteLine($"Connected to RabbitMQ at {hostname}");
-                        await StartConsuming(channel);
+                        await StartConsuming(channel, cancellationToken);
                         return;
                     }
                     catch (Exception ex)
@@ -62,10 +68,10 @@ namespace MCMS.Services
                 }
 
                 retryCount++;
-                if (retryCount < MaxRetries)
+                if (retryCount < MaxRetries && !cancellationToken.IsCancellationRequested)
                 {
                     Console.WriteLine("Retrying to connect to RabbitMQ after a delay...");
-                    await Task.Delay(RetryDelay);
+                    await Task.Delay(RetryDelay, cancellationToken);
                 }
                 else
                 {
@@ -74,6 +80,64 @@ namespace MCMS.Services
                 }
             }
         }
+
+        private async Task StartConsuming(IModel channel, CancellationToken cancellationToken)
+        {
+            string deviceQueueName = "device-queue";
+            string deviceInfoQueueName = "DeviceInfoQueue";
+
+            channel.QueueDeclare(queue: deviceQueueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
+            channel.QueueDeclare(queue: deviceInfoQueueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
+
+            var consumer = new EventingBasicConsumer(channel);
+
+            consumer.Received += async (model, ea) =>
+            {
+                if (cancellationToken.IsCancellationRequested)
+                {
+                    channel.Close();
+                    return;
+                }
+
+                var body = ea.Body.ToArray();
+                var message = Encoding.UTF8.GetString(body);
+
+                try
+                {
+                    if (ea.RoutingKey == deviceQueueName)
+                    {
+                        var deviceMessage = JsonSerializer.Deserialize<DeviceMessage>(message);
+                        if (deviceMessage != null)
+                        {
+                            await ProcessDeviceMessage(deviceMessage);
+                        }
+                    }
+                    else if (ea.RoutingKey == deviceInfoQueueName)
+                    {
+                        var deviceInfo = JsonSerializer.Deserialize<DeviceInfoDTO>(message);
+                        if (deviceInfo != null)
+                        {
+                            await ProcessDeviceInfo(deviceInfo);
+                        }
+                    }
+
+                    channel.BasicAck(ea.DeliveryTag, multiple: false);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error processing message: {ex.Message}");
+                    channel.BasicReject(ea.DeliveryTag, requeue: true);
+                }
+            };
+
+            channel.BasicConsume(queue: deviceQueueName, autoAck: false, consumer: consumer);
+            channel.BasicConsume(queue: deviceInfoQueueName, autoAck: false, consumer: consumer);
+
+            Console.WriteLine("[x] Waiting for messages...");
+
+            await Task.Delay(-1, cancellationToken);
+        }
+
 
         private async Task StartConsuming(IModel channel)
         {
@@ -92,7 +156,6 @@ namespace MCMS.Services
 
                 try
                 {
-                    // Process the message based on routing key
                     if (ea.RoutingKey == deviceQueueName)
                     {
                         var deviceMessage = JsonSerializer.Deserialize<DeviceMessage>(message);
@@ -190,7 +253,9 @@ namespace MCMS.Services
 
                 if (totalConsumption > deviceConsumption.MaxHourlyCons)
                 {
-                    Console.WriteLine($"WARNING: Device {deviceId} exceeded max hourly consumption!");
+                    var warningMessage = $"WARNING: Device {deviceId} exceeded max hourly consumption!";
+                    await _webSocketService.SendNotification(warningMessage);
+                    Console.WriteLine(warningMessage);
                 }
 
                 await _deviceService.UpdateDeviceConsumptionAsync(deviceId, timestamp, totalConsumption);

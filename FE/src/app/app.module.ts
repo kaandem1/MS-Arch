@@ -76,10 +76,7 @@ import { DeviceListItemComponent } from './components/items/device-list-item/dev
 import { DeviceDetailsComponent } from './components/device/device-details/device-details.component';
 import { UserDeviceListComponent } from './components/device/user-device-list/user-device-list.component';
 import { MyDevicesComponent } from './components/user/my-devices/my-devices.component';
-
-
-
-
+import { NgChartsModule } from 'ng2-charts';
 
 
 
@@ -157,7 +154,9 @@ import { MyDevicesComponent } from './components/user/my-devices/my-devices.comp
     DataViewModule,
     CardModule,
     ListboxModule,
-    ChipModule
+    ChipModule,
+    NgChartsModule
+    
   ],
   providers: [
     AuthService,

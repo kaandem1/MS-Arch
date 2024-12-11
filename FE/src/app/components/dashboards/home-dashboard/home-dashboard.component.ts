@@ -4,7 +4,11 @@ import { Device } from '../../../interfaces/Device';
 import { DeviceConsumption } from '../../../interfaces/DeviceConsumption';
 import { JWTTokenService } from '../../../services/JWTToken/jwttoken.service';
 import { UtilityService } from '../../../services/Utility/utility.service';
-import { DatePipe } from '@angular/common'; 
+import { DatePipe } from '@angular/common';
+import { ChartOptions, ChartData } from 'chart.js';
+import { NgChartsModule } from 'ng2-charts';
+import { WebSocketService } from '../../../services/WebSocket/web-socket.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'home-dashboard',
@@ -19,24 +23,55 @@ export class HomeDashboardComponent implements OnInit {
   selectedDate: string = new Date().toISOString().split('T')[0];
   consumptionData: DeviceConsumption | null = null;
   errorMessage: string | null = null;
+  wsNotification: string = '';
+  private wsSubscription: Subscription = new Subscription();
 
   formattedDate: string = '';
   hourlyConsumption: { timestamp: string, consumption: number }[] = [];
 
-  isAdmin: boolean = true;
+  isAdmin: boolean = false;
+
+  chartData: ChartData<'line'> = {
+    labels: [],
+    datasets: [
+      {
+        data: [],
+        label: 'Consumption (kWh)',
+        borderColor: 'rgba(0,123,255,1)',
+        backgroundColor: 'rgba(0,123,255,0.2)',
+        fill: true
+      }
+    ]
+  };
+  chartOptions: ChartOptions = {
+    responsive: true,
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Hour of Day'
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Energy (kWh)'
+        },
+        beginAtZero: true
+      }
+    }
+  };
 
   constructor(
     private deviceService: DeviceService,
     private jwtService: JWTTokenService,
     private utilityService: UtilityService,
-    private datePipe: DatePipe
+    private datePipe: DatePipe,
+    private webSocketService: WebSocketService
   ) {}
 
   ngOnInit(): void {
-    console.log("HomeDashboardComponent initialized.");
     this.userId = this.jwtService.getUserId() ? Number(this.jwtService.getUserId()) : null;
-    console.log("User ID fetched from JWT:", this.userId);
-
     if (this.userId) {
       this.loadUserDevices();
     } else {
@@ -55,15 +90,11 @@ export class HomeDashboardComponent implements OnInit {
   }
 
   loadUserDevices(): void {
-    console.log("Loading devices for user ID:", this.userId);
     if (this.userId) {
       this.deviceService.getDevicesByUserId(this.userId).subscribe(
-        devices => {
-          console.log("Devices fetched:", devices);
-          this.devices = devices;
+        devices => {          this.devices = devices;
           if (devices.length > 0) {
             this.deviceId = devices[0].id;
-            console.log("First device selected (ID):", this.deviceId);
             this.loadDeviceConsumption();
           } else {
             this.errorMessage = 'No devices found for the logged-in user.';
@@ -79,34 +110,49 @@ export class HomeDashboardComponent implements OnInit {
   }
 
   loadDeviceConsumption(): void {
-    console.log("Loading consumption for device ID:", this.deviceId, "on date:", this.selectedDate);
   
-    if (this.deviceId && this.selectedDate) {
-      console.log(`Fetching consumption data for Device ID: ${this.deviceId}`);
-      
+    if (this.deviceId && this.selectedDate) {  
       this.deviceService.getDeviceConsumption(this.deviceId).subscribe({
-        next: (data: DeviceConsumption) => {
-          console.log("Device consumption data received:", data);
+        next: (data: DeviceConsumption) => {  
+          if (data && data.hourlyConsumption) {  
+            const selectedDateObj = new Date(this.selectedDate);
+            const selectedYear = selectedDateObj.getUTCFullYear();
+            const selectedMonth = selectedDateObj.getUTCMonth();
+            const selectedDay = selectedDateObj.getUTCDate();
   
-          if (data && data.hourlyConsumption) {
-            console.log("Hourly consumption data:", data.hourlyConsumption);
-  
-            this.consumptionData = data;
-            this.hourlyConsumption = Object.entries(data.hourlyConsumption).map(([timestamp, consumption]) => {
-              const formattedTimestamp = new Date(parseInt(timestamp)).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-              console.log(`Processed entry - Timestamp: ${formattedTimestamp}, Consumption: ${consumption}`);
-              return { 
-                timestamp: formattedTimestamp, 
-                consumption 
-              };
-            });
+            this.hourlyConsumption = Object.entries(data.hourlyConsumption)
+              .map(([timestamp, consumption]) => {
+                const date = new Date(Number(timestamp));
+                return {
+                  timestamp: date,
+                  consumption: consumption as number
+                };
+              })
+              .filter(entry => {
+                const year = entry.timestamp.getUTCFullYear();
+                const month = entry.timestamp.getUTCMonth();
+                const day = entry.timestamp.getUTCDate();
+                return year === selectedYear && month === selectedMonth && day === selectedDay;
+              })
+              .map(entry => {
+                const formattedTime = entry.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                return {
+                  timestamp: formattedTime,
+                  consumption: entry.consumption
+                };
+              });  
+            if (this.hourlyConsumption.length > 0) {
+              this.updateChartData();
+              this.errorMessage = null;
+            } else {
+              this.errorMessage = 'No consumption data available for the selected day.';
+            }
           } else {
-            console.warn("No hourly consumption data available.");
+            this.hourlyConsumption = [];
+            this.errorMessage = 'No consumption data available for the selected day.';
           }
         },
         error: (err) => {
-          console.error('Error fetching device consumption:', err);
-          console.log("Error details:", err);
           this.errorMessage = err?.error?.message || 'An error occurred while fetching data.';
         }
       });
@@ -115,7 +161,23 @@ export class HomeDashboardComponent implements OnInit {
     }
   }
   
-  
+  updateChartData(): void {
+    const labels = this.hourlyConsumption.map(entry => entry.timestamp);
+    const consumptionValues = this.hourlyConsumption.map(entry => entry.consumption);
+
+    this.chartData = {
+      labels: labels,
+      datasets: [
+        {
+          data: consumptionValues,
+          label: 'Consumption (kWh)',
+          borderColor: 'rgba(0,123,255,1)',
+          backgroundColor: 'rgba(0,123,255,0.2)',
+          fill: true
+        }
+      ]
+    };
+  }
 
   onDateChange(): void {
     console.log("Date selected:", this.selectedDate);
@@ -123,4 +185,5 @@ export class HomeDashboardComponent implements OnInit {
     this.formattedDate = this.datePipe.transform(this.selectedDate, 'mediumDate') || '';
     console.log("Formatted date:", this.formattedDate);
   }
+
 }
