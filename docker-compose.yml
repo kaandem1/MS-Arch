@@ -109,13 +109,7 @@ services:
     - "traefik.http.routers.device-ms.rule=PathPrefix(`/api/Device`) || PathPrefix(`/api/PersonReference`)"
     - "traefik.http.services.device-ms.loadbalancer.server.port=80"
     - "traefik.docker.network=app-network"
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-      update_config:
-        parallelism: 2
-        delay: 10s
+
 
   mc-ms:
     build:
@@ -141,13 +135,7 @@ services:
       - "traefik.http.services.mc-ms.loadbalancer.server.port=80"
       - "traefik.docker.network=app-network"
       - "traefik.http.routers.mc-ms.entrypoints=web"
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-      update_config:
-        parallelism: 2
-        delay: 10s
+
 
   user-ms:
     build:
@@ -171,13 +159,21 @@ services:
     - "traefik.http.routers.user-ms.rule=PathPrefix(`/api/User`)"
     - "traefik.http.services.user-ms.loadbalancer.server.port=80" 
     - "traefik.docker.network=app-network"
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-      update_config:
-        parallelism: 2
-        delay: 10s
+
+  chat-ms:
+    build:
+      context: ./ChatMS/ChatMS
+      dockerfile: Dockerfile
+    networks:
+      - app-network 
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.chat-ms.rule=PathPrefix(`/chat`)"
+      - "traefik.http.routers.chat-ms.entrypoints=web"
+      - "traefik.http.services.chat-ms.loadbalancer.server.port=80"
+      - "traefik.http.middlewares.websocket.headers.customRequestHeaders.Connection=Upgrade"
+      - "traefik.http.middlewares.websocket.headers.customRequestHeaders.Upgrade=websocket"
+      - "traefik.http.routers.chat-ms.middlewares=websocket"
         
   device-sim:
     build:
@@ -202,7 +198,7 @@ services:
       - app-network
     labels:
     - "traefik.enable=true"
-    - "traefik.http.routers.frontend.rule=Host(`localhost`)"
+    - "traefik.http.routers.frontend.rule=PathPrefix(`/`)"
     - "traefik.http.services.frontend.loadbalancer.server.port=8080"
     - "traefik.docker.network=app-network"
 

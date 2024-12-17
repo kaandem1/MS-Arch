@@ -77,6 +77,7 @@ import { DeviceDetailsComponent } from './components/device/device-details/devic
 import { UserDeviceListComponent } from './components/device/user-device-list/user-device-list.component';
 import { MyDevicesComponent } from './components/user/my-devices/my-devices.component';
 import { NgChartsModule } from 'ng2-charts';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 
@@ -109,6 +110,7 @@ import { NgChartsModule } from 'ng2-charts';
     DeviceDetailsComponent,
     UserDeviceListComponent,
     MyDevicesComponent,
+    ChatComponent,
 
     
   ],

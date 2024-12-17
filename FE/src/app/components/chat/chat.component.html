@@ -1,0 +1,42 @@
+<div class="chat-container">
+  <div class="messages">
+    <div *ngFor="let message of messages; let i = index" class="message">
+      <div [class.sent]="message.sender === getUserId()" [class.received]="message.sender !== getUserId()">
+        <span class="message-text">{{ message.text }}</span>
+        <span class="message-meta">
+          {{ message.sender === getUserId() ? 'You' : message.senderName || message.sender }}
+        </span>
+      </div>
+
+      <div *ngFor="let entry of lastSeenIndexes | keyvalue">
+        <div *ngIf="i === entry.value" class="seen-status">
+          Seen by {{ entry.key }}.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isTyping" class="typing-notification">
+    {{ selectedReceiver }} is typing...
+  </div>
+
+  <div class="input-container">
+    <ng-container *ngIf="isAdmin(); else userView">
+      <label for="receiver">Select User:</label>
+      <select id="receiver" [(ngModel)]="selectedReceiver" class="receiver-select">
+        <option [value]="''" disabled>Select a user</option>
+        <option *ngFor="let user of userList.entries()" [value]="user[0]">
+          {{ user[1] }}
+        </option>
+      </select>
+    </ng-container>
+
+    <ng-template #userView>
+      <p class="chat-with-admin">Chatting with Admin</p>
+    </ng-template>
+
+    <input [(ngModel)]="message" (focus)="focusInput()" (keyup)="notifyTyping(true)" (blur)="notifyTyping(false)"
+      placeholder="Type a message..." class="chat-input" />
+    <button (click)="sendMessage()" class="send-button">Send</button>
+  </div>
+</div>

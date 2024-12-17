@@ -7,8 +7,7 @@ import { UtilityService } from '../../../services/Utility/utility.service';
 import { DatePipe } from '@angular/common';
 import { ChartOptions, ChartData } from 'chart.js';
 import { NgChartsModule } from 'ng2-charts';
-import { WebSocketService } from '../../../services/WebSocket/web-socket.service';
-import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'home-dashboard',
@@ -23,8 +22,6 @@ export class HomeDashboardComponent implements OnInit {
   selectedDate: string = new Date().toISOString().split('T')[0];
   consumptionData: DeviceConsumption | null = null;
   errorMessage: string | null = null;
-  wsNotification: string = '';
-  private wsSubscription: Subscription = new Subscription();
 
   formattedDate: string = '';
   hourlyConsumption: { timestamp: string, consumption: number }[] = [];
@@ -66,8 +63,7 @@ export class HomeDashboardComponent implements OnInit {
     private deviceService: DeviceService,
     private jwtService: JWTTokenService,
     private utilityService: UtilityService,
-    private datePipe: DatePipe,
-    private webSocketService: WebSocketService
+    private datePipe: DatePipe
   ) {}
 
   ngOnInit(): void {

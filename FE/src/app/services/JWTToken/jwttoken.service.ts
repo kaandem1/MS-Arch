@@ -49,6 +49,12 @@ export class JWTTokenService {
     return decodedToken?.nameid;
   }
 
+  getUserName(): string | undefined {
+    const decodedToken = this.getDecodedToken();
+    console.log(decodedToken?.name);
+    return decodedToken?.name;
+  }
+
   getUserRole(): UserRole | null {
     const role = this.decodedToken?.role;
     return this.mapRoleToUserRole(role);

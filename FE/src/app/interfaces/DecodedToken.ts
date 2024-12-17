@@ -2,7 +2,7 @@ import { UserRole } from "../enums/user-roles.enum";
 
 export interface DecodedToken {
   nameid: string;
-  unique_name: string;
+  name: string;
   email: string;
   role: UserRole;
   nbf: number;

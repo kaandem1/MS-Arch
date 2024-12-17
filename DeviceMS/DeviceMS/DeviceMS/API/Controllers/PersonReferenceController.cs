@@ -31,21 +31,38 @@ namespace DeviceMS.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<PersonReferenceDTO>> CreatePersonReferenceAsync([FromBody] PersonReferenceDTO personReferenceDTO)
         {
+            _logger.LogDebug("Received request to create PersonReference with UserId: {@UserId}", personReferenceDTO.UserId);
 
-            List<PersonReference> allPersonReferences = await _personReferenceService.GetAllAsync();
-            foreach (PersonReference pr in allPersonReferences)
+            try
             {
-                if (personReferenceDTO.UserId == pr.UserId)
+                _logger.LogDebug("Fetching all existing person references...");
+                List<PersonReference> allPersonReferences = await _personReferenceService.GetAllAsync();
+                _logger.LogDebug("Total person references fetched: {Count}", allPersonReferences.Count);
+
+                foreach (PersonReference pr in allPersonReferences)
                 {
-                    _logger.LogError("A person reference with the same id already exists : {@UserId}", personReferenceDTO.UserId);
-                    return BadRequest();
+                    _logger.LogDebug("Checking if UserId: {UserId} already exists in the database...", pr.UserId);
+                    if (personReferenceDTO.UserId == pr.UserId)
+                    {
+                        _logger.LogError("A person reference with the same UserId already exists: {@UserId}", personReferenceDTO.UserId);
+                        return BadRequest("Person reference with this UserId already exists.");
+                    }
                 }
+
+                _logger.LogDebug("Mapping PersonReferenceDTO to PersonReference entity...");
+                var personReference = _mapper.Map<PersonReference>(personReferenceDTO);
+
+                _logger.LogDebug("Saving new person reference to the database...");
+                await _personReferenceService.CreateAsync(personReference);
+
+                _logger.LogDebug("Person reference created successfully for UserId: {@UserId}", personReferenceDTO.UserId);
+                return Ok();
             }
-
-            var personReference = _mapper.Map<PersonReference>(personReferenceDTO);
-            await _personReferenceService.CreateAsync(personReference);
-
-            return Ok();
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while creating a person reference for UserId: {@UserId}", personReferenceDTO.UserId);
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing the request.");
+            }
         }
 
         [AllowAnonymous]
@@ -70,7 +87,7 @@ namespace DeviceMS.API.Controllers
 
             List<PersonReference> allPersonReferences = await _personReferenceService.GetAllAsync();
 
-            if(allPersonReferences == null)
+            if (allPersonReferences == null)
             {
                 return NotFound();
             }

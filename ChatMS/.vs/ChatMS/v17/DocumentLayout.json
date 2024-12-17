@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\configuration\\authenticationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\configuration\\authenticationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\configuration\\connectionoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|c:\\users\\kaan\\desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\chatms\\chatms\\models\\dto\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53107871-E8A1-4EB4-BA6B-18068BA90C84}|ChatMS\\ChatMS.csproj|solutionrelative:chatms\\models\\dto\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\appsettings.json",
+              "RelativeDocumentMoniker": "ChatMS\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\appsettings.json",
+              "RelativeToolTip": "ChatMS\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-14T13:08:40.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ChatMS\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\appsettings.Development.json",
+              "RelativeToolTip": "ChatMS\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-14T13:08:41.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConnectionOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Configuration\\ConnectionOptions.cs",
+              "RelativeDocumentMoniker": "ChatMS\\Configuration\\ConnectionOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Configuration\\ConnectionOptions.cs",
+              "RelativeToolTip": "ChatMS\\Configuration\\ConnectionOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:07:31.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthenticationOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Configuration\\AuthenticationOptions.cs",
+              "RelativeDocumentMoniker": "ChatMS\\Configuration\\AuthenticationOptions.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Configuration\\AuthenticationOptions.cs",
+              "RelativeToolTip": "ChatMS\\Configuration\\AuthenticationOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:06:57.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Program.cs",
+              "RelativeDocumentMoniker": "ChatMS\\Program.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Program.cs",
+              "RelativeToolTip": "ChatMS\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:06:09.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\ChatHub.cs",
+              "RelativeDocumentMoniker": "ChatMS\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\ChatHub.cs",
+              "RelativeToolTip": "ChatMS\\ChatHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:05:11.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MessageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Models\\DTO\\MessageDTO.cs",
+              "RelativeDocumentMoniker": "ChatMS\\Models\\DTO\\MessageDTO.cs",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Models\\DTO\\MessageDTO.cs",
+              "RelativeToolTip": "ChatMS\\Models\\DTO\\MessageDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:02:19.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ChatMS\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Kaan\\Desktop\\ds2024_30443_demirezenler_bilge_assignment_2\\ChatMS\\ChatMS\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ChatMS\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-14T13:01:37.961Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
