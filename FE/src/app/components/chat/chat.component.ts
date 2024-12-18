@@ -17,6 +17,7 @@ export class ChatComponent implements OnInit {
   seenBy: string | null = null;
   seenTriggered: boolean = false;
   lastSeenIndexes: Map<string, number> = new Map();
+  isAdminConnected: boolean = false; 
 
   constructor(
     private signalRService: SignalRService,
@@ -26,15 +27,39 @@ export class ChatComponent implements OnInit {
   ngOnInit(): void {
     this.signalRService.startConnection();
   
-    this.signalRService.connectedUsers$.subscribe((users) => {
-      users.forEach((user) => this.userList.set(user.userId, user.userName));
+    this.signalRService.adminConnectionStatus$.subscribe((status: boolean) => {
+      this.isAdminConnected = status;
     });
+
+    this.signalRService.connectedUsers$.subscribe((users) => {
+      users.forEach((user) => {
+        this.userList.set(user.userId, user.userName);
   
+        if (user.userId === '1') {
+          this.isAdminConnected = true;
+        }
+      });
+  
+      if (!users.some(user => user.userId === '1')) {
+        this.isAdminConnected = false;
+      }
+    });
+    
+    
     this.signalRService.userUpdate$.subscribe(({ userId, isConnected, userName }) => {
       if (isConnected) {
         this.userList.set(userId, userName);
+
+        if (userId === '1') {
+          this.isAdminConnected = true;
+        }
       } else {
         this.userList.delete(userId);
+
+        if (userId === '1') {
+          this.isAdminConnected = false;
+        }
+
         if (this.selectedReceiver === userId) {
           this.clearChat();
           this.selectedReceiver = '';
@@ -42,6 +67,7 @@ export class ChatComponent implements OnInit {
         }
       }
     });
+
     this.signalRService.messages$.subscribe((newMessages) => {
       newMessages.forEach((msg) => {
         const exists = this.messages.some(
@@ -84,6 +110,13 @@ export class ChatComponent implements OnInit {
   }
 
   sendMessage(): void {
+
+    if (!this.isAdminConnected && !this.isAdmin()) {
+      console.error('Admin is not connected.');
+      return;
+    }
+
+
     if (this.message.trim()) {
       if (this.isAdmin() && (!this.selectedReceiver || !this.userList.has(this.selectedReceiver))) {
         console.error('No valid user selected to send a message to.');

@@ -10,7 +10,7 @@ namespace MCMS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AllowAnonymous]
+    [Authorize]
     public class ConsumptionController : ControllerBase
     {
         private readonly IDeviceService _deviceService;
@@ -22,7 +22,7 @@ namespace MCMS.Controllers
             _logger = logger;
         }
 
-        [AllowAnonymous]
+        [Authorize]
         [HttpGet("{deviceId}")]
         [ProducesResponseType(typeof(DeviceConsumptionDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -58,11 +58,6 @@ namespace MCMS.Controllers
             }
         }
 
-        [HttpGet("test")]
-        public ActionResult<string> GetTestMessage()
-        {
-            return Ok("Testtetettettetet");
-        }
     }
 
     public class DeviceConsumptionDTO

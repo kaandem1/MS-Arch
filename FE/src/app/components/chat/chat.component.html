@@ -30,13 +30,25 @@
         </option>
       </select>
     </ng-container>
-
+  
     <ng-template #userView>
       <p class="chat-with-admin">Chatting with Admin</p>
     </ng-template>
-
-    <input [(ngModel)]="message" (focus)="focusInput()" (keyup)="notifyTyping(true)" (blur)="notifyTyping(false)"
-      placeholder="Type a message..." class="chat-input" />
-    <button (click)="sendMessage()" class="send-button">Send</button>
+  
+    <input
+      [(ngModel)]="message"
+      (focus)="focusInput()"
+      (keyup)="notifyTyping(true)"
+      (blur)="notifyTyping(false)"
+      placeholder="Type a message..."
+      class="chat-input"
+      [disabled]="!isAdminConnected && !isAdmin()" />
+    <button
+      (click)="sendMessage()"
+      class="send-button"
+      [disabled]="!isAdminConnected && !isAdmin()">
+      Send
+    </button>
   </div>
+  
 </div>

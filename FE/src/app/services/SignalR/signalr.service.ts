@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import * as signalR from '@microsoft/signalr';
 import { BehaviorSubject } from 'rxjs';
 import { JWTTokenService } from '../JWTToken/jwttoken.service';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,8 @@ export class SignalRService {
     userName: '',
     isConnected: false
   });
+
+  adminConnectionStatus$ = new Subject<boolean>();
 
   public connectedUsers$: BehaviorSubject<{ userId: string; userName: string }[]> = 
   new BehaviorSubject<{ userId: string; userName: string }[]>([]);
@@ -42,6 +45,10 @@ export class SignalRService {
       .start()
       .then(() => console.log('SignalR connection started'))
       .catch(err => console.error('Error while starting SignalR connection:', err));
+
+      this.hubConnection.on('AdminConnectionStatus', (status: boolean) => {
+        this.adminConnectionStatus$.next(status);
+      });
 
       this.hubConnection.on('ReceiveMessage', (message) => {
         const currentMessages = this.messages$.value;

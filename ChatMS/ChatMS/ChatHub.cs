@@ -11,6 +11,13 @@ namespace ChatMS
         private static readonly ConcurrentDictionary<string, string> _connectedUsers = new();
         private static string _activeConversation = null;
         private static readonly ConcurrentDictionary<string, int> _lastSeenIndexes = new();
+
+
+        private async Task BroadcastAdminConnectionStatus(bool isConnected)
+        {
+            await Clients.All.SendAsync("AdminConnectionStatus", isConnected);
+        }
+
         public override async Task OnConnectedAsync()
         {
             var userId = Context.User?.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -25,6 +32,11 @@ namespace ChatMS
                 Console.WriteLine($"User {userName} (Role: {userRole}) connected with ConnectionId {Context.ConnectionId}");
 
                 await NotifyAdminOfUserUpdate(userId, userName, true);
+
+                if (roleKey == "admin")
+                {
+                    await BroadcastAdminConnectionStatus(true);
+                }
             }
             else
             {
@@ -57,6 +69,10 @@ namespace ChatMS
                 }
 
                 await NotifyAdminOfUserUpdate(userId, userName, false);
+                if (roleKey == "admin")
+                {
+                    await BroadcastAdminConnectionStatus(false);
+                }
             }
 
             await base.OnDisconnectedAsync(exception);
